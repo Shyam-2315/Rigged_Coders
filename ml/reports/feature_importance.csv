@@ -1,0 +1,92 @@
+rank,feature,importance
+1,financial_discipline_index,0.4376790602143162
+2,bank_balance,0.2284423929954203
+3,utility_bill_payment_rate,0.0909979085100023
+4,income_stability_score,0.05972881222787259
+5,digital_activity_x_device_trust,0.04285485434251738
+6,risk_indicator,0.03952638349147928
+7,financial_health_score,0.031143957956024152
+8,age_x_income,0.021580383201506792
+9,employment_type_Not employed,0.010207548270537076
+10,repayment_consistency,0.006097695639145003
+11,digital_trust_index,0.005745772537293951
+12,monthly_savings,0.005201589437399189
+13,banking_maturity_score,0.0022388554983055115
+14,upi_transactions_per_month,0.0021588419409754134
+15,digital_activity_score,0.0018790544415776206
+16,years_employed,0.0017202824539456775
+17,missed_utility_payments,0.0013644169386246576
+18,monthly_income,0.001228850262502836
+19,device_reliability_score,0.0011087582181296782
+20,device_trust_score,0.0010516584655159056
+21,digital_literacy_score,0.0009852389444916815
+22,wallet_average_balance,0.0009408462981366176
+23,savings_rate,0.0008572861426652974
+24,location_consistency,0.0006801478790991924
+25,mobile_number_age,0.0005445699247929291
+26,smartphone_years,0.0005021462015476567
+27,bank_account_age,0.0004336591835885816
+28,emergency_fund_months,0.000395130025836757
+29,cash_transaction_ratio,0.00026824366814125216
+30,age,0.0002539972714862461
+31,existing_small_loans,0.00025183864211336465
+32,ecommerce_transactions,0.00021844169151431528
+33,online_subscription_count,0.0001854221684101478
+34,wallet_usage_Heavy,0.0001742679368710143
+35,device_age,0.00016473466469155748
+36,investment_frequency,0.0001311105557515841
+37,atm_withdrawals,0.00012054561980967814
+38,number_of_devices,9.329973213943462e-05
+39,mobile_recharge_frequency,8.679554006147201e-05
+40,dependents,8.578846285809582e-05
+41,gender_Female,5.8701884081474064e-05
+42,employment_type_Self-employed,5.313398563807414e-05
+43,city_tier_Tier 2,3.99737353136498e-05
+44,employment_type_Salaried,3.992941442518933e-05
+45,education_Secondary,3.8010281328685984e-05
+46,marital_status_Married,3.74209416746817e-05
+47,city_tier_Tier 1,3.690689278890458e-05
+48,education_Higher Secondary,3.5641308619556275e-05
+49,education_Graduate,3.399554441594275e-05
+50,city_tier_Tier 3,3.159844574519205e-05
+51,wallet_usage_Regular,1.8219916876151286e-05
+52,education_Diploma,1.757875744380169e-05
+53,occupation_Farmer,1.5448156640035505e-05
+54,education_Postgraduate,1.3461990354997433e-05
+55,occupation_Delivery Partner,1.1476504963548596e-05
+56,state_Uttar Pradesh,1.0953615975411006e-05
+57,occupation_Driver,1.083180828862265e-05
+58,occupation_Software Engineer,1.0639561813894972e-05
+59,occupation_Shop Owner,1.0351770323095586e-05
+60,occupation_Business Owner,7.851778422532297e-06
+61,occupation_Cashier,7.446879892324651e-06
+62,state_Karnataka,7.41763576459156e-06
+63,state_Maharashtra,7.2562093612569835e-06
+64,state_Bihar,7.173784459132448e-06
+65,occupation_Sales Executive,7.076355904409716e-06
+66,state_Andhra Pradesh,6.665278253236475e-06
+67,wallet_usage_Occasional,6.579681986402038e-06
+68,occupation_Government Employee,6.382915021503345e-06
+69,occupation_Teacher,5.68784756292252e-06
+70,occupation_Homemaker,5.473955195757332e-06
+71,state_Rajasthan,5.311729719133658e-06
+72,occupation_Plumber,5.185274693410878e-06
+73,state_Tamil Nadu,4.9735110525119516e-06
+74,state_Jharkhand,4.928481055004006e-06
+75,occupation_Freelancer,4.804270377563421e-06
+76,state_West Bengal,4.785815781712334e-06
+77,occupation_Electrician,4.7042657211295245e-06
+78,state_Madhya Pradesh,4.363508690176137e-06
+79,state_Odisha,4.279450152393587e-06
+80,state_Gujarat,4.23858410271916e-06
+81,state_Delhi,4.119373312050905e-06
+82,occupation_Student,3.674245646623436e-06
+83,state_Telangana,2.973388238353806e-06
+84,occupation_Doctor,2.8309061899686167e-06
+85,state_Assam,2.5753578530203845e-06
+86,state_Punjab,1.8722618614520808e-06
+87,state_Chhattisgarh,1.8522443574838325e-06
+88,state_Kerala,1.5386070990678639e-06
+89,wallet_usage_No usage,8.657174258701337e-07
+90,marital_status_Divorced/Widowed,2.485710372084458e-07
+91,gender_Non-binary,0.0

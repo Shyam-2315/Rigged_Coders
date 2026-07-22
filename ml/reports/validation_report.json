@@ -1,0 +1,176 @@
+{
+  "source": {
+    "stage": "source",
+    "row_count": 100000,
+    "column_count": 48,
+    "generated_at_utc": "2026-07-22T14:26:43.931469+00:00",
+    "passed": true,
+    "checks": [
+      {
+        "name": "required_columns_present",
+        "invalid_rows": 0,
+        "description": "All configured source columns are present",
+        "passed": true
+      },
+      {
+        "name": "no_missing_values",
+        "invalid_rows": 0,
+        "description": "Every row contains values for all source columns",
+        "passed": true
+      },
+      {
+        "name": "no_duplicate_users",
+        "invalid_rows": 0,
+        "description": "Each user identifier is unique",
+        "passed": true
+      },
+      {
+        "name": "income_positive",
+        "invalid_rows": 0,
+        "description": "Monthly income is greater than zero",
+        "passed": true
+      },
+      {
+        "name": "expenses_non_negative",
+        "invalid_rows": 0,
+        "description": "Monthly expenses are non-negative",
+        "passed": true
+      },
+      {
+        "name": "savings_non_negative",
+        "invalid_rows": 0,
+        "description": "Monthly savings are non-negative",
+        "passed": true
+      },
+      {
+        "name": "savings_not_above_income",
+        "invalid_rows": 0,
+        "description": "Monthly savings do not exceed monthly income",
+        "passed": true
+      },
+      {
+        "name": "age_in_range",
+        "invalid_rows": 0,
+        "description": "Age is between 18 and 65",
+        "passed": true
+      },
+      {
+        "name": "credit_likelihood_in_range",
+        "invalid_rows": 0,
+        "description": "Credit likelihood is between 0 and 100",
+        "passed": true
+      },
+      {
+        "name": "utility_bill_payment_rate_in_range",
+        "invalid_rows": 0,
+        "description": "utility_bill_payment_rate is between 0 and 1",
+        "passed": true
+      },
+      {
+        "name": "cash_transaction_ratio_in_range",
+        "invalid_rows": 0,
+        "description": "cash_transaction_ratio is between 0 and 1",
+        "passed": true
+      },
+      {
+        "name": "late_payment_ratio_in_range",
+        "invalid_rows": 0,
+        "description": "late_payment_ratio is between 0 and 1",
+        "passed": true
+      },
+      {
+        "name": "savings_rate_in_range",
+        "invalid_rows": 0,
+        "description": "savings_rate is between 0 and 1",
+        "passed": true
+      }
+    ]
+  },
+  "post_cleaning": {
+    "stage": "post_cleaning",
+    "row_count": 100000,
+    "column_count": 48,
+    "generated_at_utc": "2026-07-22T14:26:44.289084+00:00",
+    "passed": true,
+    "checks": [
+      {
+        "name": "required_columns_present",
+        "invalid_rows": 0,
+        "description": "All configured source columns are present",
+        "passed": true
+      },
+      {
+        "name": "no_missing_values",
+        "invalid_rows": 0,
+        "description": "Every row contains values for all source columns",
+        "passed": true
+      },
+      {
+        "name": "no_duplicate_users",
+        "invalid_rows": 0,
+        "description": "Each user identifier is unique",
+        "passed": true
+      },
+      {
+        "name": "income_positive",
+        "invalid_rows": 0,
+        "description": "Monthly income is greater than zero",
+        "passed": true
+      },
+      {
+        "name": "expenses_non_negative",
+        "invalid_rows": 0,
+        "description": "Monthly expenses are non-negative",
+        "passed": true
+      },
+      {
+        "name": "savings_non_negative",
+        "invalid_rows": 0,
+        "description": "Monthly savings are non-negative",
+        "passed": true
+      },
+      {
+        "name": "savings_not_above_income",
+        "invalid_rows": 0,
+        "description": "Monthly savings do not exceed monthly income",
+        "passed": true
+      },
+      {
+        "name": "age_in_range",
+        "invalid_rows": 0,
+        "description": "Age is between 18 and 65",
+        "passed": true
+      },
+      {
+        "name": "credit_likelihood_in_range",
+        "invalid_rows": 0,
+        "description": "Credit likelihood is between 0 and 100",
+        "passed": true
+      },
+      {
+        "name": "utility_bill_payment_rate_in_range",
+        "invalid_rows": 0,
+        "description": "utility_bill_payment_rate is between 0 and 1",
+        "passed": true
+      },
+      {
+        "name": "cash_transaction_ratio_in_range",
+        "invalid_rows": 0,
+        "description": "cash_transaction_ratio is between 0 and 1",
+        "passed": true
+      },
+      {
+        "name": "late_payment_ratio_in_range",
+        "invalid_rows": 0,
+        "description": "late_payment_ratio is between 0 and 1",
+        "passed": true
+      },
+      {
+        "name": "savings_rate_in_range",
+        "invalid_rows": 0,
+        "description": "savings_rate is between 0 and 1",
+        "passed": true
+      }
+    ]
+  }
+}

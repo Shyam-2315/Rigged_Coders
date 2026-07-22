@@ -1,0 +1,42 @@
+{
+  "input_feature_count": 118,
+  "output_feature_count": 91,
+  "correlation_threshold": 0.95,
+  "near_zero_variance_threshold": 1e-08,
+  "removed_features": {
+    "constant": [],
+    "duplicate": [
+      "employment_type_Contract",
+      "employment_type_Freelance",
+      "employment_type_Gig",
+      "employment_type_Government"
+    ],
+    "near_zero_variance": [
+      "debt_burden_ratio"
+    ],
+    "highly_correlated": [
+      "monthly_expenses",
+      "upi_average_transaction",
+      "late_payment_ratio",
+      "loan_history_length",
+      "sim_age",
+      "payment_consistency_score",
+      "expense_to_income_ratio",
+      "savings_to_income_ratio",
+      "bank_balance_to_annual_income_ratio",
+      "emergency_fund_adequacy_ratio",
+      "digital_payment_score",
+      "credit_behavior_score",
+      "employment_stability_feature_score",
+      "financial_cushion_score",
+      "digital_engagement_score",
+      "income_x_savings_rate",
+      "income_x_payment_consistency",
+      "bank_balance_x_emergency_fund",
+      "repayment_x_loan_history",
+      "upi_x_digital_literacy",
+      "gender_Male",
+      "marital_status_Single"
+    ]
+  }
+}
