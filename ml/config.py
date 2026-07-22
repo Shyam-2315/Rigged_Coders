@@ -1,4 +1,4 @@
-"""Configuration for TrustVest AI data generation and preprocessing."""
+"""Configuration for TrustVest AI data generation, preprocessing, and modelling."""
 
 from dataclasses import dataclass, field
 from pathlib import Path
@@ -231,3 +231,110 @@ class FeatureEngineeringConfig:
         )
         if any(cap <= 0 for cap in configurable_caps):
             raise ValueError("Feature-engineering normalisation caps must be greater than zero")
+
+
+@dataclass(frozen=True, slots=True)
+class TrainingConfig:
+    """Runtime settings for the reproducible Phase 3 credit-model pipeline.
+
+    The processed dataset is already numeric and scaled, so this configuration
+    deliberately describes modelling only.  Every output path and expensive
+    training choice is exposed here for CLI callers and later orchestration.
+    """
+
+    random_seed: int = RANDOM_SEED
+    dataset_path: Path = ML_ROOT / "datasets" / "processed_credit_dataset.csv"
+    models_dir: Path = ML_ROOT / "models"
+    reports_dir: Path = ML_ROOT / "reports"
+    plots_dir: Path = ML_ROOT / "plots"
+
+    target_column: str = "credit_likelihood"
+    test_size: float = 0.20
+    cv_folds: int = 5
+    randomized_search_iterations: int = 8
+    n_jobs: int = -1
+    search_n_jobs: int = 1
+    xgb_n_jobs: int = -1
+
+    comparison_estimators: int = 150
+    xgb_base_estimators: int = 300
+    shap_sample_size: int = 1_000
+    learning_curve_fractions: tuple[float, ...] = (0.2, 0.5, 1.0)
+    top_feature_count: int = 20
+    confidence_lower_bound: float = 0.50
+    confidence_upper_bound: float = 0.99
+
+    credit_model_filename: str = "credit_model.pkl"
+    best_model_filename: str = "best_model.pkl"
+    metadata_filename: str = "model_metadata.json"
+    comparison_filename: str = "model_comparison.csv"
+    feature_ranking_filename: str = "feature_ranking.json"
+    feature_importance_filename: str = "feature_importance.csv"
+    training_report_filename: str = "training_report.md"
+    evaluation_report_filename: str = "evaluation_report.md"
+    model_card_filename: str = "model_card.md"
+    training_log_filename: str = "training_pipeline.jsonl"
+
+    @property
+    def credit_model_path(self) -> Path:
+        return self.models_dir / self.credit_model_filename
+
+    @property
+    def best_model_path(self) -> Path:
+        return self.models_dir / self.best_model_filename
+
+    @property
+    def metadata_path(self) -> Path:
+        return self.models_dir / self.metadata_filename
+
+    @property
+    def comparison_path(self) -> Path:
+        return self.reports_dir / self.comparison_filename
+
+    @property
+    def feature_ranking_path(self) -> Path:
+        return self.reports_dir / self.feature_ranking_filename
+
+    @property
+    def feature_importance_path(self) -> Path:
+        return self.reports_dir / self.feature_importance_filename
+
+    @property
+    def training_report_path(self) -> Path:
+        return self.reports_dir / self.training_report_filename
+
+    @property
+    def evaluation_report_path(self) -> Path:
+        return self.reports_dir / self.evaluation_report_filename
+
+    @property
+    def model_card_path(self) -> Path:
+        return self.reports_dir / self.model_card_filename
+
+    @property
+    def training_log_path(self) -> Path:
+        return self.reports_dir / self.training_log_filename
+
+    def create_output_directories(self) -> None:
+        for directory in (self.models_dir, self.reports_dir, self.plots_dir):
+            directory.mkdir(parents=True, exist_ok=True)
+
+    def __post_init__(self) -> None:
+        if not self.dataset_path.exists():
+            raise FileNotFoundError(f"Processed dataset not found: {self.dataset_path}")
+        if not 0 < self.test_size < 1:
+            raise ValueError("test_size must be in the interval (0, 1)")
+        if self.cv_folds < 2:
+            raise ValueError("cv_folds must be at least 2")
+        if self.randomized_search_iterations <= 0:
+            raise ValueError("randomized_search_iterations must be greater than zero")
+        if self.comparison_estimators <= 0 or self.xgb_base_estimators <= 0:
+            raise ValueError("Estimator counts must be greater than zero")
+        if self.shap_sample_size <= 0 or self.top_feature_count <= 0:
+            raise ValueError("Sample and feature counts must be greater than zero")
+        if not 0 <= self.confidence_lower_bound <= self.confidence_upper_bound <= 1:
+            raise ValueError("Confidence bounds must be ordered values in [0, 1]")
+        if not self.learning_curve_fractions or any(
+            fraction <= 0 or fraction > 1 for fraction in self.learning_curve_fractions
+        ):
+            raise ValueError("learning_curve_fractions must contain values in (0, 1]")

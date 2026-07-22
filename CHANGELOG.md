@@ -1,5 +1,17 @@
 # Changelog
 
+## v0.3.0
+
+Added
+
+- Model Comparison
+- Hyperparameter Tuning
+- XGBoost Credit Model
+- SHAP Explainability
+- Model Versioning
+- Inference Engine
+- Evaluation Reports
+
 ## v0.2.0
 
 Added

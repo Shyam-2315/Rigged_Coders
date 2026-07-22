@@ -71,3 +71,76 @@ python -m ml.preprocessing.preprocessing
 - `ml/plots/feature_importance.png`, `correlation_heatmap_processed.png`, `target_distribution_processed.png`, and `feature_distribution_summary.png`
 
 The structured run log is written to `ml/reports/preprocessing_pipeline.jsonl`.
+
+## Phase 3 - Explainable Credit Scoring Model
+
+### Purpose
+
+Trains and exports an explainable XGBoost regression model that estimates the
+synthetic `credit_likelihood` target. This phase consumes only the processed,
+fully numeric dataset produced by Phase 2.
+
+### Algorithms Compared
+
+The hold-out comparison records RMSE, MAE, R2, MAPE, training time, and
+prediction time for:
+
+- Random Forest Regressor
+- Gradient Boosting Regressor
+- XGBoost Regressor
+- Extra Trees Regressor
+- HistGradientBoostingRegressor
+
+XGBoost is then tuned with 5-fold `RandomizedSearchCV` across tree depth,
+learning rate, estimators, row/column subsampling, minimum child weight, and
+gamma. It is the selected deployment model because it provides regularised
+nonlinear performance and exact tree-contribution explanations suitable for
+the requested inference API.
+
+### Training
+
+Install the dependencies, then train from the repository root:
+
+```powershell
+python -m pip install -r requirements.txt
+python -m ml.training.train_credit_model
+```
+
+For a fast smoke run that retains the 5-fold workflow while using smaller
+comparison and SHAP settings:
+
+```powershell
+python -m ml.training.train_credit_model --quick
+```
+
+All runtime settings, including paths, random seed, split, CV folds, tuning
+iterations, output names, and explainability sample size are centralised in
+`TrainingConfig` in [`ml/config.py`](ml/config.py).
+
+### Explainability and Inference
+
+TreeSHAP generates a global summary plot, global bar plot, dependence plots,
+a local waterfall plot, optional force-plot HTML, a ranked feature CSV, and a
+top-20 `feature_ranking.json`. The exported inference module exposes
+`load_model()`, `predict()`, and `predict_with_explanation()`.
+
+`predict_with_explanation()` accepts exactly one Phase 2 processed feature
+record and returns a credit score, a hold-out/feature-coverage confidence
+proxy, and signed top positive and negative TreeSHAP feature effects. It does
+not accept raw user records; a backend must apply the saved Phase 2
+preprocessing artifacts first.
+
+### Generated Model Outputs
+
+- `ml/models/credit_model.pkl` and `ml/models/best_model.pkl`
+- `ml/models/model_metadata.json`
+- `ml/reports/model_comparison.csv`, `training_report.md`,
+  `evaluation_report.md`, `model_card.md`, `feature_importance.csv`, and
+  `feature_ranking.json`
+- `ml/plots/model_comparison.png`, `prediction_vs_actual.png`,
+  `residual_distribution.png`, `residual_histogram.png`, `shap_summary.png`,
+  `shap_bar.png`, `feature_importance.png`, and `learning_curve.png`
+
+The model and all reports are educational artifacts for synthetic data. They
+must not be used to make lending, eligibility, pricing, or other decisions
+about real people.

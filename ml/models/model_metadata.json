@@ -1,0 +1,670 @@
+{
+  "model_name": "XGBRegressor",
+  "model_version": "v0.3.0",
+  "training_date_utc": "2026-07-22T16:26:12.683041+00:00",
+  "dataset_version": "processed_credit_dataset.csv:sha256:aa3f13d9ff31",
+  "git_commit": "df913d333833bffedbd4c9c3ca0b27b4d0dd68a1",
+  "random_seed": 2026,
+  "training_samples": 80000,
+  "validation_samples": 20000,
+  "feature_count": 91,
+  "feature_names": [
+    "age",
+    "dependents",
+    "years_employed",
+    "monthly_income",
+    "monthly_savings",
+    "bank_account_age",
+    "mobile_number_age",
+    "smartphone_years",
+    "digital_literacy_score",
+    "upi_transactions_per_month",
+    "utility_bill_payment_rate",
+    "mobile_recharge_frequency",
+    "wallet_average_balance",
+    "ecommerce_transactions",
+    "online_subscription_count",
+    "bank_balance",
+    "atm_withdrawals",
+    "cash_transaction_ratio",
+    "missed_utility_payments",
+    "savings_rate",
+    "investment_frequency",
+    "emergency_fund_months",
+    "existing_small_loans",
+    "repayment_consistency",
+    "device_trust_score",
+    "device_age",
+    "number_of_devices",
+    "location_consistency",
+    "financial_discipline_index",
+    "digital_activity_score",
+    "income_stability_score",
+    "digital_trust_index",
+    "financial_health_score",
+    "device_reliability_score",
+    "banking_maturity_score",
+    "risk_indicator",
+    "digital_activity_x_device_trust",
+    "age_x_income",
+    "gender_Female",
+    "gender_Non-binary",
+    "state_Andhra Pradesh",
+    "state_Assam",
+    "state_Bihar",
+    "state_Chhattisgarh",
+    "state_Delhi",
+    "state_Gujarat",
+    "state_Jharkhand",
+    "state_Karnataka",
+    "state_Kerala",
+    "state_Madhya Pradesh",
+    "state_Maharashtra",
+    "state_Odisha",
+    "state_Punjab",
+    "state_Rajasthan",
+    "state_Tamil Nadu",
+    "state_Telangana",
+    "state_Uttar Pradesh",
+    "state_West Bengal",
+    "city_tier_Tier 1",
+    "city_tier_Tier 2",
+    "city_tier_Tier 3",
+    "education_Diploma",
+    "education_Graduate",
+    "education_Higher Secondary",
+    "education_Postgraduate",
+    "education_Secondary",
+    "marital_status_Divorced/Widowed",
+    "marital_status_Married",
+    "occupation_Business Owner",
+    "occupation_Cashier",
+    "occupation_Delivery Partner",
+    "occupation_Doctor",
+    "occupation_Driver",
+    "occupation_Electrician",
+    "occupation_Farmer",
+    "occupation_Freelancer",
+    "occupation_Government Employee",
+    "occupation_Homemaker",
+    "occupation_Plumber",
+    "occupation_Sales Executive",
+    "occupation_Shop Owner",
+    "occupation_Software Engineer",
+    "occupation_Student",
+    "occupation_Teacher",
+    "employment_type_Not employed",
+    "employment_type_Salaried",
+    "employment_type_Self-employed",
+    "wallet_usage_Heavy",
+    "wallet_usage_No usage",
+    "wallet_usage_Occasional",
+    "wallet_usage_Regular"
+  ],
+  "target_column": "credit_likelihood",
+  "metrics": {
+    "rmse": 0.5823616228350512,
+    "mae": 0.43803138308525086,
+    "r2": 0.9974571138076259,
+    "mape_percent": 0.8718515695193383
+  },
+  "cross_validation": {
+    "folds": 5,
+    "best_rmse": 0.5982293479692711
+  },
+  "hyperparameters": {
+    "subsample": 0.85,
+    "n_estimators": 300,
+    "min_child_weight": 1,
+    "max_depth": 8,
+    "learning_rate": 0.075,
+    "gamma": 0.05,
+    "colsample_bytree": 1.0
+  },
+  "comparison_results": [
+    {
+      "model": "Extra Trees Regressor",
+      "rmse": 1.0168090451532952,
+      "mae": 0.7818553333333333,
+      "r2": 0.9922478845801497,
+      "mape_percent": 1.5339379007476803,
+      "training_time_seconds": 1.1901535000069998,
+      "prediction_time_seconds": 0.031486499996390194
+    },
+    {
+      "model": "Random Forest Regressor",
+      "rmse": 1.073879107622699,
+      "mae": 0.8276476585317462,
+      "r2": 0.9913532636909557,
+      "mape_percent": 1.6124320510354357,
+      "training_time_seconds": 2.09230880002724,
+      "prediction_time_seconds": 0.021959099976811558
+    },
+    {
+      "model": "XGBoost Regressor",
+      "rmse": 1.1747438021787118,
+      "mae": 0.9050580213356018,
+      "r2": 0.9896526830248978,
+      "mape_percent": 1.776626790703936,
+      "training_time_seconds": 0.40499750000890344,
+      "prediction_time_seconds": 0.00699309998890385
+    },
+    {
+      "model": "HistGradientBoostingRegressor",
+      "rmse": 4.835015059032473,
+      "mae": 3.796084740485773,
+      "r2": 0.8247180925767756,
+      "mape_percent": 7.793806691677537,
+      "training_time_seconds": 1.581642099947203,
+      "prediction_time_seconds": 0.008243100019171834
+    },
+    {
+      "model": "Gradient Boosting Regressor",
+      "rmse": 5.445801363189136,
+      "mae": 4.258018841700073,
+      "r2": 0.7776357218176957,
+      "mape_percent": 8.722500531625787,
+      "training_time_seconds": 7.053121400007512,
+      "prediction_time_seconds": 0.011049299966543913
+    }
+  ],
+  "top_features": [
+    {
+      "rank": 1,
+      "feature": "financial_discipline_index",
+      "mean_abs_shap_value": 4.269557705909014,
+      "mean_shap_value": -0.24440218856930732
+    },
+    {
+      "rank": 2,
+      "feature": "bank_balance",
+      "mean_abs_shap_value": 2.0933217484718187,
+      "mean_shap_value": 0.02413442428316921
+    },
+    {
+      "rank": 3,
+      "feature": "digital_activity_x_device_trust",
+      "mean_abs_shap_value": 1.4290105825848878,
+      "mean_shap_value": 0.12189619402214885
+    },
+    {
+      "rank": 4,
+      "feature": "utility_bill_payment_rate",
+      "mean_abs_shap_value": 1.4058302420005202,
+      "mean_shap_value": 0.22465966037660837
+    },
+    {
+      "rank": 5,
+      "feature": "risk_indicator",
+      "mean_abs_shap_value": 1.2418483596984298,
+      "mean_shap_value": -0.05888369188271463
+    },
+    {
+      "rank": 6,
+      "feature": "income_stability_score",
+      "mean_abs_shap_value": 0.728325899974443,
+      "mean_shap_value": 0.062203055874444545
+    },
+    {
+      "rank": 7,
+      "feature": "repayment_consistency",
+      "mean_abs_shap_value": 0.4892567906808108,
+      "mean_shap_value": -0.002775758905336261
+    },
+    {
+      "rank": 8,
+      "feature": "age_x_income",
+      "mean_abs_shap_value": 0.4868306845035404,
+      "mean_shap_value": 0.010979118717834354
+    },
+    {
+      "rank": 9,
+      "feature": "existing_small_loans",
+      "mean_abs_shap_value": 0.4641364750564098,
+      "mean_shap_value": 0.003531934469938278
+    },
+    {
+      "rank": 10,
+      "feature": "monthly_savings",
+      "mean_abs_shap_value": 0.39946134401984457,
+      "mean_shap_value": 0.00619650171198009
+    },
+    {
+      "rank": 11,
+      "feature": "digital_trust_index",
+      "mean_abs_shap_value": 0.3250267816437408,
+      "mean_shap_value": 0.031166949051432313
+    },
+    {
+      "rank": 12,
+      "feature": "upi_transactions_per_month",
+      "mean_abs_shap_value": 0.22101059313490987,
+      "mean_shap_value": 0.012748794179409743
+    },
+    {
+      "rank": 13,
+      "feature": "missed_utility_payments",
+      "mean_abs_shap_value": 0.19425649317353963,
+      "mean_shap_value": 0.0478554065823555
+    },
+    {
+      "rank": 14,
+      "feature": "digital_literacy_score",
+      "mean_abs_shap_value": 0.16259185260348022,
+      "mean_shap_value": 0.008881632272154093
+    },
+    {
+      "rank": 15,
+      "feature": "investment_frequency",
+      "mean_abs_shap_value": 0.1537624847497791,
+      "mean_shap_value": -0.01384777153097093
+    },
+    {
+      "rank": 16,
+      "feature": "cash_transaction_ratio",
+      "mean_abs_shap_value": 0.14487923232838512,
+      "mean_shap_value": -0.019889320950955153
+    },
+    {
+      "rank": 17,
+      "feature": "device_trust_score",
+      "mean_abs_shap_value": 0.12948754265531898,
+      "mean_shap_value": 0.016240587385371326
+    },
+    {
+      "rank": 18,
+      "feature": "financial_health_score",
+      "mean_abs_shap_value": 0.12203388512297533,
+      "mean_shap_value": -0.07412142366007901
+    },
+    {
+      "rank": 19,
+      "feature": "online_subscription_count",
+      "mean_abs_shap_value": 0.1173652126782108,
+      "mean_shap_value": -0.004658037799177691
+    },
+    {
+      "rank": 20,
+      "feature": "monthly_income",
+      "mean_abs_shap_value": 0.10363144135801122,
+      "mean_shap_value": 0.030292826549615712
+    }
+  ],
+  "explainability": {
+    "engine": "xgboost.pred_contribs",
+    "note": "TreeSHAP explanations are calculated for the final XGBoost model."
+  },
+  "confidence_calibration": {
+    "method": "holdout_rmse_with_feature_quantile_ood_penalty",
+    "baseline_confidence": 0.99,
+    "lower_bound": 0.5,
+    "upper_bound": 0.99,
+    "note": "Confidence is a heuristic reliability proxy, not a calibrated probability."
+  },
+  "feature_quantiles": {
+    "age": {
+      "p01": -1.8764138219815052,
+      "p99": 2.246875509620857
+    },
+    "dependents": {
+      "p01": -0.7600931194984358,
+      "p99": 2.759589775078841
+    },
+    "years_employed": {
+      "p01": -1.280082971952735,
+      "p99": 2.986908666637467
+    },
+    "monthly_income": {
+      "p01": -1.0197659506329986,
+      "p99": 3.684903907473661
+    },
+    "monthly_savings": {
+      "p01": -0.8727096603980141,
+      "p99": 3.9519576104690657
+    },
+    "bank_account_age": {
+      "p01": -1.7451073889468396,
+      "p99": 1.9880601320996687
+    },
+    "mobile_number_age": {
+      "p01": -2.5258770534336543,
+      "p99": 1.64683752787262
+    },
+    "smartphone_years": {
+      "p01": -2.534272269920544,
+      "p99": 0.904917559135656
+    },
+    "digital_literacy_score": {
+      "p01": -2.316050952171645,
+      "p99": 1.6246971605189746
+    },
+    "upi_transactions_per_month": {
+      "p01": -2.593305666362269,
+      "p99": 1.764309857683155
+    },
+    "utility_bill_payment_rate": {
+      "p01": -2.8214099168567306,
+      "p99": 1.2419709905283036
+    },
+    "mobile_recharge_frequency": {
+      "p01": -2.189688421917402,
+      "p99": 2.2576210744747933
+    },
+    "wallet_average_balance": {
+      "p01": -0.8437019189292453,
+      "p99": 4.099805958121236
+    },
+    "ecommerce_transactions": {
+      "p01": -1.8882720293234043,
+      "p99": 2.452895907654595
+    },
+    "online_subscription_count": {
+      "p01": -1.666421755448445,
+      "p99": 2.9504467592947683
+    },
+    "bank_balance": {
+      "p01": -0.9468225313986075,
+      "p99": 4.07392393562971
+    },
+    "atm_withdrawals": {
+      "p01": -0.621186480638192,
+      "p99": 3.8876432415610505
+    },
+    "cash_transaction_ratio": {
+      "p01": -0.4454544722794958,
+      "p99": 3.664126195498977
+    },
+    "missed_utility_payments": {
+      "p01": -0.7705260393734553,
+      "p99": 2.8447605902584843
+    },
+    "savings_rate": {
+      "p01": -2.3935472388848247,
+      "p99": 2.309975541235312
+    },
+    "investment_frequency": {
+      "p01": -2.1443525483127304,
+      "p99": 2.612563946617473
+    },
+    "emergency_fund_months": {
+      "p01": -2.3604267359124496,
+      "p99": 2.295490424801326
+    },
+    "existing_small_loans": {
+      "p01": -0.6747830410056941,
+      "p99": 3.0744976491154
+    },
+    "repayment_consistency": {
+      "p01": -2.424727873607275,
+      "p99": 2.2594044813683203
+    },
+    "device_trust_score": {
+      "p01": -2.3184525671884897,
+      "p99": 2.1559085523459105
+    },
+    "device_age": {
+      "p01": -3.2875592085787666,
+      "p99": 0.60668487596862
+    },
+    "number_of_devices": {
+      "p01": -0.9851942152258364,
+      "p99": 2.727336271362084
+    },
+    "location_consistency": {
+      "p01": -2.88144349925192,
+      "p99": 0.8463908238549711
+    },
+    "financial_discipline_index": {
+      "p01": -2.482620964718744,
+      "p99": 2.1534639618884777
+    },
+    "digital_activity_score": {
+      "p01": -2.1851692400977893,
+      "p99": 1.730749676234901
+    },
+    "income_stability_score": {
+      "p01": -2.309498460209494,
+      "p99": 2.0952457479266826
+    },
+    "digital_trust_index": {
+      "p01": -2.3870823282816853,
+      "p99": 1.7674565674727711
+    },
+    "financial_health_score": {
+      "p01": -2.289013619496324,
+      "p99": 2.4003644923295133
+    },
+    "device_reliability_score": {
+      "p01": -2.5251273925444764,
+      "p99": 1.7436992227504278
+    },
+    "banking_maturity_score": {
+      "p01": -2.019642255678915,
+      "p99": 1.5758775410696615
+    },
+    "risk_indicator": {
+      "p01": -1.116049828677003,
+      "p99": 2.980596323670786
+    },
+    "digital_activity_x_device_trust": {
+      "p01": -2.0237442408219457,
+      "p99": 2.1018019394666236
+    },
+    "age_x_income": {
+      "p01": -0.973257856822911,
+      "p99": 3.937657352569074
+    },
+    "gender_Female": {
+      "p01": 0.0,
+      "p99": 1.0
+    },
+    "gender_Non-binary": {
+      "p01": 0.0,
+      "p99": 0.0
+    },
+    "state_Andhra Pradesh": {
+      "p01": 0.0,
+      "p99": 1.0
+    },
+    "state_Assam": {
+      "p01": 0.0,
+      "p99": 1.0
+    },
+    "state_Bihar": {
+      "p01": 0.0,
+      "p99": 1.0
+    },
+    "state_Chhattisgarh": {
+      "p01": 0.0,
+      "p99": 1.0
+    },
+    "state_Delhi": {
+      "p01": 0.0,
+      "p99": 1.0
+    },
+    "state_Gujarat": {
+      "p01": 0.0,
+      "p99": 1.0
+    },
+    "state_Jharkhand": {
+      "p01": 0.0,
+      "p99": 1.0
+    },
+    "state_Karnataka": {
+      "p01": 0.0,
+      "p99": 1.0
+    },
+    "state_Kerala": {
+      "p01": 0.0,
+      "p99": 1.0
+    },
+    "state_Madhya Pradesh": {
+      "p01": 0.0,
+      "p99": 1.0
+    },
+    "state_Maharashtra": {
+      "p01": 0.0,
+      "p99": 1.0
+    },
+    "state_Odisha": {
+      "p01": 0.0,
+      "p99": 1.0
+    },
+    "state_Punjab": {
+      "p01": 0.0,
+      "p99": 1.0
+    },
+    "state_Rajasthan": {
+      "p01": 0.0,
+      "p99": 1.0
+    },
+    "state_Tamil Nadu": {
+      "p01": 0.0,
+      "p99": 1.0
+    },
+    "state_Telangana": {
+      "p01": 0.0,
+      "p99": 1.0
+    },
+    "state_Uttar Pradesh": {
+      "p01": 0.0,
+      "p99": 1.0
+    },
+    "state_West Bengal": {
+      "p01": 0.0,
+      "p99": 1.0
+    },
+    "city_tier_Tier 1": {
+      "p01": 0.0,
+      "p99": 1.0
+    },
+    "city_tier_Tier 2": {
+      "p01": 0.0,
+      "p99": 1.0
+    },
+    "city_tier_Tier 3": {
+      "p01": 0.0,
+      "p99": 1.0
+    },
+    "education_Diploma": {
+      "p01": 0.0,
+      "p99": 1.0
+    },
+    "education_Graduate": {
+      "p01": 0.0,
+      "p99": 1.0
+    },
+    "education_Higher Secondary": {
+      "p01": 0.0,
+      "p99": 1.0
+    },
+    "education_Postgraduate": {
+      "p01": 0.0,
+      "p99": 1.0
+    },
+    "education_Secondary": {
+      "p01": 0.0,
+      "p99": 1.0
+    },
+    "marital_status_Divorced/Widowed": {
+      "p01": 0.0,
+      "p99": 1.0
+    },
+    "marital_status_Married": {
+      "p01": 0.0,
+      "p99": 1.0
+    },
+    "occupation_Business Owner": {
+      "p01": 0.0,
+      "p99": 1.0
+    },
+    "occupation_Cashier": {
+      "p01": 0.0,
+      "p99": 1.0
+    },
+    "occupation_Delivery Partner": {
+      "p01": 0.0,
+      "p99": 1.0
+    },
+    "occupation_Doctor": {
+      "p01": 0.0,
+      "p99": 1.0
+    },
+    "occupation_Driver": {
+      "p01": 0.0,
+      "p99": 1.0
+    },
+    "occupation_Electrician": {
+      "p01": 0.0,
+      "p99": 1.0
+    },
+    "occupation_Farmer": {
+      "p01": 0.0,
+      "p99": 1.0
+    },
+    "occupation_Freelancer": {
+      "p01": 0.0,
+      "p99": 1.0
+    },
+    "occupation_Government Employee": {
+      "p01": 0.0,
+      "p99": 1.0
+    },
+    "occupation_Homemaker": {
+      "p01": 0.0,
+      "p99": 1.0
+    },
+    "occupation_Plumber": {
+      "p01": 0.0,
+      "p99": 1.0
+    },
+    "occupation_Sales Executive": {
+      "p01": 0.0,
+      "p99": 1.0
+    },
+    "occupation_Shop Owner": {
+      "p01": 0.0,
+      "p99": 1.0
+    },
+    "occupation_Software Engineer": {
+      "p01": 0.0,
+      "p99": 1.0
+    },
+    "occupation_Student": {
+      "p01": 0.0,
+      "p99": 1.0
+    },
+    "occupation_Teacher": {
+      "p01": 0.0,
+      "p99": 1.0
+    },
+    "employment_type_Not employed": {
+      "p01": 0.0,
+      "p99": 1.0
+    },
+    "employment_type_Salaried": {
+      "p01": 0.0,
+      "p99": 1.0
+    },
+    "employment_type_Self-employed": {
+      "p01": 0.0,
+      "p99": 1.0
+    },
+    "wallet_usage_Heavy": {
+      "p01": 0.0,
+      "p99": 1.0
+    },
+    "wallet_usage_No usage": {
+      "p01": 0.0,
+      "p99": 0.0
+    },
+    "wallet_usage_Occasional": {
+      "p01": 0.0,
+      "p99": 1.0
+    },
+    "wallet_usage_Regular": {
+      "p01": 0.0,
+      "p99": 1.0
+    }
+  }
+}

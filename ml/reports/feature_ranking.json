@@ -1,0 +1,122 @@
+[
+  {
+    "rank": 1,
+    "feature": "financial_discipline_index",
+    "mean_abs_shap_value": 4.269557705909014,
+    "mean_shap_value": -0.24440218856930732
+  },
+  {
+    "rank": 2,
+    "feature": "bank_balance",
+    "mean_abs_shap_value": 2.0933217484718187,
+    "mean_shap_value": 0.02413442428316921
+  },
+  {
+    "rank": 3,
+    "feature": "digital_activity_x_device_trust",
+    "mean_abs_shap_value": 1.4290105825848878,
+    "mean_shap_value": 0.12189619402214885
+  },
+  {
+    "rank": 4,
+    "feature": "utility_bill_payment_rate",
+    "mean_abs_shap_value": 1.4058302420005202,
+    "mean_shap_value": 0.22465966037660837
+  },
+  {
+    "rank": 5,
+    "feature": "risk_indicator",
+    "mean_abs_shap_value": 1.2418483596984298,
+    "mean_shap_value": -0.05888369188271463
+  },
+  {
+    "rank": 6,
+    "feature": "income_stability_score",
+    "mean_abs_shap_value": 0.728325899974443,
+    "mean_shap_value": 0.062203055874444545
+  },
+  {
+    "rank": 7,
+    "feature": "repayment_consistency",
+    "mean_abs_shap_value": 0.4892567906808108,
+    "mean_shap_value": -0.002775758905336261
+  },
+  {
+    "rank": 8,
+    "feature": "age_x_income",
+    "mean_abs_shap_value": 0.4868306845035404,
+    "mean_shap_value": 0.010979118717834354
+  },
+  {
+    "rank": 9,
+    "feature": "existing_small_loans",
+    "mean_abs_shap_value": 0.4641364750564098,
+    "mean_shap_value": 0.003531934469938278
+  },
+  {
+    "rank": 10,
+    "feature": "monthly_savings",
+    "mean_abs_shap_value": 0.39946134401984457,
+    "mean_shap_value": 0.00619650171198009
+  },
+  {
+    "rank": 11,
+    "feature": "digital_trust_index",
+    "mean_abs_shap_value": 0.3250267816437408,
+    "mean_shap_value": 0.031166949051432313
+  },
+  {
+    "rank": 12,
+    "feature": "upi_transactions_per_month",
+    "mean_abs_shap_value": 0.22101059313490987,
+    "mean_shap_value": 0.012748794179409743
+  },
+  {
+    "rank": 13,
+    "feature": "missed_utility_payments",
+    "mean_abs_shap_value": 0.19425649317353963,
+    "mean_shap_value": 0.0478554065823555
+  },
+  {
+    "rank": 14,
+    "feature": "digital_literacy_score",
+    "mean_abs_shap_value": 0.16259185260348022,
+    "mean_shap_value": 0.008881632272154093
+  },
+  {
+    "rank": 15,
+    "feature": "investment_frequency",
+    "mean_abs_shap_value": 0.1537624847497791,
+    "mean_shap_value": -0.01384777153097093
+  },
+  {
+    "rank": 16,
+    "feature": "cash_transaction_ratio",
+    "mean_abs_shap_value": 0.14487923232838512,
+    "mean_shap_value": -0.019889320950955153
+  },
+  {
+    "rank": 17,
+    "feature": "device_trust_score",
+    "mean_abs_shap_value": 0.12948754265531898,
+    "mean_shap_value": 0.016240587385371326
+  },
+  {
+    "rank": 18,
+    "feature": "financial_health_score",
+    "mean_abs_shap_value": 0.12203388512297533,
+    "mean_shap_value": -0.07412142366007901
+  },
+  {
+    "rank": 19,
+    "feature": "online_subscription_count",
+    "mean_abs_shap_value": 0.1173652126782108,
+    "mean_shap_value": -0.004658037799177691
+  },
+  {
+    "rank": 20,
+    "feature": "monthly_income",
+    "mean_abs_shap_value": 0.10363144135801122,
+    "mean_shap_value": 0.030292826549615712
+  }
+]
