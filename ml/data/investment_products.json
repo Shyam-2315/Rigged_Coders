@@ -1,0 +1,1560 @@
+[
+  {
+    "id": "liquid-fund",
+    "name": "Liquid Fund",
+    "category": "Debt Mutual Fund",
+    "subcategory": "Liquid Fund",
+    "description": "A debt mutual fund investing in very short-term instruments with a focus on capital stability and quick access.",
+    "plain_language_description": "Liquid Fund: A debt mutual fund investing in very short-term instruments with a focus on capital stability and quick access.",
+    "risk_level": "Low",
+    "behavioral_personas": [
+      "Secure Saver",
+      "Conservative Planner"
+    ],
+    "supported_goals": [
+      "Emergency Fund",
+      "Vacation",
+      "Car"
+    ],
+    "minimum_investment": 500.0,
+    "recommended_monthly_sip": 500.0,
+    "expected_annual_return_min": 5.0,
+    "expected_annual_return_max": 7.0,
+    "historical_volatility": 0.8,
+    "liquidity": "High",
+    "withdrawal_time": "1 business day",
+    "lock_in_period": 0,
+    "tax_efficiency": "Moderate",
+    "inflation_protection": false,
+    "expense_ratio": 0.25,
+    "recommended_horizon": 1,
+    "ideal_age_range": {
+      "minimum": 18.0,
+      "maximum": 75.0
+    },
+    "ideal_income_range": {
+      "minimum": 0.0,
+      "maximum": 10000000.0
+    },
+    "credit_score_requirement": 0,
+    "risk_profile_requirement": [
+      "Low",
+      "Medium"
+    ],
+    "suitable_for_beginners": true,
+    "suitable_for_students": false,
+    "suitable_for_retirement": false,
+    "suitable_for_emergency_fund": true,
+    "shariah_compliant": false,
+    "government_backed": false,
+    "popularity_score": 78.0,
+    "trust_score": 82.0,
+    "potential_risks": [
+      "Returns can change with short-term interest rates",
+      "Not covered by a bank deposit guarantee"
+    ],
+    "search_terms": [
+      "safe investment",
+      "liquid",
+      "parking money",
+      "emergency"
+    ]
+  },
+  {
+    "id": "overnight-fund",
+    "name": "Overnight Fund",
+    "category": "Debt Mutual Fund",
+    "subcategory": "Overnight Fund",
+    "description": "A debt fund that holds securities maturing overnight, designed to minimise interest-rate sensitivity.",
+    "plain_language_description": "Overnight Fund: A debt fund that holds securities maturing overnight, designed to minimise interest-rate sensitivity.",
+    "risk_level": "Low",
+    "behavioral_personas": [
+      "Secure Saver",
+      "Conservative Planner"
+    ],
+    "supported_goals": [
+      "Emergency Fund",
+      "Vacation"
+    ],
+    "minimum_investment": 500.0,
+    "recommended_monthly_sip": 500.0,
+    "expected_annual_return_min": 4.5,
+    "expected_annual_return_max": 6.5,
+    "historical_volatility": 0.2,
+    "liquidity": "High",
+    "withdrawal_time": "1 business day",
+    "lock_in_period": 0,
+    "tax_efficiency": "Moderate",
+    "inflation_protection": false,
+    "expense_ratio": 0.18,
+    "recommended_horizon": 1,
+    "ideal_age_range": {
+      "minimum": 18.0,
+      "maximum": 75.0
+    },
+    "ideal_income_range": {
+      "minimum": 0.0,
+      "maximum": 10000000.0
+    },
+    "credit_score_requirement": 0,
+    "risk_profile_requirement": [
+      "Low",
+      "Medium"
+    ],
+    "suitable_for_beginners": true,
+    "suitable_for_students": false,
+    "suitable_for_retirement": false,
+    "suitable_for_emergency_fund": true,
+    "shariah_compliant": false,
+    "government_backed": false,
+    "popularity_score": 65.0,
+    "trust_score": 84.0,
+    "potential_risks": [
+      "Returns are usually lower than longer-duration debt funds",
+      "Not covered by a bank deposit guarantee"
+    ],
+    "search_terms": [
+      "safe investment",
+      "overnight",
+      "cash parking",
+      "emergency"
+    ]
+  },
+  {
+    "id": "ultra-short-duration-fund",
+    "name": "Ultra Short Duration Fund",
+    "category": "Debt Mutual Fund",
+    "subcategory": "Ultra Short Duration Fund",
+    "description": "A short-maturity debt fund intended for money that may be needed within roughly a year.",
+    "plain_language_description": "Ultra Short Duration Fund: A short-maturity debt fund intended for money that may be needed within roughly a year.",
+    "risk_level": "Low",
+    "behavioral_personas": [
+      "Secure Saver",
+      "Conservative Planner"
+    ],
+    "supported_goals": [
+      "Vacation",
+      "Car",
+      "Emergency Fund"
+    ],
+    "minimum_investment": 500.0,
+    "recommended_monthly_sip": 500.0,
+    "expected_annual_return_min": 5.5,
+    "expected_annual_return_max": 7.5,
+    "historical_volatility": 1.5,
+    "liquidity": "High",
+    "withdrawal_time": "1-2 business days",
+    "lock_in_period": 0,
+    "tax_efficiency": "Moderate",
+    "inflation_protection": false,
+    "expense_ratio": 0.35,
+    "recommended_horizon": 1,
+    "ideal_age_range": {
+      "minimum": 18.0,
+      "maximum": 75.0
+    },
+    "ideal_income_range": {
+      "minimum": 0.0,
+      "maximum": 10000000.0
+    },
+    "credit_score_requirement": 0,
+    "risk_profile_requirement": [
+      "Low",
+      "Medium"
+    ],
+    "suitable_for_beginners": true,
+    "suitable_for_students": false,
+    "suitable_for_retirement": false,
+    "suitable_for_emergency_fund": true,
+    "shariah_compliant": false,
+    "government_backed": false,
+    "popularity_score": 69.0,
+    "trust_score": 80.0,
+    "potential_risks": [
+      "Credit quality differs by fund",
+      "Net asset value can fluctuate modestly"
+    ],
+    "search_terms": [
+      "safe investment",
+      "short term",
+      "ultra short",
+      "liquid"
+    ]
+  },
+  {
+    "id": "money-market-fund",
+    "name": "Money Market Fund",
+    "category": "Debt Mutual Fund",
+    "subcategory": "Money Market Fund",
+    "description": "A debt fund investing in money-market instruments with maturities typically under one year.",
+    "plain_language_description": "Money Market Fund: A debt fund investing in money-market instruments with maturities typically under one year.",
+    "risk_level": "Low",
+    "behavioral_personas": [
+      "Secure Saver",
+      "Conservative Planner"
+    ],
+    "supported_goals": [
+      "Vacation",
+      "Car",
+      "House"
+    ],
+    "minimum_investment": 500.0,
+    "recommended_monthly_sip": 500.0,
+    "expected_annual_return_min": 5.5,
+    "expected_annual_return_max": 7.5,
+    "historical_volatility": 1.8,
+    "liquidity": "High",
+    "withdrawal_time": "1-2 business days",
+    "lock_in_period": 0,
+    "tax_efficiency": "Moderate",
+    "inflation_protection": false,
+    "expense_ratio": 0.32,
+    "recommended_horizon": 1,
+    "ideal_age_range": {
+      "minimum": 18.0,
+      "maximum": 75.0
+    },
+    "ideal_income_range": {
+      "minimum": 0.0,
+      "maximum": 10000000.0
+    },
+    "credit_score_requirement": 0,
+    "risk_profile_requirement": [
+      "Low",
+      "Medium"
+    ],
+    "suitable_for_beginners": true,
+    "suitable_for_students": false,
+    "suitable_for_retirement": false,
+    "suitable_for_emergency_fund": false,
+    "shariah_compliant": false,
+    "government_backed": false,
+    "popularity_score": 67.0,
+    "trust_score": 81.0,
+    "potential_risks": [
+      "Interest-rate and credit changes can affect returns",
+      "Not a fixed-return product"
+    ],
+    "search_terms": [
+      "safe investment",
+      "money market",
+      "short term",
+      "cash"
+    ]
+  },
+  {
+    "id": "corporate-bond-fund",
+    "name": "Corporate Bond Fund",
+    "category": "Debt Mutual Fund",
+    "subcategory": "Corporate Bond Fund",
+    "description": "A debt fund mainly holding higher-rated company bonds for investors seeking income with moderate fluctuation.",
+    "plain_language_description": "Corporate Bond Fund: A debt fund mainly holding higher-rated company bonds for investors seeking income with moderate fluctuation.",
+    "risk_level": "Medium",
+    "behavioral_personas": [
+      "Secure Saver",
+      "Conservative Planner",
+      "Balanced Builder",
+      "Strategic Investor"
+    ],
+    "supported_goals": [
+      "Education",
+      "House",
+      "Passive Income"
+    ],
+    "minimum_investment": 500.0,
+    "recommended_monthly_sip": 1000.0,
+    "expected_annual_return_min": 6.0,
+    "expected_annual_return_max": 8.5,
+    "historical_volatility": 3.5,
+    "liquidity": "Moderate",
+    "withdrawal_time": "2-3 business days",
+    "lock_in_period": 0,
+    "tax_efficiency": "Moderate",
+    "inflation_protection": false,
+    "expense_ratio": 0.45,
+    "recommended_horizon": 3,
+    "ideal_age_range": {
+      "minimum": 18.0,
+      "maximum": 75.0
+    },
+    "ideal_income_range": {
+      "minimum": 0.0,
+      "maximum": 10000000.0
+    },
+    "credit_score_requirement": 0,
+    "risk_profile_requirement": [
+      "Medium",
+      "High"
+    ],
+    "suitable_for_beginners": true,
+    "suitable_for_students": false,
+    "suitable_for_retirement": false,
+    "suitable_for_emergency_fund": false,
+    "shariah_compliant": false,
+    "government_backed": false,
+    "popularity_score": 63.0,
+    "trust_score": 78.0,
+    "potential_risks": [
+      "Issuer credit risk",
+      "Bond prices can fall when interest rates rise"
+    ],
+    "search_terms": [
+      "bond",
+      "debt income",
+      "corporate bond",
+      "monthly income"
+    ]
+  },
+  {
+    "id": "banking-psu-fund",
+    "name": "Banking & PSU Fund",
+    "category": "Debt Mutual Fund",
+    "subcategory": "Banking and PSU Debt Fund",
+    "description": "A debt fund investing primarily in bonds issued by banks and public-sector entities.",
+    "plain_language_description": "Banking & PSU Fund: A debt fund investing primarily in bonds issued by banks and public-sector entities.",
+    "risk_level": "Low",
+    "behavioral_personas": [
+      "Secure Saver",
+      "Conservative Planner",
+      "Balanced Builder"
+    ],
+    "supported_goals": [
+      "Education",
+      "House",
+      "Passive Income"
+    ],
+    "minimum_investment": 500.0,
+    "recommended_monthly_sip": 1000.0,
+    "expected_annual_return_min": 6.0,
+    "expected_annual_return_max": 8.0,
+    "historical_volatility": 3.0,
+    "liquidity": "Moderate",
+    "withdrawal_time": "2-3 business days",
+    "lock_in_period": 0,
+    "tax_efficiency": "Moderate",
+    "inflation_protection": false,
+    "expense_ratio": 0.4,
+    "recommended_horizon": 3,
+    "ideal_age_range": {
+      "minimum": 18.0,
+      "maximum": 75.0
+    },
+    "ideal_income_range": {
+      "minimum": 0.0,
+      "maximum": 10000000.0
+    },
+    "credit_score_requirement": 0,
+    "risk_profile_requirement": [
+      "Low",
+      "Medium"
+    ],
+    "suitable_for_beginners": true,
+    "suitable_for_students": false,
+    "suitable_for_retirement": false,
+    "suitable_for_emergency_fund": false,
+    "shariah_compliant": false,
+    "government_backed": false,
+    "popularity_score": 58.0,
+    "trust_score": 83.0,
+    "potential_risks": [
+      "Interest-rate sensitivity",
+      "Sector concentration in financial and public-sector issuers"
+    ],
+    "search_terms": [
+      "banking debt",
+      "psu bond",
+      "safe investment",
+      "income"
+    ]
+  },
+  {
+    "id": "gilt-fund",
+    "name": "Gilt Fund",
+    "category": "Debt Mutual Fund",
+    "subcategory": "Government Securities Fund",
+    "description": "A debt fund investing in government securities, with low default risk but meaningful interest-rate sensitivity.",
+    "plain_language_description": "Gilt Fund: A debt fund investing in government securities, with low default risk but meaningful interest-rate sensitivity.",
+    "risk_level": "Medium",
+    "behavioral_personas": [
+      "Secure Saver",
+      "Conservative Planner",
+      "Balanced Builder",
+      "Strategic Investor"
+    ],
+    "supported_goals": [
+      "Education",
+      "Retirement",
+      "Passive Income"
+    ],
+    "minimum_investment": 500.0,
+    "recommended_monthly_sip": 1000.0,
+    "expected_annual_return_min": 5.5,
+    "expected_annual_return_max": 8.5,
+    "historical_volatility": 6.5,
+    "liquidity": "Moderate",
+    "withdrawal_time": "2-3 business days",
+    "lock_in_period": 0,
+    "tax_efficiency": "Moderate",
+    "inflation_protection": false,
+    "expense_ratio": 0.35,
+    "recommended_horizon": 5,
+    "ideal_age_range": {
+      "minimum": 18.0,
+      "maximum": 75.0
+    },
+    "ideal_income_range": {
+      "minimum": 0.0,
+      "maximum": 10000000.0
+    },
+    "credit_score_requirement": 0,
+    "risk_profile_requirement": [
+      "Medium",
+      "High"
+    ],
+    "suitable_for_beginners": true,
+    "suitable_for_students": false,
+    "suitable_for_retirement": true,
+    "suitable_for_emergency_fund": false,
+    "shariah_compliant": false,
+    "government_backed": false,
+    "popularity_score": 55.0,
+    "trust_score": 86.0,
+    "potential_risks": [
+      "Long-duration gilts can fluctuate sharply when rates change",
+      "Returns are not fixed"
+    ],
+    "search_terms": [
+      "gilt",
+      "government bond",
+      "debt",
+      "retirement"
+    ]
+  },
+  {
+    "id": "fixed-deposit",
+    "name": "Fixed Deposit",
+    "category": "Fixed Income",
+    "subcategory": "Bank Fixed Deposit",
+    "description": "A bank deposit with a stated interest rate and maturity date, generally used for predictable short- to medium-term goals.",
+    "plain_language_description": "Fixed Deposit: A bank deposit with a stated interest rate and maturity date, generally used for predictable short- to medium-term goals.",
+    "risk_level": "Low",
+    "behavioral_personas": [
+      "Secure Saver",
+      "Conservative Planner"
+    ],
+    "supported_goals": [
+      "Vacation",
+      "Education",
+      "Marriage",
+      "Car"
+    ],
+    "minimum_investment": 1000.0,
+    "recommended_monthly_sip": 0.0,
+    "expected_annual_return_min": 5.5,
+    "expected_annual_return_max": 7.5,
+    "historical_volatility": 0.0,
+    "liquidity": "Moderate",
+    "withdrawal_time": "Premature withdrawal with penalty",
+    "lock_in_period": 0,
+    "tax_efficiency": "Low",
+    "inflation_protection": false,
+    "expense_ratio": 0.0,
+    "recommended_horizon": 2,
+    "ideal_age_range": {
+      "minimum": 18.0,
+      "maximum": 75.0
+    },
+    "ideal_income_range": {
+      "minimum": 0.0,
+      "maximum": 10000000.0
+    },
+    "credit_score_requirement": 0,
+    "risk_profile_requirement": [
+      "Low",
+      "Medium"
+    ],
+    "suitable_for_beginners": true,
+    "suitable_for_students": false,
+    "suitable_for_retirement": false,
+    "suitable_for_emergency_fund": false,
+    "shariah_compliant": false,
+    "government_backed": false,
+    "popularity_score": 88.0,
+    "trust_score": 88.0,
+    "potential_risks": [
+      "Interest is commonly taxable",
+      "Premature withdrawal may reduce returns",
+      "Inflation can reduce real purchasing power"
+    ],
+    "search_terms": [
+      "safe investment",
+      "fd",
+      "fixed deposit",
+      "guaranteed"
+    ]
+  },
+  {
+    "id": "recurring-deposit",
+    "name": "Recurring Deposit",
+    "category": "Fixed Income",
+    "subcategory": "Bank Recurring Deposit",
+    "description": "A scheduled bank deposit where a fixed amount is contributed each month for a chosen tenure.",
+    "plain_language_description": "Recurring Deposit: A scheduled bank deposit where a fixed amount is contributed each month for a chosen tenure.",
+    "risk_level": "Low",
+    "behavioral_personas": [
+      "Secure Saver",
+      "Conservative Planner"
+    ],
+    "supported_goals": [
+      "Vacation",
+      "Education",
+      "Marriage",
+      "Car"
+    ],
+    "minimum_investment": 100.0,
+    "recommended_monthly_sip": 500.0,
+    "expected_annual_return_min": 5.0,
+    "expected_annual_return_max": 7.0,
+    "historical_volatility": 0.0,
+    "liquidity": "Moderate",
+    "withdrawal_time": "Premature withdrawal with penalty",
+    "lock_in_period": 0,
+    "tax_efficiency": "Low",
+    "inflation_protection": false,
+    "expense_ratio": 0.0,
+    "recommended_horizon": 2,
+    "ideal_age_range": {
+      "minimum": 18.0,
+      "maximum": 75.0
+    },
+    "ideal_income_range": {
+      "minimum": 0.0,
+      "maximum": 10000000.0
+    },
+    "credit_score_requirement": 0,
+    "risk_profile_requirement": [
+      "Low",
+      "Medium"
+    ],
+    "suitable_for_beginners": true,
+    "suitable_for_students": true,
+    "suitable_for_retirement": false,
+    "suitable_for_emergency_fund": false,
+    "shariah_compliant": false,
+    "government_backed": false,
+    "popularity_score": 80.0,
+    "trust_score": 87.0,
+    "potential_risks": [
+      "Interest is commonly taxable",
+      "Returns may not outpace inflation",
+      "Early closure can attract a penalty"
+    ],
+    "search_terms": [
+      "safe investment",
+      "rd",
+      "recurring deposit",
+      "monthly saving"
+    ]
+  },
+  {
+    "id": "ppf",
+    "name": "PPF",
+    "category": "Government Savings",
+    "subcategory": "Public Provident Fund",
+    "description": "A long-term government savings scheme with a statutory lock-in and tax-aware retirement focus.",
+    "plain_language_description": "PPF: A long-term government savings scheme with a statutory lock-in and tax-aware retirement focus.",
+    "risk_level": "Low",
+    "behavioral_personas": [
+      "Secure Saver",
+      "Conservative Planner"
+    ],
+    "supported_goals": [
+      "Retirement",
+      "Tax Saving",
+      "Child Education"
+    ],
+    "minimum_investment": 500.0,
+    "recommended_monthly_sip": 500.0,
+    "expected_annual_return_min": 6.5,
+    "expected_annual_return_max": 7.5,
+    "historical_volatility": 0.0,
+    "liquidity": "Low",
+    "withdrawal_time": "Partial withdrawal subject to scheme rules",
+    "lock_in_period": 0,
+    "tax_efficiency": "High",
+    "inflation_protection": true,
+    "expense_ratio": 0.0,
+    "recommended_horizon": 15,
+    "ideal_age_range": {
+      "minimum": 18.0,
+      "maximum": 75.0
+    },
+    "ideal_income_range": {
+      "minimum": 0.0,
+      "maximum": 10000000.0
+    },
+    "credit_score_requirement": 0,
+    "risk_profile_requirement": [
+      "Low",
+      "Medium"
+    ],
+    "suitable_for_beginners": true,
+    "suitable_for_students": false,
+    "suitable_for_retirement": true,
+    "suitable_for_emergency_fund": false,
+    "shariah_compliant": false,
+    "government_backed": true,
+    "popularity_score": 84.0,
+    "trust_score": 96.0,
+    "potential_risks": [
+      "Long lock-in reduces flexibility",
+      "Rates can be revised by the government",
+      "Contribution limits apply"
+    ],
+    "search_terms": [
+      "ppf",
+      "tax",
+      "retirement",
+      "government saving"
+    ]
+  },
+  {
+    "id": "epf",
+    "name": "EPF",
+    "category": "Government Savings",
+    "subcategory": "Employees Provident Fund",
+    "description": "A regulated retirement savings arrangement for eligible employees, typically funded through salary contributions.",
+    "plain_language_description": "EPF: A regulated retirement savings arrangement for eligible employees, typically funded through salary contributions.",
+    "risk_level": "Low",
+    "behavioral_personas": [
+      "Secure Saver",
+      "Conservative Planner"
+    ],
+    "supported_goals": [
+      "Retirement",
+      "Tax Saving"
+    ],
+    "minimum_investment": 0.0,
+    "recommended_monthly_sip": 0.0,
+    "expected_annual_return_min": 7.0,
+    "expected_annual_return_max": 8.5,
+    "historical_volatility": 0.0,
+    "liquidity": "Low",
+    "withdrawal_time": "Subject to employment and scheme rules",
+    "lock_in_period": 0,
+    "tax_efficiency": "High",
+    "inflation_protection": true,
+    "expense_ratio": 0.0,
+    "recommended_horizon": 15,
+    "ideal_age_range": {
+      "minimum": 18.0,
+      "maximum": 75.0
+    },
+    "ideal_income_range": {
+      "minimum": 0.0,
+      "maximum": 10000000.0
+    },
+    "credit_score_requirement": 0,
+    "risk_profile_requirement": [
+      "Low",
+      "Medium"
+    ],
+    "suitable_for_beginners": true,
+    "suitable_for_students": false,
+    "suitable_for_retirement": true,
+    "suitable_for_emergency_fund": false,
+    "shariah_compliant": false,
+    "government_backed": true,
+    "popularity_score": 86.0,
+    "trust_score": 95.0,
+    "potential_risks": [
+      "Access is restricted by scheme rules",
+      "Eligibility depends on employment",
+      "Rates can change over time"
+    ],
+    "search_terms": [
+      "epf",
+      "provident fund",
+      "retirement",
+      "tax"
+    ]
+  },
+  {
+    "id": "nps",
+    "name": "NPS",
+    "category": "Government Savings",
+    "subcategory": "National Pension System",
+    "description": "A regulated long-term pension account that can combine equity, corporate debt, and government securities.",
+    "plain_language_description": "NPS: A regulated long-term pension account that can combine equity, corporate debt, and government securities.",
+    "risk_level": "Medium",
+    "behavioral_personas": [
+      "Secure Saver",
+      "Conservative Planner",
+      "Balanced Builder",
+      "Strategic Investor"
+    ],
+    "supported_goals": [
+      "Retirement",
+      "Tax Saving"
+    ],
+    "minimum_investment": 500.0,
+    "recommended_monthly_sip": 500.0,
+    "expected_annual_return_min": 7.0,
+    "expected_annual_return_max": 11.0,
+    "historical_volatility": 10.0,
+    "liquidity": "Low",
+    "withdrawal_time": "Restricted until retirement subject to scheme rules",
+    "lock_in_period": 0,
+    "tax_efficiency": "High",
+    "inflation_protection": true,
+    "expense_ratio": 0.12,
+    "recommended_horizon": 15,
+    "ideal_age_range": {
+      "minimum": 18.0,
+      "maximum": 75.0
+    },
+    "ideal_income_range": {
+      "minimum": 0.0,
+      "maximum": 10000000.0
+    },
+    "credit_score_requirement": 0,
+    "risk_profile_requirement": [
+      "Medium",
+      "High"
+    ],
+    "suitable_for_beginners": true,
+    "suitable_for_students": false,
+    "suitable_for_retirement": true,
+    "suitable_for_emergency_fund": false,
+    "shariah_compliant": false,
+    "government_backed": true,
+    "popularity_score": 74.0,
+    "trust_score": 91.0,
+    "potential_risks": [
+      "Withdrawals are restricted",
+      "Market-linked choices can fluctuate",
+      "Annuity rules may apply"
+    ],
+    "search_terms": [
+      "nps",
+      "pension",
+      "retirement",
+      "tax"
+    ]
+  },
+  {
+    "id": "index-fund",
+    "name": "Index Fund",
+    "category": "Indian Equity",
+    "subcategory": "Broad Market Index Fund",
+    "description": "An equity mutual fund designed to track a market index at a relatively low cost.",
+    "plain_language_description": "Index Fund: An equity mutual fund designed to track a market index at a relatively low cost.",
+    "risk_level": "Medium",
+    "behavioral_personas": [
+      "Balanced Builder",
+      "Strategic Investor",
+      "Growth Explorer"
+    ],
+    "supported_goals": [
+      "Wealth Creation",
+      "Retirement",
+      "Child Education"
+    ],
+    "minimum_investment": 500.0,
+    "recommended_monthly_sip": 500.0,
+    "expected_annual_return_min": 9.0,
+    "expected_annual_return_max": 13.0,
+    "historical_volatility": 16.0,
+    "liquidity": "Moderate",
+    "withdrawal_time": "2-3 business days",
+    "lock_in_period": 0,
+    "tax_efficiency": "Moderate",
+    "inflation_protection": false,
+    "expense_ratio": 0.2,
+    "recommended_horizon": 7,
+    "ideal_age_range": {
+      "minimum": 18.0,
+      "maximum": 75.0
+    },
+    "ideal_income_range": {
+      "minimum": 0.0,
+      "maximum": 10000000.0
+    },
+    "credit_score_requirement": 0,
+    "risk_profile_requirement": [
+      "Medium",
+      "High"
+    ],
+    "suitable_for_beginners": true,
+    "suitable_for_students": false,
+    "suitable_for_retirement": true,
+    "suitable_for_emergency_fund": false,
+    "shariah_compliant": false,
+    "government_backed": false,
+    "popularity_score": 91.0,
+    "trust_score": 86.0,
+    "potential_risks": [
+      "Market value can fall substantially in the short term",
+      "Index concentration and tracking error are possible"
+    ],
+    "search_terms": [
+      "index",
+      "passive",
+      "equity",
+      "wealth creation",
+      "retirement"
+    ]
+  },
+  {
+    "id": "large-cap-fund",
+    "name": "Large Cap Fund",
+    "category": "Indian Equity",
+    "subcategory": "Large Cap Equity Fund",
+    "description": "An equity mutual fund investing primarily in larger, established companies.",
+    "plain_language_description": "Large Cap Fund: An equity mutual fund investing primarily in larger, established companies.",
+    "risk_level": "Medium",
+    "behavioral_personas": [
+      "Balanced Builder",
+      "Strategic Investor"
+    ],
+    "supported_goals": [
+      "Wealth Creation",
+      "Retirement",
+      "Child Education"
+    ],
+    "minimum_investment": 500.0,
+    "recommended_monthly_sip": 500.0,
+    "expected_annual_return_min": 8.5,
+    "expected_annual_return_max": 12.5,
+    "historical_volatility": 15.0,
+    "liquidity": "Moderate",
+    "withdrawal_time": "2-3 business days",
+    "lock_in_period": 0,
+    "tax_efficiency": "Moderate",
+    "inflation_protection": false,
+    "expense_ratio": 0.75,
+    "recommended_horizon": 6,
+    "ideal_age_range": {
+      "minimum": 18.0,
+      "maximum": 75.0
+    },
+    "ideal_income_range": {
+      "minimum": 0.0,
+      "maximum": 10000000.0
+    },
+    "credit_score_requirement": 0,
+    "risk_profile_requirement": [
+      "Medium",
+      "High"
+    ],
+    "suitable_for_beginners": true,
+    "suitable_for_students": false,
+    "suitable_for_retirement": true,
+    "suitable_for_emergency_fund": false,
+    "shariah_compliant": false,
+    "government_backed": false,
+    "popularity_score": 82.0,
+    "trust_score": 82.0,
+    "potential_risks": [
+      "Equity markets are volatile",
+      "Active manager choices may lag the benchmark"
+    ],
+    "search_terms": [
+      "large cap",
+      "equity",
+      "retirement",
+      "wealth creation"
+    ]
+  },
+  {
+    "id": "flexi-cap-fund",
+    "name": "Flexi Cap Fund",
+    "category": "Indian Equity",
+    "subcategory": "Flexi Cap Equity Fund",
+    "description": "An equity fund whose manager can invest across large-, mid-, and small-company segments.",
+    "plain_language_description": "Flexi Cap Fund: An equity fund whose manager can invest across large-, mid-, and small-company segments.",
+    "risk_level": "Medium",
+    "behavioral_personas": [
+      "Balanced Builder",
+      "Strategic Investor"
+    ],
+    "supported_goals": [
+      "Wealth Creation",
+      "Retirement",
+      "Child Education"
+    ],
+    "minimum_investment": 500.0,
+    "recommended_monthly_sip": 500.0,
+    "expected_annual_return_min": 9.0,
+    "expected_annual_return_max": 14.0,
+    "historical_volatility": 17.0,
+    "liquidity": "Moderate",
+    "withdrawal_time": "2-3 business days",
+    "lock_in_period": 0,
+    "tax_efficiency": "Moderate",
+    "inflation_protection": false,
+    "expense_ratio": 0.85,
+    "recommended_horizon": 7,
+    "ideal_age_range": {
+      "minimum": 18.0,
+      "maximum": 75.0
+    },
+    "ideal_income_range": {
+      "minimum": 0.0,
+      "maximum": 10000000.0
+    },
+    "credit_score_requirement": 0,
+    "risk_profile_requirement": [
+      "Medium",
+      "High"
+    ],
+    "suitable_for_beginners": true,
+    "suitable_for_students": false,
+    "suitable_for_retirement": true,
+    "suitable_for_emergency_fund": false,
+    "shariah_compliant": false,
+    "government_backed": false,
+    "popularity_score": 86.0,
+    "trust_score": 81.0,
+    "potential_risks": [
+      "Broad equity drawdowns",
+      "Portfolio style can change with manager decisions"
+    ],
+    "search_terms": [
+      "flexi cap",
+      "equity",
+      "wealth creation",
+      "long term"
+    ]
+  },
+  {
+    "id": "mid-cap-fund",
+    "name": "Mid Cap Fund",
+    "category": "Indian Equity",
+    "subcategory": "Mid Cap Equity Fund",
+    "description": "An equity fund focused on mid-sized companies with higher growth potential and higher volatility.",
+    "plain_language_description": "Mid Cap Fund: An equity fund focused on mid-sized companies with higher growth potential and higher volatility.",
+    "risk_level": "High",
+    "behavioral_personas": [
+      "Balanced Builder",
+      "Strategic Investor",
+      "Growth Explorer",
+      "Aggressive Wealth Seeker"
+    ],
+    "supported_goals": [
+      "Wealth Creation",
+      "Retirement",
+      "Child Education"
+    ],
+    "minimum_investment": 500.0,
+    "recommended_monthly_sip": 1000.0,
+    "expected_annual_return_min": 10.0,
+    "expected_annual_return_max": 16.0,
+    "historical_volatility": 22.0,
+    "liquidity": "Moderate",
+    "withdrawal_time": "2-3 business days",
+    "lock_in_period": 0,
+    "tax_efficiency": "Moderate",
+    "inflation_protection": false,
+    "expense_ratio": 0.9,
+    "recommended_horizon": 8,
+    "ideal_age_range": {
+      "minimum": 18.0,
+      "maximum": 75.0
+    },
+    "ideal_income_range": {
+      "minimum": 0.0,
+      "maximum": 10000000.0
+    },
+    "credit_score_requirement": 0,
+    "risk_profile_requirement": [
+      "High"
+    ],
+    "suitable_for_beginners": true,
+    "suitable_for_students": false,
+    "suitable_for_retirement": true,
+    "suitable_for_emergency_fund": false,
+    "shariah_compliant": false,
+    "government_backed": false,
+    "popularity_score": 77.0,
+    "trust_score": 78.0,
+    "potential_risks": [
+      "Large and prolonged drawdowns",
+      "Mid-cap valuations can change quickly"
+    ],
+    "search_terms": [
+      "mid cap",
+      "growth",
+      "equity",
+      "wealth creation"
+    ]
+  },
+  {
+    "id": "small-cap-fund",
+    "name": "Small Cap Fund",
+    "category": "Indian Equity",
+    "subcategory": "Small Cap Equity Fund",
+    "description": "An equity fund investing in smaller companies, intended only for long horizons and high volatility tolerance.",
+    "plain_language_description": "Small Cap Fund: An equity fund investing in smaller companies, intended only for long horizons and high volatility tolerance.",
+    "risk_level": "High",
+    "behavioral_personas": [
+      "Growth Explorer",
+      "Aggressive Wealth Seeker"
+    ],
+    "supported_goals": [
+      "Wealth Creation",
+      "Child Education"
+    ],
+    "minimum_investment": 500.0,
+    "recommended_monthly_sip": 1000.0,
+    "expected_annual_return_min": 11.0,
+    "expected_annual_return_max": 18.0,
+    "historical_volatility": 28.0,
+    "liquidity": "Moderate",
+    "withdrawal_time": "2-3 business days",
+    "lock_in_period": 0,
+    "tax_efficiency": "Moderate",
+    "inflation_protection": false,
+    "expense_ratio": 0.95,
+    "recommended_horizon": 10,
+    "ideal_age_range": {
+      "minimum": 18.0,
+      "maximum": 75.0
+    },
+    "ideal_income_range": {
+      "minimum": 0.0,
+      "maximum": 10000000.0
+    },
+    "credit_score_requirement": 0,
+    "risk_profile_requirement": [
+      "High"
+    ],
+    "suitable_for_beginners": true,
+    "suitable_for_students": false,
+    "suitable_for_retirement": false,
+    "suitable_for_emergency_fund": false,
+    "shariah_compliant": false,
+    "government_backed": false,
+    "popularity_score": 70.0,
+    "trust_score": 74.0,
+    "potential_risks": [
+      "Very high volatility",
+      "Liquidity and valuation risk during market stress",
+      "May underperform for extended periods"
+    ],
+    "search_terms": [
+      "small cap",
+      "high growth",
+      "equity",
+      "aggressive"
+    ]
+  },
+  {
+    "id": "elss",
+    "name": "ELSS",
+    "category": "Indian Equity",
+    "subcategory": "Equity Linked Savings Scheme",
+    "description": "A diversified equity mutual fund with a statutory three-year lock-in and tax-saving eligibility subject to law.",
+    "plain_language_description": "ELSS: A diversified equity mutual fund with a statutory three-year lock-in and tax-saving eligibility subject to law.",
+    "risk_level": "High",
+    "behavioral_personas": [
+      "Balanced Builder",
+      "Strategic Investor",
+      "Growth Explorer",
+      "Aggressive Wealth Seeker"
+    ],
+    "supported_goals": [
+      "Tax Saving",
+      "Wealth Creation",
+      "Retirement"
+    ],
+    "minimum_investment": 500.0,
+    "recommended_monthly_sip": 500.0,
+    "expected_annual_return_min": 9.0,
+    "expected_annual_return_max": 15.0,
+    "historical_volatility": 20.0,
+    "liquidity": "Low",
+    "withdrawal_time": "After 3-year statutory lock-in",
+    "lock_in_period": 36,
+    "tax_efficiency": "High",
+    "inflation_protection": true,
+    "expense_ratio": 0.9,
+    "recommended_horizon": 7,
+    "ideal_age_range": {
+      "minimum": 18.0,
+      "maximum": 75.0
+    },
+    "ideal_income_range": {
+      "minimum": 0.0,
+      "maximum": 10000000.0
+    },
+    "credit_score_requirement": 0,
+    "risk_profile_requirement": [
+      "High"
+    ],
+    "suitable_for_beginners": true,
+    "suitable_for_students": false,
+    "suitable_for_retirement": true,
+    "suitable_for_emergency_fund": false,
+    "shariah_compliant": false,
+    "government_backed": false,
+    "popularity_score": 82.0,
+    "trust_score": 80.0,
+    "potential_risks": [
+      "Equity losses can occur during the lock-in",
+      "Tax treatment can change",
+      "Cannot be redeemed before lock-in ends"
+    ],
+    "search_terms": [
+      "elss",
+      "tax",
+      "tax saving",
+      "equity"
+    ]
+  },
+  {
+    "id": "gold-etf",
+    "name": "Gold ETF",
+    "category": "Commodity",
+    "subcategory": "Gold Exchange Traded Fund",
+    "description": "An exchange-traded fund designed to track domestic gold prices without storing physical gold.",
+    "plain_language_description": "Gold ETF: An exchange-traded fund designed to track domestic gold prices without storing physical gold.",
+    "risk_level": "Medium",
+    "behavioral_personas": [
+      "Balanced Builder",
+      "Strategic Investor",
+      "Growth Explorer"
+    ],
+    "supported_goals": [
+      "Wealth Creation",
+      "Retirement"
+    ],
+    "minimum_investment": 100.0,
+    "recommended_monthly_sip": 0.0,
+    "expected_annual_return_min": 5.0,
+    "expected_annual_return_max": 10.0,
+    "historical_volatility": 18.0,
+    "liquidity": "High",
+    "withdrawal_time": "Market settlement cycle",
+    "lock_in_period": 0,
+    "tax_efficiency": "Moderate",
+    "inflation_protection": true,
+    "expense_ratio": 0.45,
+    "recommended_horizon": 5,
+    "ideal_age_range": {
+      "minimum": 18.0,
+      "maximum": 75.0
+    },
+    "ideal_income_range": {
+      "minimum": 0.0,
+      "maximum": 10000000.0
+    },
+    "credit_score_requirement": 0,
+    "risk_profile_requirement": [
+      "Medium",
+      "High"
+    ],
+    "suitable_for_beginners": true,
+    "suitable_for_students": false,
+    "suitable_for_retirement": true,
+    "suitable_for_emergency_fund": false,
+    "shariah_compliant": false,
+    "government_backed": false,
+    "popularity_score": 83.0,
+    "trust_score": 82.0,
+    "potential_risks": [
+      "Gold prices can be volatile",
+      "No cash income",
+      "Trading requires market access and may involve tracking error"
+    ],
+    "search_terms": [
+      "gold",
+      "gold etf",
+      "inflation",
+      "commodity"
+    ]
+  },
+  {
+    "id": "silver-etf",
+    "name": "Silver ETF",
+    "category": "Commodity",
+    "subcategory": "Silver Exchange Traded Fund",
+    "description": "An exchange-traded fund offering market-linked exposure to silver prices.",
+    "plain_language_description": "Silver ETF: An exchange-traded fund offering market-linked exposure to silver prices.",
+    "risk_level": "High",
+    "behavioral_personas": [
+      "Balanced Builder",
+      "Strategic Investor",
+      "Growth Explorer",
+      "Aggressive Wealth Seeker"
+    ],
+    "supported_goals": [
+      "Wealth Creation",
+      "Retirement"
+    ],
+    "minimum_investment": 100.0,
+    "recommended_monthly_sip": 0.0,
+    "expected_annual_return_min": 4.0,
+    "expected_annual_return_max": 12.0,
+    "historical_volatility": 25.0,
+    "liquidity": "High",
+    "withdrawal_time": "Market settlement cycle",
+    "lock_in_period": 0,
+    "tax_efficiency": "Moderate",
+    "inflation_protection": true,
+    "expense_ratio": 0.55,
+    "recommended_horizon": 5,
+    "ideal_age_range": {
+      "minimum": 18.0,
+      "maximum": 75.0
+    },
+    "ideal_income_range": {
+      "minimum": 0.0,
+      "maximum": 10000000.0
+    },
+    "credit_score_requirement": 0,
+    "risk_profile_requirement": [
+      "High"
+    ],
+    "suitable_for_beginners": true,
+    "suitable_for_students": false,
+    "suitable_for_retirement": true,
+    "suitable_for_emergency_fund": false,
+    "shariah_compliant": false,
+    "government_backed": false,
+    "popularity_score": 56.0,
+    "trust_score": 75.0,
+    "potential_risks": [
+      "Higher commodity-price volatility",
+      "No cash income",
+      "Industrial-demand changes can affect prices"
+    ],
+    "search_terms": [
+      "silver",
+      "silver etf",
+      "commodity",
+      "inflation"
+    ]
+  },
+  {
+    "id": "sovereign-gold-bond",
+    "name": "Sovereign Gold Bond",
+    "category": "Government Savings",
+    "subcategory": "Sovereign Gold Bond",
+    "description": "A government-issued gold-linked security with a long maturity and market-linked value.",
+    "plain_language_description": "Sovereign Gold Bond: A government-issued gold-linked security with a long maturity and market-linked value.",
+    "risk_level": "Medium",
+    "behavioral_personas": [
+      "Secure Saver",
+      "Conservative Planner",
+      "Balanced Builder",
+      "Strategic Investor"
+    ],
+    "supported_goals": [
+      "Wealth Creation",
+      "Retirement"
+    ],
+    "minimum_investment": 1.0,
+    "recommended_monthly_sip": 0.0,
+    "expected_annual_return_min": 4.0,
+    "expected_annual_return_max": 9.0,
+    "historical_volatility": 16.0,
+    "liquidity": "Low",
+    "withdrawal_time": "Tradable subject to market liquidity; scheduled maturity",
+    "lock_in_period": 0,
+    "tax_efficiency": "Moderate",
+    "inflation_protection": true,
+    "expense_ratio": 0.0,
+    "recommended_horizon": 8,
+    "ideal_age_range": {
+      "minimum": 18.0,
+      "maximum": 75.0
+    },
+    "ideal_income_range": {
+      "minimum": 0.0,
+      "maximum": 10000000.0
+    },
+    "credit_score_requirement": 0,
+    "risk_profile_requirement": [
+      "Medium",
+      "High"
+    ],
+    "suitable_for_beginners": true,
+    "suitable_for_students": false,
+    "suitable_for_retirement": true,
+    "suitable_for_emergency_fund": false,
+    "shariah_compliant": false,
+    "government_backed": true,
+    "popularity_score": 73.0,
+    "trust_score": 92.0,
+    "potential_risks": [
+      "Long holding period",
+      "Secondary-market price and liquidity can differ from gold value",
+      "Issue availability varies"
+    ],
+    "search_terms": [
+      "gold",
+      "sovereign gold bond",
+      "sgb",
+      "government"
+    ]
+  },
+  {
+    "id": "reit",
+    "name": "REIT",
+    "category": "Real Asset",
+    "subcategory": "Real Estate Investment Trust",
+    "description": "A listed trust that gives market-linked exposure to income-producing real estate assets.",
+    "plain_language_description": "REIT: A listed trust that gives market-linked exposure to income-producing real estate assets.",
+    "risk_level": "Medium",
+    "behavioral_personas": [
+      "Balanced Builder",
+      "Strategic Investor",
+      "Growth Explorer"
+    ],
+    "supported_goals": [
+      "Passive Income",
+      "Wealth Creation",
+      "Retirement"
+    ],
+    "minimum_investment": 100.0,
+    "recommended_monthly_sip": 0.0,
+    "expected_annual_return_min": 7.0,
+    "expected_annual_return_max": 11.0,
+    "historical_volatility": 18.0,
+    "liquidity": "High",
+    "withdrawal_time": "Market settlement cycle",
+    "lock_in_period": 0,
+    "tax_efficiency": "Moderate",
+    "inflation_protection": false,
+    "expense_ratio": 0.5,
+    "recommended_horizon": 5,
+    "ideal_age_range": {
+      "minimum": 18.0,
+      "maximum": 75.0
+    },
+    "ideal_income_range": {
+      "minimum": 0.0,
+      "maximum": 10000000.0
+    },
+    "credit_score_requirement": 0,
+    "risk_profile_requirement": [
+      "Medium",
+      "High"
+    ],
+    "suitable_for_beginners": true,
+    "suitable_for_students": false,
+    "suitable_for_retirement": true,
+    "suitable_for_emergency_fund": false,
+    "shariah_compliant": false,
+    "government_backed": false,
+    "popularity_score": 66.0,
+    "trust_score": 77.0,
+    "potential_risks": [
+      "Unit prices can be volatile",
+      "Rental income and property valuations can change",
+      "Market liquidity varies"
+    ],
+    "search_terms": [
+      "reit",
+      "real estate",
+      "monthly income",
+      "passive income"
+    ]
+  },
+  {
+    "id": "international-index-fund",
+    "name": "International Index Fund",
+    "category": "International Equity",
+    "subcategory": "International Equity Index Fund",
+    "description": "A fund tracking an overseas equity index, adding geographic and currency diversification to a portfolio.",
+    "plain_language_description": "International Index Fund: A fund tracking an overseas equity index, adding geographic and currency diversification to a portfolio.",
+    "risk_level": "High",
+    "behavioral_personas": [
+      "Balanced Builder",
+      "Strategic Investor",
+      "Growth Explorer",
+      "Aggressive Wealth Seeker"
+    ],
+    "supported_goals": [
+      "Wealth Creation",
+      "Retirement",
+      "Child Education"
+    ],
+    "minimum_investment": 500.0,
+    "recommended_monthly_sip": 500.0,
+    "expected_annual_return_min": 8.0,
+    "expected_annual_return_max": 14.0,
+    "historical_volatility": 21.0,
+    "liquidity": "Moderate",
+    "withdrawal_time": "2-4 business days",
+    "lock_in_period": 0,
+    "tax_efficiency": "Moderate",
+    "inflation_protection": false,
+    "expense_ratio": 0.65,
+    "recommended_horizon": 8,
+    "ideal_age_range": {
+      "minimum": 18.0,
+      "maximum": 75.0
+    },
+    "ideal_income_range": {
+      "minimum": 0.0,
+      "maximum": 10000000.0
+    },
+    "credit_score_requirement": 0,
+    "risk_profile_requirement": [
+      "High"
+    ],
+    "suitable_for_beginners": true,
+    "suitable_for_students": false,
+    "suitable_for_retirement": true,
+    "suitable_for_emergency_fund": false,
+    "shariah_compliant": false,
+    "government_backed": false,
+    "popularity_score": 72.0,
+    "trust_score": 79.0,
+    "potential_risks": [
+      "Foreign markets and currency can both fluctuate",
+      "Tax and investment limits may change",
+      "Tracking difference is possible"
+    ],
+    "search_terms": [
+      "international",
+      "global index",
+      "us equity",
+      "diversification"
+    ]
+  },
+  {
+    "id": "cash-reserve",
+    "name": "Cash Reserve",
+    "category": "Cash & Savings",
+    "subcategory": "Cash Reserve",
+    "description": "Cash set aside for immediate needs and near-term bills rather than long-term investment growth.",
+    "plain_language_description": "Cash Reserve: Cash set aside for immediate needs and near-term bills rather than long-term investment growth.",
+    "risk_level": "Low",
+    "behavioral_personas": [
+      "Secure Saver",
+      "Conservative Planner",
+      "Balanced Builder",
+      "Strategic Investor",
+      "Growth Explorer",
+      "Aggressive Wealth Seeker"
+    ],
+    "supported_goals": [
+      "Emergency Fund",
+      "Vacation",
+      "Car"
+    ],
+    "minimum_investment": 0.0,
+    "recommended_monthly_sip": 0.0,
+    "expected_annual_return_min": 2.0,
+    "expected_annual_return_max": 4.0,
+    "historical_volatility": 0.0,
+    "liquidity": "Instant",
+    "withdrawal_time": "Immediate",
+    "lock_in_period": 0,
+    "tax_efficiency": "Low",
+    "inflation_protection": false,
+    "expense_ratio": 0.0,
+    "recommended_horizon": 0,
+    "ideal_age_range": {
+      "minimum": 18.0,
+      "maximum": 75.0
+    },
+    "ideal_income_range": {
+      "minimum": 0.0,
+      "maximum": 10000000.0
+    },
+    "credit_score_requirement": 0,
+    "risk_profile_requirement": [
+      "Low",
+      "Medium"
+    ],
+    "suitable_for_beginners": true,
+    "suitable_for_students": true,
+    "suitable_for_retirement": false,
+    "suitable_for_emergency_fund": true,
+    "shariah_compliant": false,
+    "government_backed": false,
+    "popularity_score": 90.0,
+    "trust_score": 85.0,
+    "potential_risks": [
+      "Low return may not outpace inflation",
+      "Physical cash can be lost or stolen",
+      "Large balances may earn little"
+    ],
+    "search_terms": [
+      "cash",
+      "safe investment",
+      "emergency",
+      "liquid"
+    ]
+  },
+  {
+    "id": "emergency-savings-account",
+    "name": "Emergency Savings Account",
+    "category": "Cash & Savings",
+    "subcategory": "Savings Bank Account",
+    "description": "A bank savings account used to keep emergency money accessible while earning a variable deposit rate.",
+    "plain_language_description": "Emergency Savings Account: A bank savings account used to keep emergency money accessible while earning a variable deposit rate.",
+    "risk_level": "Low",
+    "behavioral_personas": [
+      "Secure Saver",
+      "Conservative Planner",
+      "Balanced Builder",
+      "Strategic Investor",
+      "Growth Explorer",
+      "Aggressive Wealth Seeker"
+    ],
+    "supported_goals": [
+      "Emergency Fund",
+      "Vacation",
+      "Car"
+    ],
+    "minimum_investment": 0.0,
+    "recommended_monthly_sip": 0.0,
+    "expected_annual_return_min": 2.5,
+    "expected_annual_return_max": 5.0,
+    "historical_volatility": 0.0,
+    "liquidity": "Instant",
+    "withdrawal_time": "Immediate",
+    "lock_in_period": 0,
+    "tax_efficiency": "Low",
+    "inflation_protection": false,
+    "expense_ratio": 0.0,
+    "recommended_horizon": 0,
+    "ideal_age_range": {
+      "minimum": 18.0,
+      "maximum": 75.0
+    },
+    "ideal_income_range": {
+      "minimum": 0.0,
+      "maximum": 10000000.0
+    },
+    "credit_score_requirement": 0,
+    "risk_profile_requirement": [
+      "Low",
+      "Medium"
+    ],
+    "suitable_for_beginners": true,
+    "suitable_for_students": true,
+    "suitable_for_retirement": false,
+    "suitable_for_emergency_fund": true,
+    "shariah_compliant": false,
+    "government_backed": false,
+    "popularity_score": 95.0,
+    "trust_score": 89.0,
+    "potential_risks": [
+      "Interest may not keep up with inflation",
+      "Deposit insurance limits and bank terms apply",
+      "Rates can change"
+    ],
+    "search_terms": [
+      "emergency savings",
+      "safe investment",
+      "bank account",
+      "liquid"
+    ]
+  }
+]

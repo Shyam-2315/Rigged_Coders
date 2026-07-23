@@ -144,3 +144,128 @@ preprocessing artifacts first.
 The model and all reports are educational artifacts for synthetic data. They
 must not be used to make lending, eligibility, pricing, or other decisions
 about real people.
+
+## Phase 4 — Behavioral AI Risk Profiling
+
+### Purpose
+
+Phase 4 adds a conversational-questionnaire classifier that estimates a synthetic investor risk profile (`Low`, `Medium`, or `High`) and returns a behavioral persona, class probabilities, model confidence, and local feature explanations. It is a research and product-prototyping component only—not personalised financial advice or an investment-suitability decision.
+
+### Behavioral Dataset and Questionnaire
+
+The generator creates **50,000 reproducible, correlated investor profiles**. Risk labels are deterministically derived from behavioral-finance characteristics—loss response, investment horizon, preparedness, experience, knowledge, liquidity preference, and confidence—not randomly assigned and not determined by income alone.
+
+The questionnaire covers age, occupation, income stability, monthly income and savings, monthly investment budget, emergency-fund coverage, investment goal and horizon, expected annual return, reaction to a 20% market loss, prior experience, mutual-fund and stock knowledge, liquidity preference, dependents, financial confidence, investment frequency, and investment type.
+
+Feature engineering produces transparent risk-tolerance, financial-preparedness, income-stability, experience, liquidity-preference, confidence, loss-recovery, investment-readiness, and long-term-orientation scores.
+
+### Models and Selection
+
+The training command compares Logistic Regression, Random Forest, XGBoost Classifier, Extra Trees, and HistGradientBoosting on an untouched stratified hold-out set. It records accuracy, weighted precision/recall/F1, multiclass one-vs-rest ROC AUC, training time, and prediction time, then automatically exports the best weighted-F1 model (using ROC AUC, accuracy, and prediction latency as deterministic tie-breakers).
+
+SHAP-compatible selected models receive global-summary, global-bar, local-explanation, and ranked-top-feature artifacts.
+
+### Training
+
+Install dependencies and run from the repository root:
+
+```powershell
+python -m pip install -r requirements.txt
+python -m ml.risk.train_risk_model
+```
+
+The training command generates the default data set if it does not already exist. For a smaller estimator/SHAP smoke run:
+
+```powershell
+python -m ml.risk.train_risk_model --quick
+```
+
+Risk-specific outputs are kept separate from Phase 3:
+
+- `ml/risk/data/behavioral_risk_profiles.csv` and `behavioral_risk_features.csv`
+- `ml/models/risk_model.pkl`, `risk_encoder.pkl`, `risk_scaler.pkl`, and `risk_model_metadata.json`
+- `ml/risk/reports/classification_report.md`, `training_metrics.json`, `feature_importance.csv`, and `shap_top_features.csv`
+- `ml/risk/plots/confusion_matrix.png`, `roc_curve.png`, `shap_summary.png`, `shap_bar.png`, and `shap_local_explanation.png`
+
+### Behavioral Personas and Inference
+
+Each class resolves to a behavioral persona with its own description, investment philosophy, strengths, and potential risks:
+
+- Low: **Secure Saver** or **Conservative Planner**
+- Medium: **Balanced Builder** or **Strategic Investor**
+- High: **Growth Explorer** or **Aggressive Wealth Seeker**
+
+Use `predict_risk()` for a profile, probabilities, confidence, and persona, or `predict_with_explanation()` for a single questionnaire response plus model-derived positive and negative factors.
+
+```python
+from ml.risk.inference import predict_with_explanation
+
+response = predict_with_explanation({
+    "age": 34,
+    "occupation": "Salaried professional",
+    "income_stability": "Stable",
+    "monthly_income": 90000,
+    "monthly_savings": 25000,
+    "monthly_investment_budget": 15000,
+    "emergency_fund_months": 8,
+    "investment_goal": "Retirement",
+    "investment_horizon_years": 12,
+    "expected_annual_return_percent": 12,
+    "reaction_to_20_percent_loss": "Hold and wait",
+    "previous_investment_experience": "Intermediate",
+    "mutual_fund_knowledge": "Good",
+    "stock_knowledge": "Basic",
+    "preferred_liquidity": "Flexible",
+    "dependents": 1,
+    "financial_confidence": "High",
+    "preferred_investment_frequency": "Monthly",
+    "preferred_investment_type": "Balanced mutual funds",
+})
+```
+
+The output is integration-ready and includes `risk_profile`, persona and persona details, `confidence`, `{low, medium, high}` probabilities, top positive/negative factors, and a non-prescriptive recommendation summary.
+
+## Phase 5 — Investment Intelligence Knowledge Base
+
+### Purpose
+
+Phase 5 is a validated, structured repository of investment-product metadata for future TrustVest components. It retrieves and ranks product matches; it does **not** construct portfolios, allocate money, make a suitability determination, or provide personalised investment advice.
+
+### Products and Market Assumptions
+
+The catalog contains 25 investment product categories across cash, debt funds, deposits, government savings, Indian equity, commodities, REITs, and international equity. Each product has validated metadata for risk, personas, goals, return range, volatility, liquidity, lock-in, tax efficiency, horizon, eligibility flags, trust/popularity, potential risks, and plain-language explanation.
+
+Illustrative planning assumptions for inflation, risk-free rate, equity premium, gold, debt, cash, and default Monte Carlo volatility are saved separately for Phase 7. They are not live market data or forecasts.
+
+### Generate the Knowledge Base
+
+```powershell
+python -m pip install -r requirements.txt
+python -m ml.investments.knowledge_base
+```
+
+Generated artifacts:
+
+- `ml/data/investment_products.json` and `investment_products.csv`
+- `ml/data/market_assumptions.json`
+- `ml/reports/investment_catalog.md`, `investment_statistics.md`, `risk_distribution.json`, and `goal_distribution.json`
+- `ml/docs/investment_intelligence_knowledge_base.md`
+
+### Retrieval and Ranking
+
+The repository-backed API supports `get_all_products()`, `get_product_by_id()`, filters for risk, goal, persona, horizon, liquidity, beginner status, government backing, and credit-score eligibility, plus ranked smart search.
+
+```python
+from ml.investments.retrieval import search_products
+
+matches = search_products(
+    "retirement",
+    context={
+        "risk_profile": "Medium",
+        "persona": "Balanced Builder",
+        "investment_horizon_years": 12,
+    },
+)
+```
+
+Search understands common intents such as `safe investment`, `gold`, `retirement`, `tax`, and `monthly income`. Results are ranked from explicit metadata matches—risk, goal, persona, horizon, liquidity, credit eligibility, popularity, and trust—and include the match reason, supported personas/goals, potential risks, illustrative return range, horizon, and a simple explanation.

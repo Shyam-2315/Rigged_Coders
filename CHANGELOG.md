@@ -1,5 +1,24 @@
 # Changelog
 
+## v0.5.0
+
+Added
+
+- [x] Investment knowledge base with 25 structured products
+- [x] Product repository and validation layer
+- [x] Smart retrieval and explainable ranking
+- [x] Market assumptions for future simulations
+
+## v0.4.0
+
+Added
+
+- [x] Behavioral investor dataset with 50,000 correlated profiles
+- [x] ML risk classifier with automatic multi-model selection
+- [x] Behavioral personas with strengths and potential risks
+- [x] Probability scores and model confidence
+- [x] SHAP-compatible global and local explanations
+
 ## v0.3.0
 
 Added
