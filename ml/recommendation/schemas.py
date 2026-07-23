@@ -4,7 +4,7 @@ from __future__ import annotations
 
 from enum import Enum
 
-from pydantic import AliasChoices, BaseModel, ConfigDict, Field, model_validator
+from pydantic import BaseModel, ConfigDict, Field, model_validator
 
 from ml.investments.schemas import (
     BehavioralPersonaName,
@@ -104,56 +104,16 @@ class PortfolioAllocation(BaseModel):
 class PortfolioHealth(BaseModel):
     """Transparent, rule-based health metrics for a portfolio illustration."""
 
-    model_config = ConfigDict(frozen=True, extra="forbid", populate_by_name=True)
+    model_config = ConfigDict(frozen=True, extra="forbid")
 
-    diversification_score: int = Field(
-        ge=0,
-        le=100,
-        serialization_alias="Diversification",
-        validation_alias=AliasChoices("diversification_score", "Diversification"),
-    )
-    risk_alignment_score: int = Field(
-        ge=0,
-        le=100,
-        serialization_alias="Risk Alignment",
-        validation_alias=AliasChoices("risk_alignment_score", "Risk Alignment"),
-    )
-    liquidity_score: int = Field(
-        ge=0,
-        le=100,
-        serialization_alias="Liquidity",
-        validation_alias=AliasChoices("liquidity_score", "Liquidity"),
-    )
-    inflation_protection_score: int = Field(
-        ge=0,
-        le=100,
-        serialization_alias="Inflation Protection",
-        validation_alias=AliasChoices("inflation_protection_score", "Inflation Protection"),
-    )
-    goal_alignment_score: int = Field(
-        ge=0,
-        le=100,
-        serialization_alias="Goal Alignment",
-        validation_alias=AliasChoices("goal_alignment_score", "Goal Alignment"),
-    )
-    tax_efficiency_score: int = Field(
-        ge=0,
-        le=100,
-        serialization_alias="Tax Efficiency",
-        validation_alias=AliasChoices("tax_efficiency_score", "Tax Efficiency"),
-    )
-    portfolio_stability_score: int = Field(
-        ge=0,
-        le=100,
-        serialization_alias="Portfolio Stability",
-        validation_alias=AliasChoices("portfolio_stability_score", "Portfolio Stability"),
-    )
-    overall_portfolio_score: int = Field(
-        ge=0,
-        le=100,
-        serialization_alias="Overall Portfolio Score",
-        validation_alias=AliasChoices("overall_portfolio_score", "Overall Portfolio Score"),
-    )
+    diversification_score: int = Field(ge=0, le=100, serialization_alias="Diversification")
+    risk_alignment_score: int = Field(ge=0, le=100, serialization_alias="Risk Alignment")
+    liquidity_score: int = Field(ge=0, le=100, serialization_alias="Liquidity")
+    inflation_protection_score: int = Field(ge=0, le=100, serialization_alias="Inflation Protection")
+    goal_alignment_score: int = Field(ge=0, le=100, serialization_alias="Goal Alignment")
+    tax_efficiency_score: int = Field(ge=0, le=100, serialization_alias="Tax Efficiency")
+    portfolio_stability_score: int = Field(ge=0, le=100, serialization_alias="Portfolio Stability")
+    overall_portfolio_score: int = Field(ge=0, le=100, serialization_alias="Overall Portfolio Score")
 
 
 class PortfolioVariant(BaseModel):

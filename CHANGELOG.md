@@ -1,15 +1,16 @@
 # Changelog
 
-## v0.7.0
+## v0.8.0
 
 Added
 
-- [x] Monte Carlo Simulation
-- [x] Goal Probability Analysis
-- [x] Inflation-adjusted Projections
-- [x] Portfolio Analytics
-- [x] Scenario Comparison
-- [x] Financial Projection Reports
+- [x] Unified AI Orchestrator
+- [x] Pipeline Management
+- [x] Response Builder
+- [x] Fault Tolerance
+- [x] Audit Logging
+- [x] Telemetry
+- [x] Unified API Contract
 
 ## v0.6.0
 
