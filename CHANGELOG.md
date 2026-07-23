@@ -1,5 +1,20 @@
 # Changelog
 
+## v0.9.0
+
+Added
+
+- [x] FastAPI application factory with CORS, lifespan, request-timing middleware, and global error handlers
+- [x] POST /api/v1/analyze — unified orchestrator endpoint (all phases in one call)
+- [x] POST /api/v1/credit-score — Phase 3 XGBoost credit scoring with SHAP explanations
+- [x] POST /api/v1/risk-profile — Phase 4 behavioral risk classifier with persona and probabilities
+- [x] GET /api/v1/products — Phase 5 investment knowledge-base search with filters
+- [x] POST /api/v1/recommend — Phase 6 deterministic portfolio recommendation
+- [x] POST /api/v1/simulate — Phase 7 Monte Carlo financial projection
+- [x] GET /api/v1/health and GET /api/v1/version system endpoints
+- [x] API-level integration tests (TestClient) for all 7 endpoint groups
+- [x] fastapi, uvicorn, and httpx added to requirements.txt
+
 ## v0.8.0
 
 Added

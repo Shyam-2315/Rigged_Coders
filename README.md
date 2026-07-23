@@ -328,3 +328,179 @@ Generated artifacts:
 - `ml/reports/portfolio_rules.md`
 - `ml/reports/portfolio_metrics.json`
 - `ml/reports/recommendation_examples.md`
+
+
+## Phase 7 — Monte Carlo Financial Simulation
+
+### Purpose
+
+Phase 7 consumes a Phase 6 `RecommendationResponse` and Phase 5 market assumptions to produce educational Monte Carlo projections across conservative, recommended, and growth portfolio scenarios. It does not forecast markets or provide regulated investment advice.
+
+### Simulation Engine
+
+`FinancialProjectionEngine.project()` runs independent log-normal GBM simulations (default 10,000 paths) for each portfolio style using deterministic seeds. Each path applies a monthly SIP on top of an initial lump-sum investment. The engine returns terminal-value distribution statistics, goal-attainment probabilities, inflation-adjusted figures, yearly projections, and illustrative risk/return analytics.
+
+### Scenarios and Outputs
+
+Three concurrent scenarios are simulated — Conservative, Recommended, and Growth — using the expected-return and volatility bounds from the corresponding Phase 6 portfolio variant. The active scenario (default: Recommended) provides the headline summary.
+
+Key response fields:
+
+- `simulation` — runs, mean, median, min, max, standard deviation, and percentile bands
+- `goal_probability` — probability of success, shortfall, and exceeding the goal amount
+- `inflation_adjusted` — nominal and real terminal values at the stated inflation assumption
+- `analytics` — expected CAGR, annualized volatility, Sharpe ratio, max drawdown, downside risk
+- `yearly_projections` — per-year median, 10th/25th/75th/90th percentile bands
+
+### Usage
+
+```powershell
+python -m pip install -r requirements.txt
+python -c "from ml.simulation import generate_sample_phase7_reports; generate_sample_phase7_reports()"
+```
+
+Generated artifacts:
+
+- `ml/reports/simulation_summary.json`
+- `ml/reports/projection_report.md`
+- `ml/reports/scenario_comparison.md`
+- `ml/reports/yearly_projection.csv`
+- `ml/simulation/plots/` — portfolio growth, simulation fan, distribution histogram, scenario comparison
+
+## Phase 8 — TrustVest Intelligence Orchestrator
+
+### Purpose
+
+Phase 8 is the unified AI coordination layer that wires Phases 3–7 into a single, fault-tolerant pipeline. It exposes one `analyze_user()` entry point consumed directly by the Phase 9 FastAPI backend.
+
+### Pipeline Stages
+
+1. `validate_request` — parses and validates the `UnifiedAnalysisRequest` contract
+2. `preprocess_input` — maps unified fields to per-phase module contracts
+3. `credit_scoring` — runs Phase 3 credit model with Phase 2 feature engineering; falls back to `fallback_credit_score` if the model is unavailable
+4. `risk_profiling` — runs Phase 4 behavioral classifier; falls back to a questionnaire heuristic
+5. `knowledge_base_retrieval` — queries Phase 5 product catalog with context-aware ranking
+6. `portfolio_recommendation` — calls Phase 6 recommendation engine
+7. `financial_projection` — runs Phase 7 Monte Carlo simulation (skippable via `simulation.enabled=false`)
+8. `generate_response` — assembles `UnifiedAnalysisResponse` with telemetry and next steps
+
+### Fault Tolerance and Observability
+
+Each stage is independently error-isolated. A failed or skipped stage records its status in `pipeline_trace` without aborting downstream stages where possible. `TelemetrySummary` reports per-module latency and pipeline-wide success rate. An `AuditRecord` is optionally appended to `ml/reports/orchestrator_audit.jsonl`.
+
+### Usage
+
+```python
+from ml.orchestrator import analyze_user
+
+response = analyze_user({
+    "personal": {"age": 31, "occupation": "Salaried professional", ...},
+    "financial": {"monthly_income": 85000, "monthly_budget": 10000, ...},
+    "behavioral": {"investment_goal": "Wealth Creation", ...},
+    "simulation": {"enabled": True, "goal_amount": 2500000, "num_simulations": 1000},
+})
+```
+
+Generate Phase 8 reports:
+
+```powershell
+python -c "from ml.orchestrator import generate_phase8_reports; generate_phase8_reports()"
+```
+
+Generated artifacts:
+
+- `ml/reports/pipeline_summary.md`
+- `ml/reports/pipeline_metrics.json`
+- `ml/reports/sample_responses.json`
+- `ml/reports/audit_log_example.json`
+
+## Phase 9 — FastAPI REST API
+
+### Purpose
+
+Phase 9 exposes every TrustVest AI ML module as a production-ready REST API built with FastAPI. All endpoints return educational illustrations and include a disclaimer. They do not provide regulated financial advice.
+
+### Running the API
+
+Install dependencies, then start the server:
+
+```powershell
+python -m pip install -r requirements.txt
+uvicorn backend.main:app --reload --port 8000
+```
+
+Interactive documentation is available at:
+
+- Swagger UI: `http://localhost:8000/docs`
+- ReDoc: `http://localhost:8000/redoc`
+
+### Endpoints
+
+| Method | Path | Description |
+|--------|------|-------------|
+| GET | `/api/v1/health` | Liveness probe — returns `{"status": "ok"}` |
+| GET | `/api/v1/version` | API version, pipeline version, and runtime metadata |
+| POST | `/api/v1/analyze` | **Unified** — runs the full Phase 3–7 pipeline in one call |
+| POST | `/api/v1/credit-score` | Phase 3 XGBoost credit score + SHAP feature contributions |
+| POST | `/api/v1/risk-profile` | Phase 4 behavioral risk classifier + persona + probabilities |
+| GET | `/api/v1/products` | Phase 5 knowledge-base search with optional filters |
+| POST | `/api/v1/recommend` | Phase 6 portfolio recommendation (3 variants) |
+| POST | `/api/v1/simulate` | Phase 7 Monte Carlo financial projection |
+
+### Request/Response Contracts
+
+`POST /api/v1/analyze` and `POST /api/v1/credit-score` / `POST /api/v1/risk-profile` accept the `UnifiedAnalysisRequest` contract:
+
+```json
+{
+  "personal":  { "age": 31, "occupation": "Salaried professional", ... },
+  "financial": { "monthly_income": 85000, "monthly_budget": 10000, "fallback_credit_score": 760, ... },
+  "behavioral": { "investment_goal": "Wealth Creation", "investment_horizon_years": 10, ... },
+  "simulation": { "enabled": true, "goal_amount": 2500000, "num_simulations": 1000 }
+}
+```
+
+`POST /api/v1/recommend` accepts the Phase 6 `RecommendationRequest`:
+
+```json
+{
+  "credit_score": 760,
+  "risk_profile": "Medium",
+  "behavioral_persona": "Balanced Builder",
+  "monthly_income": 85000,
+  "monthly_budget": 10000,
+  "investment_goal": "Wealth Creation",
+  "investment_horizon": 10,
+  ...
+}
+```
+
+`POST /api/v1/simulate` accepts the Phase 7 `ProjectionRequest`, which embeds a full `RecommendationResponse` under the `recommendation` key.
+
+`GET /api/v1/products` accepts optional query parameters: `q`, `risk`, `goal`, `persona`, `horizon`, `liquidity`, `limit`.
+
+### Package Structure
+
+```
+backend/
+├── __init__.py
+├── main.py            # FastAPI app factory, CORS, lifespan, error handlers
+├── config.py          # BackendConfig dataclass
+└── api/
+    └── v1/
+        ├── router.py  # Mounts all endpoint sub-routers
+        └── endpoints/
+            ├── health.py
+            ├── analyze.py
+            ├── credit_score.py
+            ├── risk_profile.py
+            ├── products.py
+            ├── recommend.py
+            └── simulate.py
+```
+
+### Running Tests
+
+```powershell
+python -m pytest tests/test_api.py -v
+```
