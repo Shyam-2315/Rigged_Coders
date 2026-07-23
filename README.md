@@ -269,3 +269,139 @@ matches = search_products(
 ```
 
 Search understands common intents such as `safe investment`, `gold`, `retirement`, `tax`, and `monthly income`. Results are ranked from explicit metadata matches—risk, goal, persona, horizon, liquidity, credit eligibility, popularity, and trust—and include the match reason, supported personas/goals, potential risks, illustrative return range, horizon, and a simple explanation.
+
+## Phase 6 - AI Portfolio Recommendation Engine
+
+### Purpose
+
+Phase 6 converts the Phase 3 credit score, Phase 4 risk profile/persona, and Phase 5 product catalog into deterministic, diversified **educational portfolio illustrations**. It does not predict markets, execute orders, or provide regulated financial advice. Every response includes a clear disclaimer, per-product reasons and risks, rule-derived portfolio health, and alternatives suitable for direct Phase 7 Monte Carlo consumption.
+
+### Product Retrieval and Scoring
+
+The repository-backed engine retrieves products within the investor's risk ceiling, credit eligibility, monthly allocation cap, liquidity need, and requested horizon. Goal, persona, and a government-backed preference are transparent score inputs, rather than brittle exclusions, so sparse goals can still receive a diversified illustration.
+
+Each candidate receives a reproducible 0-100 score from goal/risk/persona match, expected-return range, liquidity, tax efficiency, inflation protection, trust, popularity, diversification value, and budget compatibility. The full score breakdown is returned with each allocation.
+
+### Portfolio Optimization and Allocation
+
+The strategy-based optimizer produces conservative, recommended, and growth variants using the same validated candidate pool. It enforces 3-6 products, a minimum 5% allocation, a maximum 60% allocation per product, exact integer monthly-budget reconciliation, minimum-investment affordability, and asset-class diversification across equity, debt, gold, cash, and government savings where eligible catalog products permit.
+
+The allocation output contains the allocation percentage and monthly amount, illustrative expected-return bounds, risk contribution, liquidity contribution, potential risks, and a plain-language selection reason for every product.
+
+### Portfolio Health, Explainability, and Insights
+
+Health metrics are deterministic 0-100 measures for diversification, risk alignment, liquidity, inflation protection, goal alignment, tax efficiency, portfolio stability, and overall portfolio health. The engine also returns simple-language benefits and trade-offs plus actionable educational prompts about emergency reserves, recurring investment capacity, concentration, diversification, horizon, and tax-aware alternatives.
+
+```python
+from ml.recommendation import recommend_portfolio
+
+response = recommend_portfolio({
+    "credit_score": 760,
+    "risk_profile": "Medium",
+    "behavioral_persona": "Balanced Builder",
+    "monthly_income": 85000,
+    "monthly_savings": 22000,
+    "monthly_budget": 10000,
+    "existing_savings": 350000,
+    "investment_goal": "Wealth Creation",
+    "investment_horizon": 10,
+    "age": 31,
+    "dependents": 1,
+    "emergency_fund_months": 5,
+    "income_stability": "High",
+})
+
+fastapi_payload = response.model_dump(mode="json", by_alias=True)
+```
+
+The main FastAPI-ready entry points are `PortfolioRecommendationEngine.recommend()` and `recommend_portfolio()`. The request and response contracts are Pydantic models in `ml/recommendation/schemas.py`; all policy weights and portfolio limits are versioned in `ml/models/recommendation_rules.json`.
+
+Generate the reproducible Phase 6 reports with:
+
+```powershell
+python -c "from ml.recommendation.recommendation_engine import generate_phase6_reports; generate_phase6_reports()"
+```
+
+Generated artifacts:
+
+- `ml/reports/portfolio_examples.json`
+- `ml/reports/portfolio_rules.md`
+- `ml/reports/portfolio_metrics.json`
+- `ml/reports/recommendation_examples.md`
+
+## Phase 7 — Financial Projection & Monte Carlo Simulation Engine
+
+### Purpose
+
+Phase 7 converts Phase 6 portfolio recommendations and Phase 5 planning assumptions into transparent, **educational** long-term investment projections. It uses Monte Carlo simulation with geometric Brownian motion and log-normal return paths. It does **not** predict future market performance, execute trades, or provide regulated investment advice. Every response and report includes a clear educational disclaimer.
+
+### Simulation Method
+
+The engine runs 10,000 independent simulations by default (configurable) with a deterministic random seed. Each path applies monthly geometric Brownian motion to the selected portfolio’s illustrative expected return midpoint and volatility, adds recurring SIP contributions, and records year-end snapshots across the investment horizon.
+
+### Scenario Analysis
+
+Independent simulations are run for the **Conservative**, **Recommended**, and **Growth** portfolios returned by Phase 6. Each scenario produces its own distribution metrics, inflation-adjusted values, analytics, and year-wise timeline.
+
+### Goal Probability
+
+When a goal amount is supplied, the engine calculates the probability of reaching the goal, falling short, and exceeding the target based on simulated terminal portfolio values.
+
+### Inflation Adjustment
+
+Nominal and real (inflation-adjusted) median terminal values are computed using the Phase 5 `market_assumptions.json` inflation rate unless overridden in the request.
+
+### Portfolio Analytics
+
+Illustrative analytics include expected CAGR, portfolio volatility, Sharpe ratio, simulated maximum drawdown on the median path, downside risk, and upside capture. These are educational measures derived from simulated paths, not forecasts.
+
+### Generated Reports
+
+```python
+from ml.recommendation import recommend_portfolio
+from ml.simulation import project_portfolio
+
+recommendation = recommend_portfolio({
+    "credit_score": 760,
+    "risk_profile": "Medium",
+    "behavioral_persona": "Balanced Builder",
+    "monthly_income": 85000,
+    "monthly_savings": 22000,
+    "monthly_budget": 10000,
+    "existing_savings": 350000,
+    "investment_goal": "Wealth Creation",
+    "investment_horizon": 10,
+    "age": 31,
+    "dependents": 1,
+    "emergency_fund_months": 5,
+    "income_stability": "High",
+})
+
+response = project_portfolio({
+    "initial_investment": 350000,
+    "monthly_sip": 10000,
+    "investment_horizon_years": 10,
+    "goal_amount": 2500000,
+    "recommendation": recommendation.model_dump(mode="json", by_alias=True),
+    "generate_charts": True,
+    "generate_reports": True,
+})
+
+fastapi_payload = response.model_dump(mode="json")
+```
+
+Generate the reproducible Phase 7 reports with:
+
+```powershell
+python -c "from ml.simulation.projection_engine import generate_sample_phase7_reports; generate_sample_phase7_reports()"
+```
+
+Generated artifacts:
+
+- `ml/reports/simulation_summary.json`
+- `ml/reports/projection_report.md`
+- `ml/reports/scenario_comparison.md`
+- `ml/reports/yearly_projection.csv`
+- `ml/simulation/plots/` — portfolio growth, fan chart, histogram, confidence interval, goal probability, scenario comparison, and yearly projection charts
+
+The main FastAPI-ready entry points are `FinancialProjectionEngine.project()` and `project_portfolio()`. Request and response contracts live in `ml/simulation/schemas.py`; Monte Carlo defaults and disclaimers are configured in `ml/simulation/config.py`.

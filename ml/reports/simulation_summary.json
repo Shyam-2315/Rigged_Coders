@@ -1,0 +1,505 @@
+{
+  "simulation_version": "v0.7.0",
+  "active_scenario": "Recommended",
+  "simulation": {
+    "runs": 10000,
+    "mean_value": 2697997.498151576,
+    "median_value": 2591646.2342343708,
+    "minimum_value": 1032959.0108322449,
+    "maximum_value": 8001660.585380094,
+    "standard_deviation": 738694.3445238012,
+    "best_case": 3672925.5297687813,
+    "worst_case": 1862666.0625048883,
+    "percentile_10": 1862666.0625048883,
+    "percentile_25": 2174970.705834156,
+    "percentile_50": 2591646.2342343708,
+    "percentile_75": 3099778.3820384485,
+    "percentile_90": 3672925.5297687813
+  },
+  "goal_probability": {
+    "goal_amount": 2500000.0,
+    "probability_of_success": 55.21,
+    "probability_of_shortfall": 44.79,
+    "probability_of_exceeding": 55.21
+  },
+  "inflation_adjusted": {
+    "nominal": 2591646.23,
+    "real": 1517228.96,
+    "inflation_rate_used": 0.055,
+    "horizon_years": 10
+  },
+  "analytics": {
+    "expected_cagr": 5.27,
+    "volatility": 16.41,
+    "sharpe_ratio": 1.02,
+    "max_drawdown": 0.0,
+    "downside_risk": 4.23,
+    "upside_capture": 25.12
+  },
+  "scenarios": [
+    {
+      "style": "Conservative",
+      "expected_return_range": "5.4%–8.8%",
+      "expected_annual_return_min": 5.41,
+      "expected_annual_return_max": 8.79,
+      "estimated_risk": 8.77,
+      "simulation": {
+        "runs": 10000,
+        "mean_value": 2449203.7431966974,
+        "median_value": 2399172.2405866943,
+        "minimum_value": 1215323.8326256315,
+        "maximum_value": 5474570.642184362,
+        "standard_deviation": 491827.37042852293,
+        "best_case": 3090470.3032072806,
+        "worst_case": 1865448.0633912703,
+        "percentile_10": 1865448.0633912703,
+        "percentile_25": 2099118.711961367,
+        "percentile_50": 2399172.2405866943,
+        "percentile_75": 2748430.874296343,
+        "percentile_90": 3090470.3032072806
+      },
+      "goal_probability": {
+        "goal_amount": 2500000.0,
+        "probability_of_success": 41.78,
+        "probability_of_shortfall": 58.22,
+        "probability_of_exceeding": 41.78
+      },
+      "inflation_adjusted": {
+        "nominal": 2399172.24,
+        "real": 1404548.79,
+        "inflation_rate_used": 0.055,
+        "horizon_years": 10
+      },
+      "analytics": {
+        "expected_cagr": 4.47,
+        "volatility": 13.5,
+        "sharpe_ratio": 1.15,
+        "max_drawdown": 0.0,
+        "downside_risk": 2.95,
+        "upside_capture": 22.79
+      },
+      "yearly_projections": [
+        {
+          "year": 0,
+          "median": 350000.0,
+          "best_case": 350000.0,
+          "worst_case": 350000.0,
+          "expected_range_low": 350000.0,
+          "expected_range_high": 350000.0,
+          "nominal_median": 350000.0,
+          "real_median": 350000.0
+        },
+        {
+          "year": 1,
+          "median": 497678.2,
+          "best_case": 548668.13,
+          "worst_case": 452550.25,
+          "expected_range_low": 473606.0,
+          "expected_range_high": 523944.66,
+          "nominal_median": 497678.2,
+          "real_median": 471732.9
+        },
+        {
+          "year": 2,
+          "median": 656013.23,
+          "best_case": 747159.22,
+          "worst_case": 577615.02,
+          "expected_range_low": 613281.28,
+          "expected_range_high": 702034.11,
+          "nominal_median": 656013.23,
+          "real_median": 589396.67
+        },
+        {
+          "year": 3,
+          "median": 827553.38,
+          "best_case": 960027.38,
+          "worst_case": 711068.79,
+          "expected_range_low": 762246.39,
+          "expected_range_high": 893494.6,
+          "nominal_median": 827553.38,
+          "real_median": 704755.76
+        },
+        {
+          "year": 4,
+          "median": 1006373.59,
+          "best_case": 1191493.17,
+          "worst_case": 854133.43,
+          "expected_range_low": 922902.34,
+          "expected_range_high": 1100005.44,
+          "nominal_median": 1006373.59,
+          "real_median": 812361.61
+        },
+        {
+          "year": 5,
+          "median": 1199527.16,
+          "best_case": 1441005.73,
+          "worst_case": 1001298.21,
+          "expected_range_low": 1088774.88,
+          "expected_range_high": 1321687.14,
+          "nominal_median": 1199527.16,
+          "real_median": 917799.44
+        },
+        {
+          "year": 6,
+          "median": 1408032.66,
+          "best_case": 1725268.59,
+          "worst_case": 1151491.76,
+          "expected_range_low": 1266935.87,
+          "expected_range_high": 1567552.61,
+          "nominal_median": 1408032.66,
+          "real_median": 1021169.82
+        },
+        {
+          "year": 7,
+          "median": 1628308.6,
+          "best_case": 2020399.38,
+          "worst_case": 1316526.91,
+          "expected_range_low": 1456966.63,
+          "expected_range_high": 1820724.47,
+          "nominal_median": 1628308.6,
+          "real_median": 1119359.27
+        },
+        {
+          "year": 8,
+          "median": 1872228.1,
+          "best_case": 2346384.77,
+          "worst_case": 1497497.69,
+          "expected_range_low": 1660789.4,
+          "expected_range_high": 2102642.7,
+          "nominal_median": 1872228.1,
+          "real_median": 1219941.72
+        },
+        {
+          "year": 9,
+          "median": 2126648.89,
+          "best_case": 2712925.46,
+          "worst_case": 1676420.52,
+          "expected_range_low": 1876813.61,
+          "expected_range_high": 2407647.26,
+          "nominal_median": 2126648.89,
+          "real_median": 1313480.58
+        },
+        {
+          "year": 10,
+          "median": 2399172.24,
+          "best_case": 3090470.3,
+          "worst_case": 1865448.06,
+          "expected_range_low": 2099118.71,
+          "expected_range_high": 2748430.87,
+          "nominal_median": 2399172.24,
+          "real_median": 1404548.79
+        }
+      ]
+    },
+    {
+      "style": "Recommended",
+      "expected_return_range": "6.6%–10.3%",
+      "expected_annual_return_min": 6.64,
+      "expected_annual_return_max": 10.28,
+      "estimated_risk": 11.66,
+      "simulation": {
+        "runs": 10000,
+        "mean_value": 2697997.498151576,
+        "median_value": 2591646.2342343708,
+        "minimum_value": 1032959.0108322449,
+        "maximum_value": 8001660.585380094,
+        "standard_deviation": 738694.3445238012,
+        "best_case": 3672925.5297687813,
+        "worst_case": 1862666.0625048883,
+        "percentile_10": 1862666.0625048883,
+        "percentile_25": 2174970.705834156,
+        "percentile_50": 2591646.2342343708,
+        "percentile_75": 3099778.3820384485,
+        "percentile_90": 3672925.5297687813
+      },
+      "goal_probability": {
+        "goal_amount": 2500000.0,
+        "probability_of_success": 55.21,
+        "probability_of_shortfall": 44.79,
+        "probability_of_exceeding": 55.21
+      },
+      "inflation_adjusted": {
+        "nominal": 2591646.23,
+        "real": 1517228.96,
+        "inflation_rate_used": 0.055,
+        "horizon_years": 10
+      },
+      "analytics": {
+        "expected_cagr": 5.27,
+        "volatility": 16.41,
+        "sharpe_ratio": 1.02,
+        "max_drawdown": 0.0,
+        "downside_risk": 4.23,
+        "upside_capture": 25.12
+      },
+      "yearly_projections": [
+        {
+          "year": 0,
+          "median": 350000.0,
+          "best_case": 350000.0,
+          "worst_case": 350000.0,
+          "expected_range_low": 350000.0,
+          "expected_range_high": 350000.0,
+          "nominal_median": 350000.0,
+          "real_median": 350000.0
+        },
+        {
+          "year": 1,
+          "median": 502943.66,
+          "best_case": 573157.88,
+          "worst_case": 441999.28,
+          "expected_range_low": 470294.97,
+          "expected_range_high": 538937.64,
+          "nominal_median": 502943.66,
+          "real_median": 476723.85
+        },
+        {
+          "year": 2,
+          "median": 668439.91,
+          "best_case": 794432.72,
+          "worst_case": 563696.06,
+          "expected_range_low": 609908.43,
+          "expected_range_high": 731279.42,
+          "nominal_median": 668439.91,
+          "real_median": 600561.45
+        },
+        {
+          "year": 3,
+          "median": 848686.07,
+          "best_case": 1039703.42,
+          "worst_case": 694534.06,
+          "expected_range_low": 761480.29,
+          "expected_range_high": 942319.83,
+          "nominal_median": 848686.07,
+          "real_median": 722752.65
+        },
+        {
+          "year": 4,
+          "median": 1041498.68,
+          "best_case": 1309921.52,
+          "worst_case": 830356.26,
+          "expected_range_low": 925354.72,
+          "expected_range_high": 1174214.23,
+          "nominal_median": 1041498.68,
+          "real_median": 840715.17
+        },
+        {
+          "year": 5,
+          "median": 1251796.5,
+          "best_case": 1610666.31,
+          "worst_case": 981250.94,
+          "expected_range_low": 1097890.16,
+          "expected_range_high": 1431042.54,
+          "nominal_median": 1251796.5,
+          "real_median": 957792.51
+        },
+        {
+          "year": 6,
+          "median": 1476091.66,
+          "best_case": 1949967.64,
+          "worst_case": 1133502.86,
+          "expected_range_low": 1282448.02,
+          "expected_range_high": 1706183.7,
+          "nominal_median": 1476091.66,
+          "real_median": 1070529.33
+        },
+        {
+          "year": 7,
+          "median": 1727128.7,
+          "best_case": 2310967.21,
+          "worst_case": 1298577.08,
+          "expected_range_low": 1480515.36,
+          "expected_range_high": 2010591.16,
+          "nominal_median": 1727128.7,
+          "real_median": 1187291.84
+        },
+        {
+          "year": 8,
+          "median": 1987350.95,
+          "best_case": 2711076.82,
+          "worst_case": 1470827.64,
+          "expected_range_low": 1696269.66,
+          "expected_range_high": 2340753.56,
+          "nominal_median": 1987350.95,
+          "real_median": 1294955.63
+        },
+        {
+          "year": 9,
+          "median": 2269214.76,
+          "best_case": 3172969.17,
+          "worst_case": 1669347.31,
+          "expected_range_low": 1925955.88,
+          "expected_range_high": 2708316.35,
+          "nominal_median": 2269214.76,
+          "real_median": 1401533.43
+        },
+        {
+          "year": 10,
+          "median": 2591646.23,
+          "best_case": 3672925.53,
+          "worst_case": 1862666.06,
+          "expected_range_low": 2174970.71,
+          "expected_range_high": 3099778.38,
+          "nominal_median": 2591646.23,
+          "real_median": 1517228.96
+        }
+      ]
+    },
+    {
+      "style": "Growth",
+      "expected_return_range": "7.4%–11.3%",
+      "expected_annual_return_min": 7.44,
+      "expected_annual_return_max": 11.32,
+      "estimated_risk": 13.88,
+      "simulation": {
+        "runs": 10000,
+        "mean_value": 2880422.4863607935,
+        "median_value": 2708322.2044420037,
+        "minimum_value": 875354.5981078347,
+        "maximum_value": 10451564.857647859,
+        "standard_deviation": 961019.2047274135,
+        "best_case": 4131056.720021122,
+        "worst_case": 1837026.9170179043,
+        "percentile_10": 1837026.9170179043,
+        "percentile_25": 2190734.753825883,
+        "percentile_50": 2708322.2044420037,
+        "percentile_75": 3397244.3363702632,
+        "percentile_90": 4131056.720021122
+      },
+      "goal_probability": {
+        "goal_amount": 2500000.0,
+        "probability_of_success": 60.01,
+        "probability_of_shortfall": 39.99,
+        "probability_of_exceeding": 60.01
+      },
+      "inflation_adjusted": {
+        "nominal": 2708322.2,
+        "real": 1585534.64,
+        "inflation_rate_used": 0.055,
+        "horizon_years": 10
+      },
+      "analytics": {
+        "expected_cagr": 5.74,
+        "volatility": 18.84,
+        "sharpe_ratio": 0.94,
+        "max_drawdown": 2.27,
+        "downside_risk": 5.09,
+        "upside_capture": 27.02
+      },
+      "yearly_projections": [
+        {
+          "year": 0,
+          "median": 350000.0,
+          "best_case": 350000.0,
+          "worst_case": 350000.0,
+          "expected_range_low": 350000.0,
+          "expected_range_high": 350000.0,
+          "nominal_median": 350000.0,
+          "real_median": 350000.0
+        },
+        {
+          "year": 1,
+          "median": 504969.14,
+          "best_case": 590611.98,
+          "worst_case": 432876.74,
+          "expected_range_low": 465659.9,
+          "expected_range_high": 548508.08,
+          "nominal_median": 504969.14,
+          "real_median": 478643.73
+        },
+        {
+          "year": 2,
+          "median": 675058.06,
+          "best_case": 831187.96,
+          "worst_case": 551720.97,
+          "expected_range_low": 609356.4,
+          "expected_range_high": 752760.35,
+          "nominal_median": 675058.06,
+          "real_median": 606507.55
+        },
+        {
+          "year": 3,
+          "median": 858010.93,
+          "best_case": 1096824.78,
+          "worst_case": 681426.58,
+          "expected_range_low": 760568.51,
+          "expected_range_high": 975964.01,
+          "nominal_median": 858010.93,
+          "real_median": 730693.83
+        },
+        {
+          "year": 4,
+          "median": 1060201.14,
+          "best_case": 1402601.1,
+          "worst_case": 816867.78,
+          "expected_range_low": 923279.73,
+          "expected_range_high": 1224624.8,
+          "nominal_median": 1060201.14,
+          "real_median": 855812.11
+        },
+        {
+          "year": 5,
+          "median": 1281015.68,
+          "best_case": 1737728.38,
+          "worst_case": 961546.88,
+          "expected_range_low": 1097881.47,
+          "expected_range_high": 1501261.95,
+          "nominal_median": 1281015.68,
+          "real_median": 980149.11
+        },
+        {
+          "year": 6,
+          "median": 1519039.67,
+          "best_case": 2133367.65,
+          "worst_case": 1113377.76,
+          "expected_range_low": 1286917.95,
+          "expected_range_high": 1806782.72,
+          "nominal_median": 1519039.67,
+          "real_median": 1101677.19
+        },
+        {
+          "year": 7,
+          "median": 1777791.69,
+          "best_case": 2520246.92,
+          "worst_case": 1278953.57,
+          "expected_range_low": 1486660.38,
+          "expected_range_high": 2138936.64,
+          "nominal_median": 1777791.69,
+          "real_median": 1222119.45
+        },
+        {
+          "year": 8,
+          "median": 2065321.34,
+          "best_case": 3028523.43,
+          "worst_case": 1439640.82,
+          "expected_range_low": 1705566.55,
+          "expected_range_high": 2518614.19,
+          "nominal_median": 2065321.34,
+          "real_median": 1345761.05
+        },
+        {
+          "year": 9,
+          "median": 2367835.01,
+          "best_case": 3572366.43,
+          "worst_case": 1627091.31,
+          "expected_range_low": 1945539.25,
+          "expected_range_high": 2923408.09,
+          "nominal_median": 2367835.01,
+          "real_median": 1462444.19
+        },
+        {
+          "year": 10,
+          "median": 2708322.2,
+          "best_case": 4131056.72,
+          "worst_case": 1837026.92,
+          "expected_range_low": 2190734.75,
+          "expected_range_high": 3397244.34,
+          "nominal_median": 2708322.2,
+          "real_median": 1585534.64
+        }
+      ]
+    }
+  ],
+  "explanation_summary": "Based on 10,000 simulated market paths using the assumptions defined in TrustVest AI, your recommended portfolio has approximately a 55% probability of reaching your goal amount of ₹2,500,000 over the selected 10-year horizon. The median projected portfolio value is ₹2,591,646, with an illustrative 10th–90th percentile range of ₹1,862,666 to ₹3,672,926. After adjusting for inflation, the median real value is approximately ₹1,517,229. These are simulated outcomes intended for educational purposes and should not be interpreted as predictions. The illustration assumes an initial investment of ₹350,000 and a monthly contribution of ₹10,000.",
+  "educational_disclaimer": "This simulation is based on statistical assumptions and historical-style modeling. It is for educational purposes only and does not constitute investment advice or a prediction of future market performance."
+}

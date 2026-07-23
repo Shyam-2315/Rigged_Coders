@@ -1,5 +1,27 @@
 # Changelog
 
+## v0.7.0
+
+Added
+
+- [x] Monte Carlo Simulation
+- [x] Goal Probability Analysis
+- [x] Inflation-adjusted Projections
+- [x] Portfolio Analytics
+- [x] Scenario Comparison
+- [x] Financial Projection Reports
+
+## v0.6.0
+
+Added
+
+- [x] Product retrieval from the Phase 5 investment knowledge base
+- [x] Deterministic weighted product scoring and repository-backed recommendation facade
+- [x] Strategy-based portfolio optimizer and constrained allocation engine
+- [x] Portfolio health metrics, product-level explanations, trade-offs, and actionable insights
+- [x] Conservative, recommended, and growth alternative portfolios
+- [x] Versioned recommendation rules plus generated portfolio examples and metrics reports
+
 ## v0.5.0
 
 Added

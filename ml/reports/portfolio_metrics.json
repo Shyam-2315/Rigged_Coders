@@ -1,0 +1,34 @@
+{
+  "version": "v0.6.0",
+  "catalog_product_count": 25,
+  "rules": {
+    "version": "v0.6.0",
+    "scoring_weights": {
+      "goal_match": 20.0,
+      "risk_match": 15.0,
+      "persona_match": 10.0,
+      "expected_return": 10.0,
+      "liquidity": 8.0,
+      "tax_efficiency": 7.0,
+      "inflation_protection": 7.0,
+      "trust_score": 7.0,
+      "popularity": 4.0,
+      "diversification_value": 7.0,
+      "budget_compatibility": 5.0
+    },
+    "portfolio_constraints": {
+      "minimum_products": 3,
+      "maximum_products": 6,
+      "minimum_allocation_percent": 5.0,
+      "maximum_single_product_percent": 60.0
+    },
+    "emergency_fund_target_months": 6.0,
+    "method": "Deterministic educational portfolio illustration; not a market forecast or investment advice."
+  },
+  "sample_portfolio_scores": {
+    "Balanced long-term wealth illustration": 81,
+    "Conservative near-term illustration": 72,
+    "Growth-oriented retirement illustration": 82
+  },
+  "disclaimer": "Educational illustration only; this deterministic tool does not provide regulated financial advice, predict market returns, or recommend a transaction. Review suitability, costs, tax rules, and product terms with a qualified professional before investing."
+}

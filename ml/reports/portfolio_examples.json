@@ -1,0 +1,1934 @@
+[
+  {
+    "name": "Balanced long-term wealth illustration",
+    "input": {
+      "credit_score": 760,
+      "risk_profile": "Medium",
+      "behavioral_persona": "Balanced Builder",
+      "monthly_income": 85000,
+      "monthly_savings": 22000,
+      "monthly_budget": 10000,
+      "existing_savings": 350000,
+      "investment_goal": "Wealth Creation",
+      "investment_horizon": 10,
+      "age": 31,
+      "dependents": 1,
+      "emergency_fund_months": 5,
+      "income_stability": "High"
+    },
+    "output": {
+      "portfolio_score": 81,
+      "expected_return_range": "6.6%–10.3%",
+      "expected_annual_return_min": 6.64,
+      "expected_annual_return_max": 10.28,
+      "estimated_risk": 11.66,
+      "risk_level": "Medium",
+      "monthly_budget": 10000,
+      "recommended_portfolio": [
+        {
+          "product": "Emergency Savings Account",
+          "product_id": "emergency-savings-account",
+          "asset_class": "Cash",
+          "allocation": 11.76,
+          "monthly_amount": 1176,
+          "expected_annual_return_min": 2.5,
+          "expected_annual_return_max": 5.0,
+          "risk_contribution": 0.0,
+          "liquidity_contribution": 11.76,
+          "selection_score": 61.73,
+          "score_breakdown": {
+            "goal_match": 25.0,
+            "risk_match": 75.0,
+            "persona_match": 100.0,
+            "expected_return": 12.5,
+            "liquidity": 100.0,
+            "tax_efficiency": 35.0,
+            "inflation_protection": 25.0,
+            "trust_score": 89.0,
+            "popularity": 95.0,
+            "diversification_value": 100.0,
+            "budget_compatibility": 100.0
+          },
+          "reason": "Emergency Savings Account is included because It keeps part of the plan accessible for short-term needs and resilience. It is used as a diversification sleeve rather than the primary goal vehicle. Its allocation balances its score, asset-class role, minimum investment, and concentration cap.",
+          "potential_risks": [
+            "Interest may not keep up with inflation",
+            "Deposit insurance limits and bank terms apply",
+            "Rates can change"
+          ]
+        },
+        {
+          "product": "Index Fund",
+          "product_id": "index-fund",
+          "asset_class": "Equity",
+          "allocation": 42.07,
+          "monthly_amount": 4207,
+          "expected_annual_return_min": 9.0,
+          "expected_annual_return_max": 13.0,
+          "risk_contribution": 6.731,
+          "liquidity_contribution": 25.242,
+          "selection_score": 84.19,
+          "score_breakdown": {
+            "goal_match": 100.0,
+            "risk_match": 100.0,
+            "persona_match": 100.0,
+            "expected_return": 64.28571428571429,
+            "liquidity": 60.0,
+            "tax_efficiency": 65.0,
+            "inflation_protection": 25.0,
+            "trust_score": 86.0,
+            "popularity": 91.0,
+            "diversification_value": 100.0,
+            "budget_compatibility": 100.0
+          },
+          "reason": "Index Fund is included because It provides diversified market-linked growth potential for a longer horizon. It directly supports the wealth creation goal. Its allocation balances its score, asset-class role, minimum investment, and concentration cap.",
+          "potential_risks": [
+            "Market value can fall substantially in the short term",
+            "Index concentration and tracking error are possible"
+          ]
+        },
+        {
+          "product": "Gilt Fund",
+          "product_id": "gilt-fund",
+          "asset_class": "Debt",
+          "allocation": 29.41,
+          "monthly_amount": 2941,
+          "expected_annual_return_min": 5.5,
+          "expected_annual_return_max": 8.5,
+          "risk_contribution": 1.912,
+          "liquidity_contribution": 17.646,
+          "selection_score": 64.89,
+          "score_breakdown": {
+            "goal_match": 25.0,
+            "risk_match": 100.0,
+            "persona_match": 100.0,
+            "expected_return": 35.714285714285715,
+            "liquidity": 60.0,
+            "tax_efficiency": 65.0,
+            "inflation_protection": 25.0,
+            "trust_score": 86.0,
+            "popularity": 55.0,
+            "diversification_value": 100.0,
+            "budget_compatibility": 100.0
+          },
+          "reason": "Gilt Fund is included because It adds a comparatively stable fixed-income component and helps balance equity risk. It is used as a diversification sleeve rather than the primary goal vehicle. Its allocation balances its score, asset-class role, minimum investment, and concentration cap.",
+          "potential_risks": [
+            "Long-duration gilts can fluctuate sharply when rates change",
+            "Returns are not fixed"
+          ]
+        },
+        {
+          "product": "Gold ETF",
+          "product_id": "gold-etf",
+          "asset_class": "Gold",
+          "allocation": 11.76,
+          "monthly_amount": 1176,
+          "expected_annual_return_min": 5.0,
+          "expected_annual_return_max": 10.0,
+          "risk_contribution": 2.117,
+          "liquidity_contribution": 9.408,
+          "selection_score": 87.94,
+          "score_breakdown": {
+            "goal_match": 100.0,
+            "risk_match": 100.0,
+            "persona_match": 100.0,
+            "expected_return": 39.285714285714285,
+            "liquidity": 80.0,
+            "tax_efficiency": 65.0,
+            "inflation_protection": 100.0,
+            "trust_score": 82.0,
+            "popularity": 83.0,
+            "diversification_value": 100.0,
+            "budget_compatibility": 100.0
+          },
+          "reason": "Gold ETF is included because It adds an asset that can diversify equity exposure and may help with inflation protection. It directly supports the wealth creation goal. Its allocation balances its score, asset-class role, minimum investment, and concentration cap.",
+          "potential_risks": [
+            "Gold prices can be volatile",
+            "No cash income",
+            "Trading requires market access and may involve tracking error"
+          ]
+        },
+        {
+          "product": "REIT",
+          "product_id": "reit",
+          "asset_class": "Real Assets",
+          "allocation": 5.0,
+          "monthly_amount": 500,
+          "expected_annual_return_min": 7.0,
+          "expected_annual_return_max": 11.0,
+          "risk_contribution": 0.9,
+          "liquidity_contribution": 4.0,
+          "selection_score": 82.73,
+          "score_breakdown": {
+            "goal_match": 100.0,
+            "risk_match": 100.0,
+            "persona_match": 100.0,
+            "expected_return": 50.0,
+            "liquidity": 80.0,
+            "tax_efficiency": 65.0,
+            "inflation_protection": 25.0,
+            "trust_score": 77.0,
+            "popularity": 66.0,
+            "diversification_value": 100.0,
+            "budget_compatibility": 100.0
+          },
+          "reason": "REIT is included because It broadens exposure beyond conventional equity and debt, while retaining market risk. It directly supports the wealth creation goal. Its allocation balances its score, asset-class role, minimum investment, and concentration cap.",
+          "potential_risks": [
+            "Unit prices can be volatile",
+            "Rental income and property valuations can change",
+            "Market liquidity varies"
+          ]
+        }
+      ],
+      "portfolio_health": {
+        "Diversification": 91,
+        "Risk Alignment": 93,
+        "Liquidity": 68,
+        "Inflation Protection": 57,
+        "Goal Alignment": 100,
+        "Tax Efficiency": 61,
+        "Portfolio Stability": 74,
+        "Overall Portfolio Score": 81
+      },
+      "alternative_portfolios": {
+        "conservative": {
+          "style": "Conservative",
+          "expected_return_range": "5.4%–8.8%",
+          "expected_annual_return_min": 5.41,
+          "expected_annual_return_max": 8.79,
+          "estimated_risk": 8.77,
+          "risk_level": "Medium",
+          "allocation": [
+            {
+              "product": "Emergency Savings Account",
+              "product_id": "emergency-savings-account",
+              "asset_class": "Cash",
+              "allocation": 26.67,
+              "monthly_amount": 2667,
+              "expected_annual_return_min": 2.5,
+              "expected_annual_return_max": 5.0,
+              "risk_contribution": 0.0,
+              "liquidity_contribution": 26.67,
+              "selection_score": 61.73,
+              "score_breakdown": {
+                "goal_match": 25.0,
+                "risk_match": 75.0,
+                "persona_match": 100.0,
+                "expected_return": 12.5,
+                "liquidity": 100.0,
+                "tax_efficiency": 35.0,
+                "inflation_protection": 25.0,
+                "trust_score": 89.0,
+                "popularity": 95.0,
+                "diversification_value": 100.0,
+                "budget_compatibility": 100.0
+              },
+              "reason": "Emergency Savings Account is included because It keeps part of the plan accessible for short-term needs and resilience. It is used as a diversification sleeve rather than the primary goal vehicle. Its allocation reflects the conservative tilt.",
+              "potential_risks": [
+                "Interest may not keep up with inflation",
+                "Deposit insurance limits and bank terms apply",
+                "Rates can change"
+              ]
+            },
+            {
+              "product": "Gilt Fund",
+              "product_id": "gilt-fund",
+              "asset_class": "Debt",
+              "allocation": 35.0,
+              "monthly_amount": 3500,
+              "expected_annual_return_min": 5.5,
+              "expected_annual_return_max": 8.5,
+              "risk_contribution": 2.275,
+              "liquidity_contribution": 21.0,
+              "selection_score": 64.89,
+              "score_breakdown": {
+                "goal_match": 25.0,
+                "risk_match": 100.0,
+                "persona_match": 100.0,
+                "expected_return": 35.714285714285715,
+                "liquidity": 60.0,
+                "tax_efficiency": 65.0,
+                "inflation_protection": 25.0,
+                "trust_score": 86.0,
+                "popularity": 55.0,
+                "diversification_value": 100.0,
+                "budget_compatibility": 100.0
+              },
+              "reason": "Gilt Fund is included because It adds a comparatively stable fixed-income component and helps balance equity risk. It is used as a diversification sleeve rather than the primary goal vehicle. Its allocation reflects the conservative tilt.",
+              "potential_risks": [
+                "Long-duration gilts can fluctuate sharply when rates change",
+                "Returns are not fixed"
+              ]
+            },
+            {
+              "product": "Index Fund",
+              "product_id": "index-fund",
+              "asset_class": "Equity",
+              "allocation": 20.0,
+              "monthly_amount": 2000,
+              "expected_annual_return_min": 9.0,
+              "expected_annual_return_max": 13.0,
+              "risk_contribution": 3.2,
+              "liquidity_contribution": 12.0,
+              "selection_score": 84.19,
+              "score_breakdown": {
+                "goal_match": 100.0,
+                "risk_match": 100.0,
+                "persona_match": 100.0,
+                "expected_return": 64.28571428571429,
+                "liquidity": 60.0,
+                "tax_efficiency": 65.0,
+                "inflation_protection": 25.0,
+                "trust_score": 86.0,
+                "popularity": 91.0,
+                "diversification_value": 100.0,
+                "budget_compatibility": 100.0
+              },
+              "reason": "Index Fund is included because It provides diversified market-linked growth potential for a longer horizon. It directly supports the wealth creation goal. Its allocation reflects the conservative tilt.",
+              "potential_risks": [
+                "Market value can fall substantially in the short term",
+                "Index concentration and tracking error are possible"
+              ]
+            },
+            {
+              "product": "Gold ETF",
+              "product_id": "gold-etf",
+              "asset_class": "Gold",
+              "allocation": 13.33,
+              "monthly_amount": 1333,
+              "expected_annual_return_min": 5.0,
+              "expected_annual_return_max": 10.0,
+              "risk_contribution": 2.399,
+              "liquidity_contribution": 10.664,
+              "selection_score": 87.94,
+              "score_breakdown": {
+                "goal_match": 100.0,
+                "risk_match": 100.0,
+                "persona_match": 100.0,
+                "expected_return": 39.285714285714285,
+                "liquidity": 80.0,
+                "tax_efficiency": 65.0,
+                "inflation_protection": 100.0,
+                "trust_score": 82.0,
+                "popularity": 83.0,
+                "diversification_value": 100.0,
+                "budget_compatibility": 100.0
+              },
+              "reason": "Gold ETF is included because It adds an asset that can diversify equity exposure and may help with inflation protection. It directly supports the wealth creation goal. Its allocation reflects the conservative tilt.",
+              "potential_risks": [
+                "Gold prices can be volatile",
+                "No cash income",
+                "Trading requires market access and may involve tracking error"
+              ]
+            },
+            {
+              "product": "REIT",
+              "product_id": "reit",
+              "asset_class": "Real Assets",
+              "allocation": 5.0,
+              "monthly_amount": 500,
+              "expected_annual_return_min": 7.0,
+              "expected_annual_return_max": 11.0,
+              "risk_contribution": 0.9,
+              "liquidity_contribution": 4.0,
+              "selection_score": 82.73,
+              "score_breakdown": {
+                "goal_match": 100.0,
+                "risk_match": 100.0,
+                "persona_match": 100.0,
+                "expected_return": 50.0,
+                "liquidity": 80.0,
+                "tax_efficiency": 65.0,
+                "inflation_protection": 25.0,
+                "trust_score": 77.0,
+                "popularity": 66.0,
+                "diversification_value": 100.0,
+                "budget_compatibility": 100.0
+              },
+              "reason": "REIT is included because It broadens exposure beyond conventional equity and debt, while retaining market risk. It directly supports the wealth creation goal. Its allocation reflects the conservative tilt.",
+              "potential_risks": [
+                "Unit prices can be volatile",
+                "Rental income and property valuations can change",
+                "Market liquidity varies"
+              ]
+            }
+          ],
+          "portfolio_health": {
+            "Diversification": 92,
+            "Risk Alignment": 94,
+            "Liquidity": 74,
+            "Inflation Protection": 51,
+            "Goal Alignment": 93,
+            "Tax Efficiency": 57,
+            "Portfolio Stability": 84,
+            "Overall Portfolio Score": 80
+          }
+        },
+        "recommended": {
+          "style": "Recommended",
+          "expected_return_range": "6.6%–10.3%",
+          "expected_annual_return_min": 6.64,
+          "expected_annual_return_max": 10.28,
+          "estimated_risk": 11.66,
+          "risk_level": "Medium",
+          "allocation": [
+            {
+              "product": "Emergency Savings Account",
+              "product_id": "emergency-savings-account",
+              "asset_class": "Cash",
+              "allocation": 11.76,
+              "monthly_amount": 1176,
+              "expected_annual_return_min": 2.5,
+              "expected_annual_return_max": 5.0,
+              "risk_contribution": 0.0,
+              "liquidity_contribution": 11.76,
+              "selection_score": 61.73,
+              "score_breakdown": {
+                "goal_match": 25.0,
+                "risk_match": 75.0,
+                "persona_match": 100.0,
+                "expected_return": 12.5,
+                "liquidity": 100.0,
+                "tax_efficiency": 35.0,
+                "inflation_protection": 25.0,
+                "trust_score": 89.0,
+                "popularity": 95.0,
+                "diversification_value": 100.0,
+                "budget_compatibility": 100.0
+              },
+              "reason": "Emergency Savings Account is included because It keeps part of the plan accessible for short-term needs and resilience. It is used as a diversification sleeve rather than the primary goal vehicle. Its allocation balances its score, asset-class role, minimum investment, and concentration cap.",
+              "potential_risks": [
+                "Interest may not keep up with inflation",
+                "Deposit insurance limits and bank terms apply",
+                "Rates can change"
+              ]
+            },
+            {
+              "product": "Index Fund",
+              "product_id": "index-fund",
+              "asset_class": "Equity",
+              "allocation": 42.07,
+              "monthly_amount": 4207,
+              "expected_annual_return_min": 9.0,
+              "expected_annual_return_max": 13.0,
+              "risk_contribution": 6.731,
+              "liquidity_contribution": 25.242,
+              "selection_score": 84.19,
+              "score_breakdown": {
+                "goal_match": 100.0,
+                "risk_match": 100.0,
+                "persona_match": 100.0,
+                "expected_return": 64.28571428571429,
+                "liquidity": 60.0,
+                "tax_efficiency": 65.0,
+                "inflation_protection": 25.0,
+                "trust_score": 86.0,
+                "popularity": 91.0,
+                "diversification_value": 100.0,
+                "budget_compatibility": 100.0
+              },
+              "reason": "Index Fund is included because It provides diversified market-linked growth potential for a longer horizon. It directly supports the wealth creation goal. Its allocation balances its score, asset-class role, minimum investment, and concentration cap.",
+              "potential_risks": [
+                "Market value can fall substantially in the short term",
+                "Index concentration and tracking error are possible"
+              ]
+            },
+            {
+              "product": "Gilt Fund",
+              "product_id": "gilt-fund",
+              "asset_class": "Debt",
+              "allocation": 29.41,
+              "monthly_amount": 2941,
+              "expected_annual_return_min": 5.5,
+              "expected_annual_return_max": 8.5,
+              "risk_contribution": 1.912,
+              "liquidity_contribution": 17.646,
+              "selection_score": 64.89,
+              "score_breakdown": {
+                "goal_match": 25.0,
+                "risk_match": 100.0,
+                "persona_match": 100.0,
+                "expected_return": 35.714285714285715,
+                "liquidity": 60.0,
+                "tax_efficiency": 65.0,
+                "inflation_protection": 25.0,
+                "trust_score": 86.0,
+                "popularity": 55.0,
+                "diversification_value": 100.0,
+                "budget_compatibility": 100.0
+              },
+              "reason": "Gilt Fund is included because It adds a comparatively stable fixed-income component and helps balance equity risk. It is used as a diversification sleeve rather than the primary goal vehicle. Its allocation balances its score, asset-class role, minimum investment, and concentration cap.",
+              "potential_risks": [
+                "Long-duration gilts can fluctuate sharply when rates change",
+                "Returns are not fixed"
+              ]
+            },
+            {
+              "product": "Gold ETF",
+              "product_id": "gold-etf",
+              "asset_class": "Gold",
+              "allocation": 11.76,
+              "monthly_amount": 1176,
+              "expected_annual_return_min": 5.0,
+              "expected_annual_return_max": 10.0,
+              "risk_contribution": 2.117,
+              "liquidity_contribution": 9.408,
+              "selection_score": 87.94,
+              "score_breakdown": {
+                "goal_match": 100.0,
+                "risk_match": 100.0,
+                "persona_match": 100.0,
+                "expected_return": 39.285714285714285,
+                "liquidity": 80.0,
+                "tax_efficiency": 65.0,
+                "inflation_protection": 100.0,
+                "trust_score": 82.0,
+                "popularity": 83.0,
+                "diversification_value": 100.0,
+                "budget_compatibility": 100.0
+              },
+              "reason": "Gold ETF is included because It adds an asset that can diversify equity exposure and may help with inflation protection. It directly supports the wealth creation goal. Its allocation balances its score, asset-class role, minimum investment, and concentration cap.",
+              "potential_risks": [
+                "Gold prices can be volatile",
+                "No cash income",
+                "Trading requires market access and may involve tracking error"
+              ]
+            },
+            {
+              "product": "REIT",
+              "product_id": "reit",
+              "asset_class": "Real Assets",
+              "allocation": 5.0,
+              "monthly_amount": 500,
+              "expected_annual_return_min": 7.0,
+              "expected_annual_return_max": 11.0,
+              "risk_contribution": 0.9,
+              "liquidity_contribution": 4.0,
+              "selection_score": 82.73,
+              "score_breakdown": {
+                "goal_match": 100.0,
+                "risk_match": 100.0,
+                "persona_match": 100.0,
+                "expected_return": 50.0,
+                "liquidity": 80.0,
+                "tax_efficiency": 65.0,
+                "inflation_protection": 25.0,
+                "trust_score": 77.0,
+                "popularity": 66.0,
+                "diversification_value": 100.0,
+                "budget_compatibility": 100.0
+              },
+              "reason": "REIT is included because It broadens exposure beyond conventional equity and debt, while retaining market risk. It directly supports the wealth creation goal. Its allocation balances its score, asset-class role, minimum investment, and concentration cap.",
+              "potential_risks": [
+                "Unit prices can be volatile",
+                "Rental income and property valuations can change",
+                "Market liquidity varies"
+              ]
+            }
+          ],
+          "portfolio_health": {
+            "Diversification": 91,
+            "Risk Alignment": 93,
+            "Liquidity": 68,
+            "Inflation Protection": 57,
+            "Goal Alignment": 100,
+            "Tax Efficiency": 61,
+            "Portfolio Stability": 74,
+            "Overall Portfolio Score": 81
+          }
+        },
+        "growth": {
+          "style": "Growth",
+          "expected_return_range": "7.4%–11.3%",
+          "expected_annual_return_min": 7.44,
+          "expected_annual_return_max": 11.32,
+          "estimated_risk": 13.88,
+          "risk_level": "Medium",
+          "allocation": [
+            {
+              "product": "Emergency Savings Account",
+              "product_id": "emergency-savings-account",
+              "asset_class": "Cash",
+              "allocation": 5.56,
+              "monthly_amount": 556,
+              "expected_annual_return_min": 2.5,
+              "expected_annual_return_max": 5.0,
+              "risk_contribution": 0.0,
+              "liquidity_contribution": 5.56,
+              "selection_score": 61.73,
+              "score_breakdown": {
+                "goal_match": 25.0,
+                "risk_match": 75.0,
+                "persona_match": 100.0,
+                "expected_return": 12.5,
+                "liquidity": 100.0,
+                "tax_efficiency": 35.0,
+                "inflation_protection": 25.0,
+                "trust_score": 89.0,
+                "popularity": 95.0,
+                "diversification_value": 100.0,
+                "budget_compatibility": 100.0
+              },
+              "reason": "Emergency Savings Account is included because It keeps part of the plan accessible for short-term needs and resilience. It is used as a diversification sleeve rather than the primary goal vehicle. Its allocation reflects the growth tilt within the stated risk ceiling.",
+              "potential_risks": [
+                "Interest may not keep up with inflation",
+                "Deposit insurance limits and bank terms apply",
+                "Rates can change"
+              ]
+            },
+            {
+              "product": "Index Fund",
+              "product_id": "index-fund",
+              "asset_class": "Equity",
+              "allocation": 60.0,
+              "monthly_amount": 6000,
+              "expected_annual_return_min": 9.0,
+              "expected_annual_return_max": 13.0,
+              "risk_contribution": 9.6,
+              "liquidity_contribution": 36.0,
+              "selection_score": 84.19,
+              "score_breakdown": {
+                "goal_match": 100.0,
+                "risk_match": 100.0,
+                "persona_match": 100.0,
+                "expected_return": 64.28571428571429,
+                "liquidity": 60.0,
+                "tax_efficiency": 65.0,
+                "inflation_protection": 25.0,
+                "trust_score": 86.0,
+                "popularity": 91.0,
+                "diversification_value": 100.0,
+                "budget_compatibility": 100.0
+              },
+              "reason": "Index Fund is included because It provides diversified market-linked growth potential for a longer horizon. It directly supports the wealth creation goal. Its allocation reflects the growth tilt within the stated risk ceiling.",
+              "potential_risks": [
+                "Market value can fall substantially in the short term",
+                "Index concentration and tracking error are possible"
+              ]
+            },
+            {
+              "product": "Gilt Fund",
+              "product_id": "gilt-fund",
+              "asset_class": "Debt",
+              "allocation": 16.67,
+              "monthly_amount": 1667,
+              "expected_annual_return_min": 5.5,
+              "expected_annual_return_max": 8.5,
+              "risk_contribution": 1.084,
+              "liquidity_contribution": 10.002,
+              "selection_score": 64.89,
+              "score_breakdown": {
+                "goal_match": 25.0,
+                "risk_match": 100.0,
+                "persona_match": 100.0,
+                "expected_return": 35.714285714285715,
+                "liquidity": 60.0,
+                "tax_efficiency": 65.0,
+                "inflation_protection": 25.0,
+                "trust_score": 86.0,
+                "popularity": 55.0,
+                "diversification_value": 100.0,
+                "budget_compatibility": 100.0
+              },
+              "reason": "Gilt Fund is included because It adds a comparatively stable fixed-income component and helps balance equity risk. It is used as a diversification sleeve rather than the primary goal vehicle. Its allocation reflects the growth tilt within the stated risk ceiling.",
+              "potential_risks": [
+                "Long-duration gilts can fluctuate sharply when rates change",
+                "Returns are not fixed"
+              ]
+            },
+            {
+              "product": "Gold ETF",
+              "product_id": "gold-etf",
+              "asset_class": "Gold",
+              "allocation": 12.77,
+              "monthly_amount": 1277,
+              "expected_annual_return_min": 5.0,
+              "expected_annual_return_max": 10.0,
+              "risk_contribution": 2.299,
+              "liquidity_contribution": 10.216,
+              "selection_score": 87.94,
+              "score_breakdown": {
+                "goal_match": 100.0,
+                "risk_match": 100.0,
+                "persona_match": 100.0,
+                "expected_return": 39.285714285714285,
+                "liquidity": 80.0,
+                "tax_efficiency": 65.0,
+                "inflation_protection": 100.0,
+                "trust_score": 82.0,
+                "popularity": 83.0,
+                "diversification_value": 100.0,
+                "budget_compatibility": 100.0
+              },
+              "reason": "Gold ETF is included because It adds an asset that can diversify equity exposure and may help with inflation protection. It directly supports the wealth creation goal. Its allocation reflects the growth tilt within the stated risk ceiling.",
+              "potential_risks": [
+                "Gold prices can be volatile",
+                "No cash income",
+                "Trading requires market access and may involve tracking error"
+              ]
+            },
+            {
+              "product": "REIT",
+              "product_id": "reit",
+              "asset_class": "Real Assets",
+              "allocation": 5.0,
+              "monthly_amount": 500,
+              "expected_annual_return_min": 7.0,
+              "expected_annual_return_max": 11.0,
+              "risk_contribution": 0.9,
+              "liquidity_contribution": 4.0,
+              "selection_score": 82.73,
+              "score_breakdown": {
+                "goal_match": 100.0,
+                "risk_match": 100.0,
+                "persona_match": 100.0,
+                "expected_return": 50.0,
+                "liquidity": 80.0,
+                "tax_efficiency": 65.0,
+                "inflation_protection": 25.0,
+                "trust_score": 77.0,
+                "popularity": 66.0,
+                "diversification_value": 100.0,
+                "budget_compatibility": 100.0
+              },
+              "reason": "REIT is included because It broadens exposure beyond conventional equity and debt, while retaining market risk. It directly supports the wealth creation goal. Its allocation reflects the growth tilt within the stated risk ceiling.",
+              "potential_risks": [
+                "Unit prices can be volatile",
+                "Rental income and property valuations can change",
+                "Market liquidity varies"
+              ]
+            }
+          ],
+          "portfolio_health": {
+            "Diversification": 88,
+            "Risk Alignment": 89,
+            "Liquidity": 66,
+            "Inflation Protection": 63,
+            "Goal Alignment": 100,
+            "Tax Efficiency": 63,
+            "Portfolio Stability": 68,
+            "Overall Portfolio Score": 80
+          }
+        }
+      },
+      "insights": [
+        "Consider progressing toward six months of emergency reserves to improve financial resilience.",
+        "If cash flow remains stable, you could review whether up to ₹12,000 of monthly savings is available for a higher SIP.",
+        "Consider checking whether tax-saving options such as ELSS, PPF, or NPS fit your eligibility, horizon, and current tax rules."
+      ],
+      "explanation_summary": "This recommended educational illustration spreads ₹10,000 across 5 products. Its weighted planning range is 6.6%–10.3% with illustrative volatility of 11.7%.",
+      "trade_offs": [
+        "Equity allocations can fluctuate substantially and may be unsuitable for money needed soon.",
+        "Gold can diversify a portfolio but may be volatile and does not generate regular income."
+      ],
+      "rules_version": "v0.6.0",
+      "educational_disclaimer": "Educational illustration only; this deterministic tool does not provide regulated financial advice, predict market returns, or recommend a transaction. Review suitability, costs, tax rules, and product terms with a qualified professional before investing."
+    }
+  },
+  {
+    "name": "Conservative near-term illustration",
+    "input": {
+      "credit_score": 690,
+      "risk_profile": "Low",
+      "behavioral_persona": "Conservative Planner",
+      "monthly_income": 60000,
+      "monthly_savings": 12000,
+      "monthly_budget": 6000,
+      "existing_savings": 70000,
+      "investment_goal": "Car",
+      "investment_horizon": 3,
+      "age": 38,
+      "dependents": 2,
+      "emergency_fund_months": 2,
+      "income_stability": "Medium",
+      "government_backed_preference": true
+    },
+    "output": {
+      "portfolio_score": 72,
+      "expected_return_range": "4.2%–6.4%",
+      "expected_annual_return_min": 4.25,
+      "expected_annual_return_max": 6.43,
+      "estimated_risk": 0.73,
+      "risk_level": "Low",
+      "monthly_budget": 6000,
+      "recommended_portfolio": [
+        {
+          "product": "Emergency Savings Account",
+          "product_id": "emergency-savings-account",
+          "asset_class": "Cash",
+          "allocation": 36.37,
+          "monthly_amount": 2182,
+          "expected_annual_return_min": 2.5,
+          "expected_annual_return_max": 5.0,
+          "risk_contribution": 0.0,
+          "liquidity_contribution": 36.367,
+          "selection_score": 80.48,
+          "score_breakdown": {
+            "goal_match": 100.0,
+            "risk_match": 100.0,
+            "persona_match": 100.0,
+            "expected_return": 12.5,
+            "liquidity": 100.0,
+            "tax_efficiency": 35.0,
+            "inflation_protection": 25.0,
+            "trust_score": 89.0,
+            "popularity": 95.0,
+            "diversification_value": 100.0,
+            "budget_compatibility": 100.0
+          },
+          "reason": "Emergency Savings Account is included because It keeps part of the plan accessible for short-term needs and resilience. It directly supports the car goal. Its allocation balances its score, asset-class role, minimum investment, and concentration cap.",
+          "potential_risks": [
+            "Interest may not keep up with inflation",
+            "Deposit insurance limits and bank terms apply",
+            "Rates can change"
+          ]
+        },
+        {
+          "product": "Liquid Fund",
+          "product_id": "liquid-fund",
+          "asset_class": "Debt",
+          "allocation": 31.85,
+          "monthly_amount": 1911,
+          "expected_annual_return_min": 5.0,
+          "expected_annual_return_max": 7.0,
+          "risk_contribution": 0.255,
+          "liquidity_contribution": 25.48,
+          "selection_score": 81.42,
+          "score_breakdown": {
+            "goal_match": 100.0,
+            "risk_match": 100.0,
+            "persona_match": 100.0,
+            "expected_return": 28.57142857142857,
+            "liquidity": 80.0,
+            "tax_efficiency": 65.0,
+            "inflation_protection": 25.0,
+            "trust_score": 82.0,
+            "popularity": 78.0,
+            "diversification_value": 100.0,
+            "budget_compatibility": 100.0
+          },
+          "reason": "Liquid Fund is included because It adds a comparatively stable fixed-income component and helps balance equity risk. It directly supports the car goal. Its allocation balances its score, asset-class role, minimum investment, and concentration cap.",
+          "potential_risks": [
+            "Returns can change with short-term interest rates",
+            "Not covered by a bank deposit guarantee"
+          ]
+        },
+        {
+          "product": "Ultra Short Duration Fund",
+          "product_id": "ultra-short-duration-fund",
+          "asset_class": "Debt",
+          "allocation": 31.78,
+          "monthly_amount": 1907,
+          "expected_annual_return_min": 5.5,
+          "expected_annual_return_max": 7.5,
+          "risk_contribution": 0.477,
+          "liquidity_contribution": 25.427,
+          "selection_score": 81.27,
+          "score_breakdown": {
+            "goal_match": 100.0,
+            "risk_match": 100.0,
+            "persona_match": 100.0,
+            "expected_return": 32.142857142857146,
+            "liquidity": 80.0,
+            "tax_efficiency": 65.0,
+            "inflation_protection": 25.0,
+            "trust_score": 80.0,
+            "popularity": 69.0,
+            "diversification_value": 100.0,
+            "budget_compatibility": 100.0
+          },
+          "reason": "Ultra Short Duration Fund is included because It adds a comparatively stable fixed-income component and helps balance equity risk. It directly supports the car goal. Its allocation balances its score, asset-class role, minimum investment, and concentration cap.",
+          "potential_risks": [
+            "Credit quality differs by fund",
+            "Net asset value can fluctuate modestly"
+          ]
+        }
+      ],
+      "portfolio_health": {
+        "Diversification": 57,
+        "Risk Alignment": 74,
+        "Liquidity": 87,
+        "Inflation Protection": 36,
+        "Goal Alignment": 100,
+        "Tax Efficiency": 54,
+        "Portfolio Stability": 100,
+        "Overall Portfolio Score": 72
+      },
+      "alternative_portfolios": {
+        "conservative": {
+          "style": "Conservative",
+          "expected_return_range": "4.1%–6.3%",
+          "expected_annual_return_min": 4.1,
+          "expected_annual_return_max": 6.31,
+          "estimated_risk": 0.67,
+          "risk_level": "Low",
+          "allocation": [
+            {
+              "product": "Emergency Savings Account",
+              "product_id": "emergency-savings-account",
+              "asset_class": "Cash",
+              "allocation": 41.67,
+              "monthly_amount": 2500,
+              "expected_annual_return_min": 2.5,
+              "expected_annual_return_max": 5.0,
+              "risk_contribution": 0.0,
+              "liquidity_contribution": 41.667,
+              "selection_score": 80.48,
+              "score_breakdown": {
+                "goal_match": 100.0,
+                "risk_match": 100.0,
+                "persona_match": 100.0,
+                "expected_return": 12.5,
+                "liquidity": 100.0,
+                "tax_efficiency": 35.0,
+                "inflation_protection": 25.0,
+                "trust_score": 89.0,
+                "popularity": 95.0,
+                "diversification_value": 100.0,
+                "budget_compatibility": 100.0
+              },
+              "reason": "Emergency Savings Account is included because It keeps part of the plan accessible for short-term needs and resilience. It directly supports the car goal. Its allocation reflects the conservative tilt.",
+              "potential_risks": [
+                "Interest may not keep up with inflation",
+                "Deposit insurance limits and bank terms apply",
+                "Rates can change"
+              ]
+            },
+            {
+              "product": "Liquid Fund",
+              "product_id": "liquid-fund",
+              "asset_class": "Debt",
+              "allocation": 29.2,
+              "monthly_amount": 1752,
+              "expected_annual_return_min": 5.0,
+              "expected_annual_return_max": 7.0,
+              "risk_contribution": 0.234,
+              "liquidity_contribution": 23.36,
+              "selection_score": 81.42,
+              "score_breakdown": {
+                "goal_match": 100.0,
+                "risk_match": 100.0,
+                "persona_match": 100.0,
+                "expected_return": 28.57142857142857,
+                "liquidity": 80.0,
+                "tax_efficiency": 65.0,
+                "inflation_protection": 25.0,
+                "trust_score": 82.0,
+                "popularity": 78.0,
+                "diversification_value": 100.0,
+                "budget_compatibility": 100.0
+              },
+              "reason": "Liquid Fund is included because It adds a comparatively stable fixed-income component and helps balance equity risk. It directly supports the car goal. Its allocation reflects the conservative tilt.",
+              "potential_risks": [
+                "Returns can change with short-term interest rates",
+                "Not covered by a bank deposit guarantee"
+              ]
+            },
+            {
+              "product": "Ultra Short Duration Fund",
+              "product_id": "ultra-short-duration-fund",
+              "asset_class": "Debt",
+              "allocation": 29.13,
+              "monthly_amount": 1748,
+              "expected_annual_return_min": 5.5,
+              "expected_annual_return_max": 7.5,
+              "risk_contribution": 0.437,
+              "liquidity_contribution": 23.307,
+              "selection_score": 81.27,
+              "score_breakdown": {
+                "goal_match": 100.0,
+                "risk_match": 100.0,
+                "persona_match": 100.0,
+                "expected_return": 32.142857142857146,
+                "liquidity": 80.0,
+                "tax_efficiency": 65.0,
+                "inflation_protection": 25.0,
+                "trust_score": 80.0,
+                "popularity": 69.0,
+                "diversification_value": 100.0,
+                "budget_compatibility": 100.0
+              },
+              "reason": "Ultra Short Duration Fund is included because It adds a comparatively stable fixed-income component and helps balance equity risk. It directly supports the car goal. Its allocation reflects the conservative tilt.",
+              "potential_risks": [
+                "Credit quality differs by fund",
+                "Net asset value can fluctuate modestly"
+              ]
+            }
+          ],
+          "portfolio_health": {
+            "Diversification": 56,
+            "Risk Alignment": 88,
+            "Liquidity": 88,
+            "Inflation Protection": 36,
+            "Goal Alignment": 100,
+            "Tax Efficiency": 52,
+            "Portfolio Stability": 100,
+            "Overall Portfolio Score": 75
+          }
+        },
+        "recommended": {
+          "style": "Recommended",
+          "expected_return_range": "4.2%–6.4%",
+          "expected_annual_return_min": 4.25,
+          "expected_annual_return_max": 6.43,
+          "estimated_risk": 0.73,
+          "risk_level": "Low",
+          "allocation": [
+            {
+              "product": "Emergency Savings Account",
+              "product_id": "emergency-savings-account",
+              "asset_class": "Cash",
+              "allocation": 36.37,
+              "monthly_amount": 2182,
+              "expected_annual_return_min": 2.5,
+              "expected_annual_return_max": 5.0,
+              "risk_contribution": 0.0,
+              "liquidity_contribution": 36.367,
+              "selection_score": 80.48,
+              "score_breakdown": {
+                "goal_match": 100.0,
+                "risk_match": 100.0,
+                "persona_match": 100.0,
+                "expected_return": 12.5,
+                "liquidity": 100.0,
+                "tax_efficiency": 35.0,
+                "inflation_protection": 25.0,
+                "trust_score": 89.0,
+                "popularity": 95.0,
+                "diversification_value": 100.0,
+                "budget_compatibility": 100.0
+              },
+              "reason": "Emergency Savings Account is included because It keeps part of the plan accessible for short-term needs and resilience. It directly supports the car goal. Its allocation balances its score, asset-class role, minimum investment, and concentration cap.",
+              "potential_risks": [
+                "Interest may not keep up with inflation",
+                "Deposit insurance limits and bank terms apply",
+                "Rates can change"
+              ]
+            },
+            {
+              "product": "Liquid Fund",
+              "product_id": "liquid-fund",
+              "asset_class": "Debt",
+              "allocation": 31.85,
+              "monthly_amount": 1911,
+              "expected_annual_return_min": 5.0,
+              "expected_annual_return_max": 7.0,
+              "risk_contribution": 0.255,
+              "liquidity_contribution": 25.48,
+              "selection_score": 81.42,
+              "score_breakdown": {
+                "goal_match": 100.0,
+                "risk_match": 100.0,
+                "persona_match": 100.0,
+                "expected_return": 28.57142857142857,
+                "liquidity": 80.0,
+                "tax_efficiency": 65.0,
+                "inflation_protection": 25.0,
+                "trust_score": 82.0,
+                "popularity": 78.0,
+                "diversification_value": 100.0,
+                "budget_compatibility": 100.0
+              },
+              "reason": "Liquid Fund is included because It adds a comparatively stable fixed-income component and helps balance equity risk. It directly supports the car goal. Its allocation balances its score, asset-class role, minimum investment, and concentration cap.",
+              "potential_risks": [
+                "Returns can change with short-term interest rates",
+                "Not covered by a bank deposit guarantee"
+              ]
+            },
+            {
+              "product": "Ultra Short Duration Fund",
+              "product_id": "ultra-short-duration-fund",
+              "asset_class": "Debt",
+              "allocation": 31.78,
+              "monthly_amount": 1907,
+              "expected_annual_return_min": 5.5,
+              "expected_annual_return_max": 7.5,
+              "risk_contribution": 0.477,
+              "liquidity_contribution": 25.427,
+              "selection_score": 81.27,
+              "score_breakdown": {
+                "goal_match": 100.0,
+                "risk_match": 100.0,
+                "persona_match": 100.0,
+                "expected_return": 32.142857142857146,
+                "liquidity": 80.0,
+                "tax_efficiency": 65.0,
+                "inflation_protection": 25.0,
+                "trust_score": 80.0,
+                "popularity": 69.0,
+                "diversification_value": 100.0,
+                "budget_compatibility": 100.0
+              },
+              "reason": "Ultra Short Duration Fund is included because It adds a comparatively stable fixed-income component and helps balance equity risk. It directly supports the car goal. Its allocation balances its score, asset-class role, minimum investment, and concentration cap.",
+              "potential_risks": [
+                "Credit quality differs by fund",
+                "Net asset value can fluctuate modestly"
+              ]
+            }
+          ],
+          "portfolio_health": {
+            "Diversification": 57,
+            "Risk Alignment": 74,
+            "Liquidity": 87,
+            "Inflation Protection": 36,
+            "Goal Alignment": 100,
+            "Tax Efficiency": 54,
+            "Portfolio Stability": 100,
+            "Overall Portfolio Score": 72
+          }
+        },
+        "growth": {
+          "style": "Growth",
+          "expected_return_range": "4.4%–6.6%",
+          "expected_annual_return_min": 4.42,
+          "expected_annual_return_max": 6.57,
+          "estimated_risk": 0.8,
+          "risk_level": "Low",
+          "allocation": [
+            {
+              "product": "Emergency Savings Account",
+              "product_id": "emergency-savings-account",
+              "asset_class": "Cash",
+              "allocation": 30.0,
+              "monthly_amount": 1800,
+              "expected_annual_return_min": 2.5,
+              "expected_annual_return_max": 5.0,
+              "risk_contribution": 0.0,
+              "liquidity_contribution": 30.0,
+              "selection_score": 80.48,
+              "score_breakdown": {
+                "goal_match": 100.0,
+                "risk_match": 100.0,
+                "persona_match": 100.0,
+                "expected_return": 12.5,
+                "liquidity": 100.0,
+                "tax_efficiency": 35.0,
+                "inflation_protection": 25.0,
+                "trust_score": 89.0,
+                "popularity": 95.0,
+                "diversification_value": 100.0,
+                "budget_compatibility": 100.0
+              },
+              "reason": "Emergency Savings Account is included because It keeps part of the plan accessible for short-term needs and resilience. It directly supports the car goal. Its allocation reflects the growth tilt within the stated risk ceiling.",
+              "potential_risks": [
+                "Interest may not keep up with inflation",
+                "Deposit insurance limits and bank terms apply",
+                "Rates can change"
+              ]
+            },
+            {
+              "product": "Liquid Fund",
+              "product_id": "liquid-fund",
+              "asset_class": "Debt",
+              "allocation": 35.03,
+              "monthly_amount": 2102,
+              "expected_annual_return_min": 5.0,
+              "expected_annual_return_max": 7.0,
+              "risk_contribution": 0.28,
+              "liquidity_contribution": 28.027,
+              "selection_score": 81.42,
+              "score_breakdown": {
+                "goal_match": 100.0,
+                "risk_match": 100.0,
+                "persona_match": 100.0,
+                "expected_return": 28.57142857142857,
+                "liquidity": 80.0,
+                "tax_efficiency": 65.0,
+                "inflation_protection": 25.0,
+                "trust_score": 82.0,
+                "popularity": 78.0,
+                "diversification_value": 100.0,
+                "budget_compatibility": 100.0
+              },
+              "reason": "Liquid Fund is included because It adds a comparatively stable fixed-income component and helps balance equity risk. It directly supports the car goal. Its allocation reflects the growth tilt within the stated risk ceiling.",
+              "potential_risks": [
+                "Returns can change with short-term interest rates",
+                "Not covered by a bank deposit guarantee"
+              ]
+            },
+            {
+              "product": "Ultra Short Duration Fund",
+              "product_id": "ultra-short-duration-fund",
+              "asset_class": "Debt",
+              "allocation": 34.97,
+              "monthly_amount": 2098,
+              "expected_annual_return_min": 5.5,
+              "expected_annual_return_max": 7.5,
+              "risk_contribution": 0.524,
+              "liquidity_contribution": 27.973,
+              "selection_score": 81.27,
+              "score_breakdown": {
+                "goal_match": 100.0,
+                "risk_match": 100.0,
+                "persona_match": 100.0,
+                "expected_return": 32.142857142857146,
+                "liquidity": 80.0,
+                "tax_efficiency": 65.0,
+                "inflation_protection": 25.0,
+                "trust_score": 80.0,
+                "popularity": 69.0,
+                "diversification_value": 100.0,
+                "budget_compatibility": 100.0
+              },
+              "reason": "Ultra Short Duration Fund is included because It adds a comparatively stable fixed-income component and helps balance equity risk. It directly supports the car goal. Its allocation reflects the growth tilt within the stated risk ceiling.",
+              "potential_risks": [
+                "Credit quality differs by fund",
+                "Net asset value can fluctuate modestly"
+              ]
+            }
+          ],
+          "portfolio_health": {
+            "Diversification": 57,
+            "Risk Alignment": 59,
+            "Liquidity": 86,
+            "Inflation Protection": 36,
+            "Goal Alignment": 100,
+            "Tax Efficiency": 56,
+            "Portfolio Stability": 100,
+            "Overall Portfolio Score": 69
+          }
+        }
+      },
+      "insights": [
+        "Consider building at least three months of emergency reserves before increasing exposure to less-liquid products.",
+        "If cash flow remains stable, you could review whether up to ₹6,000 of monthly savings is available for a higher SIP.",
+        "Consider checking whether tax-saving options such as ELSS, PPF, or NPS fit your eligibility, horizon, and current tax rules.",
+        "A shorter horizon can make market-linked products less predictable; keep near-term goal money accessible."
+      ],
+      "explanation_summary": "This recommended educational illustration spreads ₹6,000 across 3 products. Its weighted planning range is 4.2%–6.4% with illustrative volatility of 0.7%.",
+      "trade_offs": [
+        "Limited emergency reserves can make even a diversified investment plan harder to sustain during a disruption."
+      ],
+      "rules_version": "v0.6.0",
+      "educational_disclaimer": "Educational illustration only; this deterministic tool does not provide regulated financial advice, predict market returns, or recommend a transaction. Review suitability, costs, tax rules, and product terms with a qualified professional before investing."
+    }
+  },
+  {
+    "name": "Growth-oriented retirement illustration",
+    "input": {
+      "credit_score": 790,
+      "risk_profile": "High",
+      "behavioral_persona": "Growth Explorer",
+      "monthly_income": 140000,
+      "monthly_savings": 45000,
+      "monthly_budget": 25000,
+      "existing_savings": 900000,
+      "investment_goal": "Retirement",
+      "investment_horizon": 20,
+      "age": 29,
+      "dependents": 0,
+      "emergency_fund_months": 8,
+      "income_stability": "High"
+    },
+    "output": {
+      "portfolio_score": 82,
+      "expected_return_range": "7.5%–12.8%",
+      "expected_annual_return_min": 7.45,
+      "expected_annual_return_max": 12.82,
+      "estimated_risk": 16.48,
+      "risk_level": "Medium",
+      "monthly_budget": 25000,
+      "recommended_portfolio": [
+        {
+          "product": "ELSS",
+          "product_id": "elss",
+          "asset_class": "Equity",
+          "allocation": 60.0,
+          "monthly_amount": 15000,
+          "expected_annual_return_min": 9.0,
+          "expected_annual_return_max": 15.0,
+          "risk_contribution": 12.0,
+          "liquidity_contribution": 18.0,
+          "selection_score": 89.42,
+          "score_breakdown": {
+            "goal_match": 100.0,
+            "risk_match": 100.0,
+            "persona_match": 100.0,
+            "expected_return": 71.42857142857143,
+            "liquidity": 30.0,
+            "tax_efficiency": 100.0,
+            "inflation_protection": 100.0,
+            "trust_score": 80.0,
+            "popularity": 82.0,
+            "diversification_value": 100.0,
+            "budget_compatibility": 100.0
+          },
+          "reason": "ELSS is included because It provides diversified market-linked growth potential for a longer horizon. It directly supports the retirement goal. Its allocation balances its score, asset-class role, minimum investment, and concentration cap.",
+          "potential_risks": [
+            "Equity losses can occur during the lock-in",
+            "Tax treatment can change",
+            "Cannot be redeemed before lock-in ends"
+          ]
+        },
+        {
+          "product": "Gilt Fund",
+          "product_id": "gilt-fund",
+          "asset_class": "Debt",
+          "allocation": 15.0,
+          "monthly_amount": 3750,
+          "expected_annual_return_min": 5.5,
+          "expected_annual_return_max": 8.5,
+          "risk_contribution": 0.975,
+          "liquidity_contribution": 9.0,
+          "selection_score": 70.64,
+          "score_breakdown": {
+            "goal_match": 100.0,
+            "risk_match": 75.0,
+            "persona_match": 45.0,
+            "expected_return": 35.714285714285715,
+            "liquidity": 60.0,
+            "tax_efficiency": 65.0,
+            "inflation_protection": 25.0,
+            "trust_score": 86.0,
+            "popularity": 55.0,
+            "diversification_value": 100.0,
+            "budget_compatibility": 100.0
+          },
+          "reason": "Gilt Fund is included because It adds a comparatively stable fixed-income component and helps balance equity risk. It directly supports the retirement goal. Its allocation balances its score, asset-class role, minimum investment, and concentration cap.",
+          "potential_risks": [
+            "Long-duration gilts can fluctuate sharply when rates change",
+            "Returns are not fixed"
+          ]
+        },
+        {
+          "product": "Silver ETF",
+          "product_id": "silver-etf",
+          "asset_class": "Gold",
+          "allocation": 10.0,
+          "monthly_amount": 2500,
+          "expected_annual_return_min": 4.0,
+          "expected_annual_return_max": 12.0,
+          "risk_contribution": 2.5,
+          "liquidity_contribution": 8.0,
+          "selection_score": 86.73,
+          "score_breakdown": {
+            "goal_match": 100.0,
+            "risk_match": 100.0,
+            "persona_match": 100.0,
+            "expected_return": 42.857142857142854,
+            "liquidity": 80.0,
+            "tax_efficiency": 65.0,
+            "inflation_protection": 100.0,
+            "trust_score": 75.0,
+            "popularity": 56.0,
+            "diversification_value": 100.0,
+            "budget_compatibility": 100.0
+          },
+          "reason": "Silver ETF is included because It adds an asset that can diversify equity exposure and may help with inflation protection. It directly supports the retirement goal. Its allocation balances its score, asset-class role, minimum investment, and concentration cap.",
+          "potential_risks": [
+            "Higher commodity-price volatility",
+            "No cash income",
+            "Industrial-demand changes can affect prices"
+          ]
+        },
+        {
+          "product": "NPS",
+          "product_id": "nps",
+          "asset_class": "Government Savings",
+          "allocation": 10.0,
+          "monthly_amount": 2500,
+          "expected_annual_return_min": 7.0,
+          "expected_annual_return_max": 11.0,
+          "risk_contribution": 1.0,
+          "liquidity_contribution": 3.0,
+          "selection_score": 78.48,
+          "score_breakdown": {
+            "goal_match": 100.0,
+            "risk_match": 75.0,
+            "persona_match": 45.0,
+            "expected_return": 50.0,
+            "liquidity": 30.0,
+            "tax_efficiency": 100.0,
+            "inflation_protection": 100.0,
+            "trust_score": 91.0,
+            "popularity": 74.0,
+            "diversification_value": 100.0,
+            "budget_compatibility": 100.0
+          },
+          "reason": "NPS is included because It adds a government-linked savings component with its stated terms and liquidity limits. It directly supports the retirement goal. Its allocation balances its score, asset-class role, minimum investment, and concentration cap.",
+          "potential_risks": [
+            "Withdrawals are restricted",
+            "Market-linked choices can fluctuate",
+            "Annuity rules may apply"
+          ]
+        },
+        {
+          "product": "Emergency Savings Account",
+          "product_id": "emergency-savings-account",
+          "asset_class": "Cash",
+          "allocation": 5.0,
+          "monthly_amount": 1250,
+          "expected_annual_return_min": 2.5,
+          "expected_annual_return_max": 5.0,
+          "risk_contribution": 0.0,
+          "liquidity_contribution": 5.0,
+          "selection_score": 59.48,
+          "score_breakdown": {
+            "goal_match": 25.0,
+            "risk_match": 60.0,
+            "persona_match": 100.0,
+            "expected_return": 12.5,
+            "liquidity": 100.0,
+            "tax_efficiency": 35.0,
+            "inflation_protection": 25.0,
+            "trust_score": 89.0,
+            "popularity": 95.0,
+            "diversification_value": 100.0,
+            "budget_compatibility": 100.0
+          },
+          "reason": "Emergency Savings Account is included because It keeps part of the plan accessible for short-term needs and resilience. It is used as a diversification sleeve rather than the primary goal vehicle. Its allocation balances its score, asset-class role, minimum investment, and concentration cap.",
+          "potential_risks": [
+            "Interest may not keep up with inflation",
+            "Deposit insurance limits and bank terms apply",
+            "Rates can change"
+          ]
+        }
+      ],
+      "portfolio_health": {
+        "Diversification": 88,
+        "Risk Alignment": 87,
+        "Liquidity": 43,
+        "Inflation Protection": 87,
+        "Goal Alignment": 100,
+        "Tax Efficiency": 88,
+        "Portfolio Stability": 63,
+        "Overall Portfolio Score": 82
+      },
+      "alternative_portfolios": {
+        "conservative": {
+          "style": "Conservative",
+          "expected_return_range": "6.1%–10.4%",
+          "expected_annual_return_min": 6.08,
+          "expected_annual_return_max": 10.45,
+          "estimated_risk": 11.45,
+          "risk_level": "Medium",
+          "allocation": [
+            {
+              "product": "Gilt Fund",
+              "product_id": "gilt-fund",
+              "asset_class": "Debt",
+              "allocation": 30.0,
+              "monthly_amount": 7500,
+              "expected_annual_return_min": 5.5,
+              "expected_annual_return_max": 8.5,
+              "risk_contribution": 1.95,
+              "liquidity_contribution": 18.0,
+              "selection_score": 70.64,
+              "score_breakdown": {
+                "goal_match": 100.0,
+                "risk_match": 75.0,
+                "persona_match": 45.0,
+                "expected_return": 35.714285714285715,
+                "liquidity": 60.0,
+                "tax_efficiency": 65.0,
+                "inflation_protection": 25.0,
+                "trust_score": 86.0,
+                "popularity": 55.0,
+                "diversification_value": 100.0,
+                "budget_compatibility": 100.0
+              },
+              "reason": "Gilt Fund is included because It adds a comparatively stable fixed-income component and helps balance equity risk. It directly supports the retirement goal. Its allocation reflects the conservative tilt.",
+              "potential_risks": [
+                "Long-duration gilts can fluctuate sharply when rates change",
+                "Returns are not fixed"
+              ]
+            },
+            {
+              "product": "ELSS",
+              "product_id": "elss",
+              "asset_class": "Equity",
+              "allocation": 25.0,
+              "monthly_amount": 6250,
+              "expected_annual_return_min": 9.0,
+              "expected_annual_return_max": 15.0,
+              "risk_contribution": 5.0,
+              "liquidity_contribution": 7.5,
+              "selection_score": 89.42,
+              "score_breakdown": {
+                "goal_match": 100.0,
+                "risk_match": 100.0,
+                "persona_match": 100.0,
+                "expected_return": 71.42857142857143,
+                "liquidity": 30.0,
+                "tax_efficiency": 100.0,
+                "inflation_protection": 100.0,
+                "trust_score": 80.0,
+                "popularity": 82.0,
+                "diversification_value": 100.0,
+                "budget_compatibility": 100.0
+              },
+              "reason": "ELSS is included because It provides diversified market-linked growth potential for a longer horizon. It directly supports the retirement goal. Its allocation reflects the conservative tilt.",
+              "potential_risks": [
+                "Equity losses can occur during the lock-in",
+                "Tax treatment can change",
+                "Cannot be redeemed before lock-in ends"
+              ]
+            },
+            {
+              "product": "NPS",
+              "product_id": "nps",
+              "asset_class": "Government Savings",
+              "allocation": 20.0,
+              "monthly_amount": 5000,
+              "expected_annual_return_min": 7.0,
+              "expected_annual_return_max": 11.0,
+              "risk_contribution": 2.0,
+              "liquidity_contribution": 6.0,
+              "selection_score": 78.48,
+              "score_breakdown": {
+                "goal_match": 100.0,
+                "risk_match": 75.0,
+                "persona_match": 45.0,
+                "expected_return": 50.0,
+                "liquidity": 30.0,
+                "tax_efficiency": 100.0,
+                "inflation_protection": 100.0,
+                "trust_score": 91.0,
+                "popularity": 74.0,
+                "diversification_value": 100.0,
+                "budget_compatibility": 100.0
+              },
+              "reason": "NPS is included because It adds a government-linked savings component with its stated terms and liquidity limits. It directly supports the retirement goal. Its allocation reflects the conservative tilt.",
+              "potential_risks": [
+                "Withdrawals are restricted",
+                "Market-linked choices can fluctuate",
+                "Annuity rules may apply"
+              ]
+            },
+            {
+              "product": "Emergency Savings Account",
+              "product_id": "emergency-savings-account",
+              "asset_class": "Cash",
+              "allocation": 15.0,
+              "monthly_amount": 3750,
+              "expected_annual_return_min": 2.5,
+              "expected_annual_return_max": 5.0,
+              "risk_contribution": 0.0,
+              "liquidity_contribution": 15.0,
+              "selection_score": 59.48,
+              "score_breakdown": {
+                "goal_match": 25.0,
+                "risk_match": 60.0,
+                "persona_match": 100.0,
+                "expected_return": 12.5,
+                "liquidity": 100.0,
+                "tax_efficiency": 35.0,
+                "inflation_protection": 25.0,
+                "trust_score": 89.0,
+                "popularity": 95.0,
+                "diversification_value": 100.0,
+                "budget_compatibility": 100.0
+              },
+              "reason": "Emergency Savings Account is included because It keeps part of the plan accessible for short-term needs and resilience. It is used as a diversification sleeve rather than the primary goal vehicle. Its allocation reflects the conservative tilt.",
+              "potential_risks": [
+                "Interest may not keep up with inflation",
+                "Deposit insurance limits and bank terms apply",
+                "Rates can change"
+              ]
+            },
+            {
+              "product": "Silver ETF",
+              "product_id": "silver-etf",
+              "asset_class": "Gold",
+              "allocation": 10.0,
+              "monthly_amount": 2500,
+              "expected_annual_return_min": 4.0,
+              "expected_annual_return_max": 12.0,
+              "risk_contribution": 2.5,
+              "liquidity_contribution": 8.0,
+              "selection_score": 86.73,
+              "score_breakdown": {
+                "goal_match": 100.0,
+                "risk_match": 100.0,
+                "persona_match": 100.0,
+                "expected_return": 42.857142857142854,
+                "liquidity": 80.0,
+                "tax_efficiency": 65.0,
+                "inflation_protection": 100.0,
+                "trust_score": 75.0,
+                "popularity": 56.0,
+                "diversification_value": 100.0,
+                "budget_compatibility": 100.0
+              },
+              "reason": "Silver ETF is included because It adds an asset that can diversify equity exposure and may help with inflation protection. It directly supports the retirement goal. Its allocation reflects the conservative tilt.",
+              "potential_risks": [
+                "Higher commodity-price volatility",
+                "No cash income",
+                "Industrial-demand changes can affect prices"
+              ]
+            }
+          ],
+          "portfolio_health": {
+            "Diversification": 93,
+            "Risk Alignment": 77,
+            "Liquidity": 54,
+            "Inflation Protection": 71,
+            "Goal Alignment": 100,
+            "Tax Efficiency": 76,
+            "Portfolio Stability": 80,
+            "Overall Portfolio Score": 80
+          }
+        },
+        "recommended": {
+          "style": "Recommended",
+          "expected_return_range": "7.5%–12.8%",
+          "expected_annual_return_min": 7.45,
+          "expected_annual_return_max": 12.82,
+          "estimated_risk": 16.48,
+          "risk_level": "Medium",
+          "allocation": [
+            {
+              "product": "ELSS",
+              "product_id": "elss",
+              "asset_class": "Equity",
+              "allocation": 60.0,
+              "monthly_amount": 15000,
+              "expected_annual_return_min": 9.0,
+              "expected_annual_return_max": 15.0,
+              "risk_contribution": 12.0,
+              "liquidity_contribution": 18.0,
+              "selection_score": 89.42,
+              "score_breakdown": {
+                "goal_match": 100.0,
+                "risk_match": 100.0,
+                "persona_match": 100.0,
+                "expected_return": 71.42857142857143,
+                "liquidity": 30.0,
+                "tax_efficiency": 100.0,
+                "inflation_protection": 100.0,
+                "trust_score": 80.0,
+                "popularity": 82.0,
+                "diversification_value": 100.0,
+                "budget_compatibility": 100.0
+              },
+              "reason": "ELSS is included because It provides diversified market-linked growth potential for a longer horizon. It directly supports the retirement goal. Its allocation balances its score, asset-class role, minimum investment, and concentration cap.",
+              "potential_risks": [
+                "Equity losses can occur during the lock-in",
+                "Tax treatment can change",
+                "Cannot be redeemed before lock-in ends"
+              ]
+            },
+            {
+              "product": "Gilt Fund",
+              "product_id": "gilt-fund",
+              "asset_class": "Debt",
+              "allocation": 15.0,
+              "monthly_amount": 3750,
+              "expected_annual_return_min": 5.5,
+              "expected_annual_return_max": 8.5,
+              "risk_contribution": 0.975,
+              "liquidity_contribution": 9.0,
+              "selection_score": 70.64,
+              "score_breakdown": {
+                "goal_match": 100.0,
+                "risk_match": 75.0,
+                "persona_match": 45.0,
+                "expected_return": 35.714285714285715,
+                "liquidity": 60.0,
+                "tax_efficiency": 65.0,
+                "inflation_protection": 25.0,
+                "trust_score": 86.0,
+                "popularity": 55.0,
+                "diversification_value": 100.0,
+                "budget_compatibility": 100.0
+              },
+              "reason": "Gilt Fund is included because It adds a comparatively stable fixed-income component and helps balance equity risk. It directly supports the retirement goal. Its allocation balances its score, asset-class role, minimum investment, and concentration cap.",
+              "potential_risks": [
+                "Long-duration gilts can fluctuate sharply when rates change",
+                "Returns are not fixed"
+              ]
+            },
+            {
+              "product": "Silver ETF",
+              "product_id": "silver-etf",
+              "asset_class": "Gold",
+              "allocation": 10.0,
+              "monthly_amount": 2500,
+              "expected_annual_return_min": 4.0,
+              "expected_annual_return_max": 12.0,
+              "risk_contribution": 2.5,
+              "liquidity_contribution": 8.0,
+              "selection_score": 86.73,
+              "score_breakdown": {
+                "goal_match": 100.0,
+                "risk_match": 100.0,
+                "persona_match": 100.0,
+                "expected_return": 42.857142857142854,
+                "liquidity": 80.0,
+                "tax_efficiency": 65.0,
+                "inflation_protection": 100.0,
+                "trust_score": 75.0,
+                "popularity": 56.0,
+                "diversification_value": 100.0,
+                "budget_compatibility": 100.0
+              },
+              "reason": "Silver ETF is included because It adds an asset that can diversify equity exposure and may help with inflation protection. It directly supports the retirement goal. Its allocation balances its score, asset-class role, minimum investment, and concentration cap.",
+              "potential_risks": [
+                "Higher commodity-price volatility",
+                "No cash income",
+                "Industrial-demand changes can affect prices"
+              ]
+            },
+            {
+              "product": "NPS",
+              "product_id": "nps",
+              "asset_class": "Government Savings",
+              "allocation": 10.0,
+              "monthly_amount": 2500,
+              "expected_annual_return_min": 7.0,
+              "expected_annual_return_max": 11.0,
+              "risk_contribution": 1.0,
+              "liquidity_contribution": 3.0,
+              "selection_score": 78.48,
+              "score_breakdown": {
+                "goal_match": 100.0,
+                "risk_match": 75.0,
+                "persona_match": 45.0,
+                "expected_return": 50.0,
+                "liquidity": 30.0,
+                "tax_efficiency": 100.0,
+                "inflation_protection": 100.0,
+                "trust_score": 91.0,
+                "popularity": 74.0,
+                "diversification_value": 100.0,
+                "budget_compatibility": 100.0
+              },
+              "reason": "NPS is included because It adds a government-linked savings component with its stated terms and liquidity limits. It directly supports the retirement goal. Its allocation balances its score, asset-class role, minimum investment, and concentration cap.",
+              "potential_risks": [
+                "Withdrawals are restricted",
+                "Market-linked choices can fluctuate",
+                "Annuity rules may apply"
+              ]
+            },
+            {
+              "product": "Emergency Savings Account",
+              "product_id": "emergency-savings-account",
+              "asset_class": "Cash",
+              "allocation": 5.0,
+              "monthly_amount": 1250,
+              "expected_annual_return_min": 2.5,
+              "expected_annual_return_max": 5.0,
+              "risk_contribution": 0.0,
+              "liquidity_contribution": 5.0,
+              "selection_score": 59.48,
+              "score_breakdown": {
+                "goal_match": 25.0,
+                "risk_match": 60.0,
+                "persona_match": 100.0,
+                "expected_return": 12.5,
+                "liquidity": 100.0,
+                "tax_efficiency": 35.0,
+                "inflation_protection": 25.0,
+                "trust_score": 89.0,
+                "popularity": 95.0,
+                "diversification_value": 100.0,
+                "budget_compatibility": 100.0
+              },
+              "reason": "Emergency Savings Account is included because It keeps part of the plan accessible for short-term needs and resilience. It is used as a diversification sleeve rather than the primary goal vehicle. Its allocation balances its score, asset-class role, minimum investment, and concentration cap.",
+              "potential_risks": [
+                "Interest may not keep up with inflation",
+                "Deposit insurance limits and bank terms apply",
+                "Rates can change"
+              ]
+            }
+          ],
+          "portfolio_health": {
+            "Diversification": 88,
+            "Risk Alignment": 87,
+            "Liquidity": 43,
+            "Inflation Protection": 87,
+            "Goal Alignment": 100,
+            "Tax Efficiency": 88,
+            "Portfolio Stability": 63,
+            "Overall Portfolio Score": 82
+          }
+        },
+        "growth": {
+          "style": "Growth",
+          "expected_return_range": "7.2%–13.1%",
+          "expected_annual_return_min": 7.22,
+          "expected_annual_return_max": 13.05,
+          "estimated_risk": 18.15,
+          "risk_level": "High",
+          "allocation": [
+            {
+              "product": "ELSS",
+              "product_id": "elss",
+              "asset_class": "Equity",
+              "allocation": 60.0,
+              "monthly_amount": 15000,
+              "expected_annual_return_min": 9.0,
+              "expected_annual_return_max": 15.0,
+              "risk_contribution": 12.0,
+              "liquidity_contribution": 18.0,
+              "selection_score": 89.42,
+              "score_breakdown": {
+                "goal_match": 100.0,
+                "risk_match": 100.0,
+                "persona_match": 100.0,
+                "expected_return": 71.42857142857143,
+                "liquidity": 30.0,
+                "tax_efficiency": 100.0,
+                "inflation_protection": 100.0,
+                "trust_score": 80.0,
+                "popularity": 82.0,
+                "diversification_value": 100.0,
+                "budget_compatibility": 100.0
+              },
+              "reason": "ELSS is included because It provides diversified market-linked growth potential for a longer horizon. It directly supports the retirement goal. Its allocation reflects the growth tilt within the stated risk ceiling.",
+              "potential_risks": [
+                "Equity losses can occur during the lock-in",
+                "Tax treatment can change",
+                "Cannot be redeemed before lock-in ends"
+              ]
+            },
+            {
+              "product": "Gilt Fund",
+              "product_id": "gilt-fund",
+              "asset_class": "Debt",
+              "allocation": 10.0,
+              "monthly_amount": 2500,
+              "expected_annual_return_min": 5.5,
+              "expected_annual_return_max": 8.5,
+              "risk_contribution": 0.65,
+              "liquidity_contribution": 6.0,
+              "selection_score": 70.64,
+              "score_breakdown": {
+                "goal_match": 100.0,
+                "risk_match": 75.0,
+                "persona_match": 45.0,
+                "expected_return": 35.714285714285715,
+                "liquidity": 60.0,
+                "tax_efficiency": 65.0,
+                "inflation_protection": 25.0,
+                "trust_score": 86.0,
+                "popularity": 55.0,
+                "diversification_value": 100.0,
+                "budget_compatibility": 100.0
+              },
+              "reason": "Gilt Fund is included because It adds a comparatively stable fixed-income component and helps balance equity risk. It directly supports the retirement goal. Its allocation reflects the growth tilt within the stated risk ceiling.",
+              "potential_risks": [
+                "Long-duration gilts can fluctuate sharply when rates change",
+                "Returns are not fixed"
+              ]
+            },
+            {
+              "product": "Silver ETF",
+              "product_id": "silver-etf",
+              "asset_class": "Gold",
+              "allocation": 20.0,
+              "monthly_amount": 5000,
+              "expected_annual_return_min": 4.0,
+              "expected_annual_return_max": 12.0,
+              "risk_contribution": 5.0,
+              "liquidity_contribution": 16.0,
+              "selection_score": 86.73,
+              "score_breakdown": {
+                "goal_match": 100.0,
+                "risk_match": 100.0,
+                "persona_match": 100.0,
+                "expected_return": 42.857142857142854,
+                "liquidity": 80.0,
+                "tax_efficiency": 65.0,
+                "inflation_protection": 100.0,
+                "trust_score": 75.0,
+                "popularity": 56.0,
+                "diversification_value": 100.0,
+                "budget_compatibility": 100.0
+              },
+              "reason": "Silver ETF is included because It adds an asset that can diversify equity exposure and may help with inflation protection. It directly supports the retirement goal. Its allocation reflects the growth tilt within the stated risk ceiling.",
+              "potential_risks": [
+                "Higher commodity-price volatility",
+                "No cash income",
+                "Industrial-demand changes can affect prices"
+              ]
+            },
+            {
+              "product": "Emergency Savings Account",
+              "product_id": "emergency-savings-account",
+              "asset_class": "Cash",
+              "allocation": 5.0,
+              "monthly_amount": 1250,
+              "expected_annual_return_min": 2.5,
+              "expected_annual_return_max": 5.0,
+              "risk_contribution": 0.0,
+              "liquidity_contribution": 5.0,
+              "selection_score": 59.48,
+              "score_breakdown": {
+                "goal_match": 25.0,
+                "risk_match": 60.0,
+                "persona_match": 100.0,
+                "expected_return": 12.5,
+                "liquidity": 100.0,
+                "tax_efficiency": 35.0,
+                "inflation_protection": 25.0,
+                "trust_score": 89.0,
+                "popularity": 95.0,
+                "diversification_value": 100.0,
+                "budget_compatibility": 100.0
+              },
+              "reason": "Emergency Savings Account is included because It keeps part of the plan accessible for short-term needs and resilience. It is used as a diversification sleeve rather than the primary goal vehicle. Its allocation reflects the growth tilt within the stated risk ceiling.",
+              "potential_risks": [
+                "Interest may not keep up with inflation",
+                "Deposit insurance limits and bank terms apply",
+                "Rates can change"
+              ]
+            },
+            {
+              "product": "NPS",
+              "product_id": "nps",
+              "asset_class": "Government Savings",
+              "allocation": 5.0,
+              "monthly_amount": 1250,
+              "expected_annual_return_min": 7.0,
+              "expected_annual_return_max": 11.0,
+              "risk_contribution": 0.5,
+              "liquidity_contribution": 1.5,
+              "selection_score": 78.48,
+              "score_breakdown": {
+                "goal_match": 100.0,
+                "risk_match": 75.0,
+                "persona_match": 45.0,
+                "expected_return": 50.0,
+                "liquidity": 30.0,
+                "tax_efficiency": 100.0,
+                "inflation_protection": 100.0,
+                "trust_score": 91.0,
+                "popularity": 74.0,
+                "diversification_value": 100.0,
+                "budget_compatibility": 100.0
+              },
+              "reason": "NPS is included because It adds a government-linked savings component with its stated terms and liquidity limits. It directly supports the retirement goal. Its allocation reflects the growth tilt within the stated risk ceiling.",
+              "potential_risks": [
+                "Withdrawals are restricted",
+                "Market-linked choices can fluctuate",
+                "Annuity rules may apply"
+              ]
+            }
+          ],
+          "portfolio_health": {
+            "Diversification": 88,
+            "Risk Alignment": 81,
+            "Liquidity": 46,
+            "Inflation Protection": 90,
+            "Goal Alignment": 100,
+            "Tax Efficiency": 86,
+            "Portfolio Stability": 58,
+            "Overall Portfolio Score": 81
+          }
+        }
+      },
+      "insights": [
+        "If cash flow remains stable, you could review whether up to ₹20,000 of monthly savings is available for a higher SIP.",
+        "One product has a large allocation; review concentration risk and the underlying product's terms before implementation."
+      ],
+      "explanation_summary": "This recommended educational illustration spreads ₹25,000 across 5 products. Its weighted planning range is 7.5%–12.8% with illustrative volatility of 16.5%.",
+      "trade_offs": [
+        "Equity allocations can fluctuate substantially and may be unsuitable for money needed soon.",
+        "Gold can diversify a portfolio but may be volatile and does not generate regular income.",
+        "Government-linked products can carry lock-ins, eligibility criteria, or changing issue availability."
+      ],
+      "rules_version": "v0.6.0",
+      "educational_disclaimer": "Educational illustration only; this deterministic tool does not provide regulated financial advice, predict market returns, or recommend a transaction. Review suitability, costs, tax rules, and product terms with a qualified professional before investing."
+    }
+  }
+]
